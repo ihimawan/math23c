@@ -1,3 +1,4 @@
+# setwd("Homeworks/Week1")
 # cleanup
 rm(list = ls())
 
