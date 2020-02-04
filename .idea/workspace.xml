@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7689ad80-315b-4da9-940d-0da5bca74976" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Homeworks/Week1/DataWrangling1.R" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/Week1/Problem2.R" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/Week1/Problem3.R" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/Week1/lib/GSSLogical.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/Week1/lib/RedSox2013.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/Week1/Problem1.R" beforeDir="false" afterPath="$PROJECT_DIR$/Homeworks/Week1/Problem1.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homeworks/Week1/DataWrangling1.R" beforeDir="false" afterPath="$PROJECT_DIR$/Homeworks/Week1/DataWrangling1.R" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580775432935</updated>
-      <workItem from="1580776275839" duration="6673000" />
+      <workItem from="1580776275839" duration="6751000" />
     </task>
     <servers />
   </component>
