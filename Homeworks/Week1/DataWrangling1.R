@@ -5,4 +5,4 @@
 # Then,  as in script 1D, topic 1,find or count rows with specified features, and form and apply a
 # chi-squaretest to a couple of 2 times 2 contingency tables.
 
-#https://gssdataexplorer.norc.org/projects/73889/extracts
+# https://gssdataexplorer.norc.org/projects/73889/extracts
