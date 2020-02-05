@@ -24,8 +24,8 @@ observed <- table(WonLost, Away); observed
 # WonLost FALSE TRUE
 #       L    30   40
 #       W    59   49
-pWonLost <- mean(WonLost == 'L') #following the first value in above table to avoid confusion (for me)
-pAway <- mean(!Away) #following the first value in above table to avoid confusion (for me)
+pWonLost <- mean(WonLost == 'L')
+pAway <- mean(!Away)
 expected <- nrow(rsx) * outer(c(pWonLost, 1 - pWonLost), c(pAway, 1 - pAway)); expected
 #      [,1] [,2]
 # [1,]   35   35
