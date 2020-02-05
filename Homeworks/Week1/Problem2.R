@@ -20,7 +20,7 @@ boxplot(R ~ DayNight, data = rsx)
 
 #D) Build a 2x2 contingency table for WonLost and Away
 attach(rsx)
-table(WonLost, Away);
+observed <- table(WonLost, Away); observed
 # WonLost FALSE TRUE
 #       L    30   40
 #       W    59   49
@@ -30,6 +30,8 @@ expected <- nrow(rsx) * outer(c(pWonLost, 1 - pWonLost), c(pAway, 1 - pAway)); e
 #      [,1] [,2]
 # [1,]   35   35
 # [2,]   54   54
+chisq <- sum((observed-expected)^2/expected); chisq # 2.354497
+pValue <- 1 - pchisq(chisq, 1); pValue # 0.1249221
 
 # Use anysterious calculation in R, confirmed by the built-in chi-square test to assess whether or not the Red Sox
 # appear to have had a advantage for day or night games in 2013.
@@ -37,14 +39,14 @@ expected <- nrow(rsx) * outer(c(pWonLost, 1 - pWonLost), c(pAway, 1 - pAway)); e
 # Test the hypothesis whether the WonLost is independent of DayNight at .05 significance level.
 # reference: http://www.r-tutor.com/elementary-statistics/goodness-fit/chi-squared-test-independence
 
-chisq.test(WonLost, DayNight, correct = FALSE)
+chisq.test(WonLost, Away, correct=FALSE)
+#
 # 	Pearson's Chi-squared test
 #
-# data:  WonLost and DayNight
-# X-squared = 0.90639, df = 1, p-value = 0.3411
-#
-# Using 0.05 significance level, Since p-value = 0.3411 is greater than 0.05 significance level, we do not reject the
-# null hypothesis that Red Sox has an advantage during day or night games in 2013. Seems that with this, whether Red Sox
-# wins/loses, it may not have anything to do with whether it was day or night.
+# data:  WonLost and Away
+# X-squared = 2.3545, df = 1, p-value = 0.1249
+# Using 0.05 significance level, Since p-value = 0.1249 is greater than 0.05 significance level, we do not reject the
+# null hypothesis that Red Sox has an advantage during away games in 2013. Whether Red Sox
+# wins/loses, it may not have anything to do with whether it was away or not.
 
 detach(rsx)
