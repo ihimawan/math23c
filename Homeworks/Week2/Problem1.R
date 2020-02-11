@@ -1,7 +1,7 @@
 # setwd("Homeworks/Week2")
 rm(list = ls()) # cleanup
 
-answer = c(1, 0, 0, 0)
+answer = c(100, 0, 0, 0)
 quizzes <- expand.grid(Q1 = answer, Q2 = answer); quizzes
 
 # X is average quiz score, 100, 50, 0

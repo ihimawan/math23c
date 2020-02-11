@@ -26,13 +26,13 @@ pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # small number
 # Testing significance of tobacco with birth weight
 NoTobaccoAvg <- mean(NC$Weight[which(NC$Tobacco == "No")])
 TobaccoAvg <- mean(NC$Weight[which(NC$Tobacco == "Yes")])
-observed <- NoTobaccoAvg - TobaccoAvg; observed # 215 ounces heavier without tobacco
+observed <- NoTobaccoAvg - TobaccoAvg; observed # 215.0021 ounces heavier without tobacco
 
 # permutation test
 N <- 10000
 diffs <- numeric(N)
 for (i in 1:N){
-  Tobacco <- sample(NC$Tobacco)   # permuted gender column
+  Tobacco <- sample(NC$Tobacco)   # permuted Tobacco column
   NoTobaccoAvg <- mean(NC$Weight[which(Tobacco=="No")])
   TobaccoAvg <- mean(NC$Weight[which(Tobacco=="Yes")])
   diffs[i] <- NoTobaccoAvg - TobaccoAvg
