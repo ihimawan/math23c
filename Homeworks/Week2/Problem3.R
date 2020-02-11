@@ -1,7 +1,7 @@
 # setwd("Homeworks/Week2")
 rm(list = ls()) # cleanup
 
-NC <- read.csv("lib/NCBirths2004_.csv"); head(NC)
+NC <- read.csv("lib/NCBirths2004_.csv");
 
 # Testing difference between mean weight is significant
 MaleAvg <- mean(NC$Weight[which(NC$Gender == "Male")])
@@ -12,10 +12,10 @@ observed <- MaleAvg - FemaleAvg; observed # Males are 103.26 ounces heavier
 N <- 10000
 diffs <- numeric(N)
 for (i in 1:N){
-  Gender <- sample(NC$Gender)   #permuted gender column
+  Gender <- sample(NC$Gender)   # permuted gender column
   MaleAvg <- mean(NC$Weight[which(Gender=="Male")])
   FemaleAvg <- mean(NC$Weight[which(Gender=="Female")])
-  diffs[i] <- MaleAvg - FemaleAvg    #as likely to be negative or positive
+  diffs[i] <- MaleAvg - FemaleAvg
 }
 
 mean(diffs)
@@ -28,7 +28,17 @@ NoTobaccoAvg <- mean(NC$Weight[which(NC$Tobacco == "No")])
 TobaccoAvg <- mean(NC$Weight[which(NC$Tobacco == "Yes")])
 observed <- NoTobaccoAvg - TobaccoAvg; observed # 215 ounces heavier without tobacco
 
+# permutation test
+N <- 10000
+diffs <- numeric(N)
+for (i in 1:N){
+  Tobacco <- sample(NC$Tobacco)   # permuted gender column
+  NoTobaccoAvg <- mean(NC$Weight[which(Tobacco=="No")])
+  TobaccoAvg <- mean(NC$Weight[which(Tobacco=="Yes")])
+  diffs[i] <- NoTobaccoAvg - TobaccoAvg
+}
 
-
-
-
+mean(diffs)
+hist(diffs, breaks = "FD")
+abline(v = observed, col = "red")
+pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # small number

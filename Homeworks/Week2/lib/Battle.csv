@@ -1,0 +1,1915 @@
+,Unit,Abbr,Lost,Kills,LostAvg,KillsAvg
+1,Hoplital Haplol (Greek Levy Hoplites),HOPH,38,20,41.33333333,48.33333333
+2,Hoplitai (Greek ClassIcal Hoplites),HOPL,25,53,41.33333333,48.33333333
+3,Machimoi (Native Egyptian Infantry),MACH,54,44,41.33333333,48.33333333
+4,Machimoi (Native Egyptian Infantry),MACH,55,40,41.33333333,48.33333333
+5,Machimoi (Native Egyptian Infantry),MACH,63,20,41.33333333,48.33333333
+6,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,58,183,41.33333333,48.33333333
+8,Pantodapoi (Hellenic Native Spearmen),PANT,51,32,41.33333333,48.33333333
+10,Appea Gaedotos (Alpine Phalanx),APPE,8,33,17.66666667,68.88888889
+11,Appea Gaedotos (Alpine Phalanx),APPE,19,58,17.66666667,68.88888889
+12,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,3,49,17.66666667,68.88888889
+13,Lugoae (Celtic Levy Spearmen),LUGO,49,50,17.66666667,68.88888889
+15,Teceitos (CeltIc Axemen),TECE,9,75,17.66666667,68.88888889
+16,Teceitos (CeltIc Axemen),TECE,12,71,17.66666667,68.88888889
+17,Teceitos (CeltIc Axemen),TECE,23,203,17.66666667,68.88888889
+18,Teceitos (CeltIc Axemen),TECE,9,15,17.66666667,68.88888889
+19,Teceitos (CeltIc Axemen),TECE,67,76,17.66666667,68.88888889
+20,Teceitos (CeltIc Axemen),TECE,33,73,17.66666667,68.88888889
+21,Teceitos (CeltIc Axemen),TECE,8,67,17.66666667,68.88888889
+22,Teceitos (CeltIc Axemen),TECE,8,39,17.66666667,68.88888889
+23,Teceitos (CeltIc Axemen),TECE,4,63,17.66666667,68.88888889
+24,Tekastos (RhaetJc Axemen),TEKA,15,86,17.66666667,68.88888889
+25,Tekastos (RhaetJc Axemen),TEKA,2,25,17.66666667,68.88888889
+26,Tekastos (RhaetJc Axemen),TEKA,8,70,17.66666667,68.88888889
+27,Vigiles (Town Watch),VIGI,13,32,17.66666667,68.88888889
+30,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,2,17,6.85,16.8
+31,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,17,11,6.85,16.8
+37,Hoplitai (Greek ClassIcal Hoplites),HOPL,20,30,6.85,16.8
+40,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,3,8,6.85,16.8
+41,Pezoi Brettioi (Bruttlan Infantry),PEZO,1,17,6.85,16.8
+42,Principes (Camillan Heavy Infantry Maniple),PRIN,6,11,6.85,16.8
+43,Principes (Camillan Heavy Infantry Maniple),PRIN,13,30,6.85,16.8
+44,Principes (Camillan Heavy Infantry Maniple),PRIN,5,14,6.85,16.8
+45,Tekastos (RhaetJc Axemen),TEKA,15,55,6.85,16.8
+56,Hoplitai (Greek ClassIcal Hoplites),HOPL,7,37,14.6,64
+57,Hoplitai (Greek ClassIcal Hoplites),HOPL,71,148,14.6,64
+60,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,41,290,14.6,64
+63,Principes (Camillan Heavy Infantry Maniple),PRIN,27,67,14.6,64
+65,Tekastos (RhaetJc Axemen),TEKA,64,164,14.6,64
+69,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,86,15,27.28571429,28.64285714
+70,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,22,9,27.28571429,28.64285714
+72,Merkabim Garamantim(Garamantine Chariots),GARC,23,15,27.28571429,28.64285714
+73,Merkabim Garamantim(Garamantine Chariots),GARC,9,5,27.28571429,28.64285714
+74,Hoplitai (Greek ClassIcal Hoplites),HOPL,27,20,27.28571429,28.64285714
+75,Hoplitai (Greek ClassIcal Hoplites),HOPL,25,11,27.28571429,28.64285714
+76,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,24,47,27.28571429,28.64285714
+77,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,14,146,27.28571429,28.64285714
+78,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,60,64,27.28571429,28.64285714
+79,Peltastai (Hellenic Heavy Skirmishers),PELT,18,14,27.28571429,28.64285714
+80,Peltastai (Hellenic Heavy Skirmishers),PELT,32,27,27.28571429,28.64285714
+82,Appea Gaedotos (Alpine Phalanx),APPE,38,149,25.80645161,36.35483871
+83,Appea Gaedotos (Alpine Phalanx),APPE,24,65,25.80645161,36.35483871
+84,Appea Gaedotos (Alpine Phalanx),APPE,25,92,25.80645161,36.35483871
+86,Celtae Vollorix (Celtic Lesser King),CELT,55,120,25.80645161,36.35483871
+88,Iaosatae (Celtic Slingers),IOSA,15,41,25.80645161,36.35483871
+89,Iaosatae (Celtic Slingers),IOSA,7,19,25.80645161,36.35483871
+90,Kluddacorii (Alpine Shortswordsmen),KLUD,5,14,25.80645161,36.35483871
+91,Kluddacorii (Alpine Shortswordsmen),KLUD,15,5,25.80645161,36.35483871
+92,Mori Gaesum (Helvetii Phalanx),MORI,8,15,25.80645161,36.35483871
+93,Mori Gaesum (Helvetii Phalanx),MORI,9,32,25.80645161,36.35483871
+94,Mori Gaesum (Helvetii Phalanx),MORI,6,65,25.80645161,36.35483871
+95,Mori Gaesum (Helvetii Phalanx),MORI,8,20,25.80645161,36.35483871
+96,Principes (Camillan Heavy Infantry Maniple),PRIN,66,39,25.80645161,36.35483871
+97,Teceitos (CeltIc Axemen),TECE,50,27,25.80645161,36.35483871
+98,Teceitos (CeltIc Axemen),TECE,45,39,25.80645161,36.35483871
+99,Teceitos (CeltIc Axemen),TECE,79,50,25.80645161,36.35483871
+100,Teceitos (CeltIc Axemen),TECE,11,0,25.80645161,36.35483871
+101,Teceitos (CeltIc Axemen),TECE,62,54,25.80645161,36.35483871
+102,Teceitos (CeltIc Axemen),TECE,19,30,25.80645161,36.35483871
+103,Teceitos (CeltIc Axemen),TECE,68,41,25.80645161,36.35483871
+104,Teceitos (CeltIc Axemen),TECE,18,8,25.80645161,36.35483871
+105,Teceitos (CeltIc Axemen),TECE,13,47,25.80645161,36.35483871
+106,Teceitos (CeltIc Axemen),TECE,45,32,25.80645161,36.35483871
+107,Teceitos (CeltIc Axemen),TECE,9,13,25.80645161,36.35483871
+108,Teceitos (CeltIc Axemen),TECE,8,3,25.80645161,36.35483871
+109,Tekastos (RhaetJc Axemen),TEKA,60,50,25.80645161,36.35483871
+110,Tekastos (RhaetJc Axemen),TEKA,6,35,25.80645161,36.35483871
+112,Vigiles (Town Watch),VIGI,12,7,25.80645161,36.35483871
+115,Cohors Reformata (Post Marian Legionary Cohort),COHO,33,97,13.55,41.35
+116,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,10,4,13.55,41.35
+117,Gaeroas (Celtic Spearmen),GAER,45,73,13.55,41.35
+122,Lugoae (Celtic Levy Spearmen),LUGO,2,27,13.55,41.35
+123,Principes (Camillan Heavy Infantry Maniple),PRIN,9,42,13.55,41.35
+124,Principes (Camillan Heavy Infantry Maniple),PRIN,0,12,13.55,41.35
+125,Dorkim Shardanim (Sardinian Infantry),SARD,4,33,13.55,41.35
+126,Dorkim Shardanim (Sardinian Infantry),SARD,12,38,13.55,41.35
+127,Dorkim Shardanim (Sardinian Infantry),SARD,5,62,13.55,41.35
+128,Dorkim Shardanim (Sardinian Infantry),SARD,17,58,13.55,41.35
+129,Dorkim Shardanim (Sardinian Infantry),SARD,20,85,13.55,41.35
+131,Dorkim Shardanim (Sardinian Infantry),SARD,7,67,13.55,41.35
+133,Unlocalized Arabic General,ARAB,3,40,6.4375,20.375
+134,Unlocalized Arabic General,ARAB,0,39,6.4375,20.375
+138,Hoplital Haplol (Greek Levy Hoplites),HOPH,38,34,6.4375,20.375
+142,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,0,11,6.4375,20.375
+145,Peltastai (Hellenic Heavy Skirmishers),PELT,12,12,6.4375,20.375
+146,Peltastai (Hellenic Heavy Skirmishers),PELT,19,15,6.4375,20.375
+147,Dorkim Shardanim (Sardinian Infantry),SARD,15,39,6.4375,20.375
+148,Dorkim Shardanim (Sardinian Infantry),SARD,6,89,6.4375,20.375
+149,Unlocalized Arabic General,ARAB,46,16,10,16
+150,Unlocalized Arabic General,ARAB,29,19,10,16
+151,Hoplital Haplol (Greek Levy Hoplites),HOPH,12,22,10,16
+152,Hoplital Haplol (Greek Levy Hoplites),HOPH,16,32,10,16
+154,Hoplital Haplol (Greek Levy Hoplites),HOPH,12,21,10,16
+158,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,2,18,10,16
+163,Dorkim Shardanim (Sardinian Infantry),SARD,15,37,10,16
+164,Dorkim Shardanim (Sardinian Infantry),SARD,23,67,10,16
+165,Appea Gaedotos (Alpine Phalanx),APPE,6,22,23.0625,38.0625
+166,Appea Gaedotos (Alpine Phalanx),APPE,46,71,23.0625,38.0625
+167,Appea Gaedotos (Alpine Phalanx),APPE,56,65,23.0625,38.0625
+168,Appea Gaedotos (Alpine Phalanx),APPE,46,46,23.0625,38.0625
+169,Celtae Vollorix (Celtic Lesser King),CELT,12,21,23.0625,38.0625
+170,Iaosatae (Celtic Slingers),IOSA,0,32,23.0625,38.0625
+171,Iaosatae (Celtic Slingers),IOSA,0,24,23.0625,38.0625
+172,Kluddacorii (Alpine Shortswordsmen),KLUD,88,53,23.0625,38.0625
+174,Mori Gaesum (Helvetii Phalanx),MORI,3,38,23.0625,38.0625
+175,Mori Gaesum (Helvetii Phalanx),MORI,36,20,23.0625,38.0625
+176,Mori Gaesum (Helvetii Phalanx),MORI,47,137,23.0625,38.0625
+177,Mori Gaesum (Helvetii Phalanx),MORI,14,37,23.0625,38.0625
+178,Teceitos (CeltIc Axemen),TECE,14,27,23.0625,38.0625
+182,Appea Gaedotos (Alpine Phalanx),APPE,46,21,46.05,53.95
+183,Appea Gaedotos (Alpine Phalanx),APPE,43,35,46.05,53.95
+184,Appea Gaedotos (Alpine Phalanx),APPE,51,63,46.05,53.95
+185,Appea Gaedotos (Alpine Phalanx),APPE,35,117,46.05,53.95
+187,Appea Gaedotos (Alpine Phalanx),APPE,68,11,46.05,53.95
+188,Appea Gaedotos (Alpine Phalanx),APPE,57,99,46.05,53.95
+189,Celtae Vollorix (Celtic Lesser King),CELT,11,106,46.05,53.95
+190,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,25,5,46.05,53.95
+191,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,21,34,46.05,53.95
+192,Kluddacorii (Alpine Shortswordsmen),KLUD,70,41,46.05,53.95
+193,Kluddacorii (Alpine Shortswordsmen),KLUD,67,21,46.05,53.95
+194,Kluddacorii (Alpine Shortswordsmen),KLUD,84,17,46.05,53.95
+195,Lugoae (Celtic Levy Spearmen),LUGO,122,71,46.05,53.95
+196,Mori Gaesum (Helvetii Phalanx),MORI,50,169,46.05,53.95
+197,Mori Gaesum (Helvetii Phalanx),MORI,4,11,46.05,53.95
+198,Mori Gaesum (Helvetii Phalanx),MORI,57,132,46.05,53.95
+199,Mori Gaesum (Helvetii Phalanx),MORI,37,122,46.05,53.95
+200,Tekastos (RhaetJc Axemen),TEKA,36,0,46.05,53.95
+204,Appea Gaedotos (Alpine Phalanx),APPE,3,10,4.6,12.13333333
+206,Celtae Vollorix (Celtic Lesser King),CELT,12,32,4.6,12.13333333
+207,Iaosatae (Celtic Slingers),IOSA,0,21,4.6,12.13333333
+208,Iaosatae (Celtic Slingers),IOSA,0,19,4.6,12.13333333
+209,Kluddacorii (Alpine Shortswordsmen),KLUD,40,17,4.6,12.13333333
+210,Kluddacorii (Alpine Shortswordsmen),KLUD,28,41,4.6,12.13333333
+213,Mori Gaesum (Helvetii Phalanx),MORI,6,16,4.6,12.13333333
+219,Teceitos (CeltIc Axemen),TECE,11,31,4.6,12.13333333
+220,Teceitos (CeltIc Axemen),TECE,7,16,4.6,12.13333333
+221,Teceitos (CeltIc Axemen),TECE,6,25,4.6,12.13333333
+223,Tekastos (RhaetJc Axemen),TEKA,15,75,4.6,12.13333333
+224,Tekastos (RhaetJc Axemen),TEKA,3,12,4.6,12.13333333
+231,Appea Gaedotos (Alpine Phalanx),APPE,58,119,22.3,28.8
+233,Appea Gaedotos (Alpine Phalanx),APPE,30,54,22.3,28.8
+234,Appea Gaedotos (Alpine Phalanx),APPE,32,52,22.3,28.8
+235,Appea Gaedotos (Alpine Phalanx),APPE,30,93,22.3,28.8
+240,Kluddacorii (Alpine Shortswordsmen),KLUD,15,3,22.3,28.8
+241,Mori Gaesum (Helvetii Phalanx),MORI,44,136,22.3,28.8
+243,Mori Gaesum (Helvetii Phalanx),MORI,24,48,22.3,28.8
+244,Mori Gaesum (Helvetii Phalanx),MORI,15,3,22.3,28.8
+249,Teceitos (CeltIc Axemen),TECE,9,15,22.3,28.8
+250,Teceitos (CeltIc Axemen),TECE,21,12,22.3,28.8
+253,Tekastos (RhaetJc Axemen),TEKA,19,12,22.3,28.8
+254,Tekastos (RhaetJc Axemen),TEKA,20,42,22.3,28.8
+255,Tekastos (RhaetJc Axemen),TEKA,6,36,22.3,28.8
+256,Tekastos (RhaetJc Axemen),TEKA,12,20,22.3,28.8
+257,Tekastos (RhaetJc Axemen),TEKA,12,20,22.3,28.8
+258,Tekastos (RhaetJc Axemen),TEKA,26,102,22.3,28.8
+259,Tekastos (RhaetJc Axemen),TEKA,5,6,22.3,28.8
+261,Unlocalized Arabic General,ARAB,44,6,17.10526316,34.10526316
+262,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,2,17,17.10526316,34.10526316
+264,Merkabim Garamantim(Garamantine Chariots),GARC,10,2,17.10526316,34.10526316
+265,Hoplitai (Greek ClassIcal Hoplites),HOPL,6,32,17.10526316,34.10526316
+266,Machimoi (Native Egyptian Infantry),MACH,26,24,17.10526316,34.10526316
+268,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,31,160,17.10526316,34.10526316
+269,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,12,9,17.10526316,34.10526316
+270,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,27,5,17.10526316,34.10526316
+271,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,35,47,17.10526316,34.10526316
+272,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,15,146,17.10526316,34.10526316
+273,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,5,6,17.10526316,34.10526316
+276,Peltastai (Hellenic Heavy Skirmishers),PELT,13,10,17.10526316,34.10526316
+277,Qala'im 'Arabim (Arabian Slingers),QALA,0,41,17.10526316,34.10526316
+278,Qala'im 'Arabim (Arabian Slingers),QALA,56,60,17.10526316,34.10526316
+279,Dorkim Shardanim (Sardinian Infantry),SARD,15,50,17.10526316,34.10526316
+280,Unlocalized Arabic General,ARAB,35,25,27.38888889,29.66666667
+281,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,66,3,27.38888889,29.66666667
+283,Merkabim Garamantim(Garamantine Chariots),GARC,9,13,27.38888889,29.66666667
+284,Hoplitai (Greek ClassIcal Hoplites),HOPL,2,90,27.38888889,29.66666667
+285,Machimoi (Native Egyptian Infantry),MACH,17,10,27.38888889,29.66666667
+287,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,17,33,27.38888889,29.66666667
+288,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,30,36,27.38888889,29.66666667
+289,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,26,91,27.38888889,29.66666667
+290,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,30,22,27.38888889,29.66666667
+292,Peltastai (Hellenic Heavy Skirmishers),PELT,69,4,27.38888889,29.66666667
+293,Peltastai (Hellenic Heavy Skirmishers),PELT,32,150,27.38888889,29.66666667
+294,Peltastai (Hellenic Heavy Skirmishers),PELT,20,1,27.38888889,29.66666667
+295,Qala'im 'Arabim (Arabian Slingers),QALA,50,7,27.38888889,29.66666667
+297,Dorkim Shardanim (Sardinian Infantry),SARD,30,0,27.38888889,29.66666667
+298,Appea Gaedotos (Alpine Phalanx),APPE,37,153,48.0625,73.8125
+299,Kluddacorii (Alpine Shortswordsmen),KLUD,61,16,48.0625,73.8125
+300,Lugoae (Celtic Levy Spearmen),LUGO,77,12,48.0625,73.8125
+301,Lugoae (Celtic Levy Spearmen),LUGO,70,26,48.0625,73.8125
+302,Lugoae (Celtic Levy Spearmen),LUGO,82,9,48.0625,73.8125
+303,Mori Gaesum (Helvetii Phalanx),MORI,39,125,48.0625,73.8125
+304,Mori Gaesum (Helvetii Phalanx),MORI,38,227,48.0625,73.8125
+305,Teceitos (CeltIc Axemen),TECE,34,24,48.0625,73.8125
+306,Teceitos (CeltIc Axemen),TECE,47,28,48.0625,73.8125
+307,Teceitos (CeltIc Axemen),TECE,35,28,48.0625,73.8125
+308,Teceitos (CeltIc Axemen),TECE,17,16,48.0625,73.8125
+309,Teceitos (CeltIc Axemen),TECE,43,183,48.0625,73.8125
+310,Teceitos (CeltIc Axemen),TECE,30,82,48.0625,73.8125
+311,Teceitos (CeltIc Axemen),TECE,56,135,48.0625,73.8125
+312,Teceitos (CeltIc Axemen),TECE,56,66,48.0625,73.8125
+313,Teceitos (CeltIc Axemen),TECE,47,51,48.0625,73.8125
+314,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,22,2,21.2,46
+316,Hoplitai (Greek ClassIcal Hoplites),HOPL,27,129,21.2,46
+317,Hoplitai (Greek ClassIcal Hoplites),HOPL,20,77,21.2,46
+319,Hoplitai (Greek ClassIcal Hoplites),HOPL,35,25,21.2,46
+320,Machimoi (Native Egyptian Infantry),MACH,22,47,21.2,46
+322,Machimoi (Native Egyptian Infantry),MACH,45,131,21.2,46
+323,Machimoi (Native Egyptian Infantry),MACH,3,8,21.2,46
+324,Mistophoros Strategos (Hellenistic Mercenary General),MIST,12,1,21.2,46
+325,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,29,24,21.2,46
+326,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,17,32,21.2,46
+327,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,43,78,21.2,46
+328,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,22,107,21.2,46
+329,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,44,92,21.2,46
+330,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,5,23,21.2,46
+331,Peltastai (Hellenic Heavy Skirmishers),PELT,36,46,21.2,46
+332,Peltastai (Hellenic Heavy Skirmishers),PELT,18,78,21.2,46
+333,Peltastai (Hellenic Heavy Skirmishers),PELT,24,4,21.2,46
+335,Cohors Reformata (Post Marian Legionary Cohort),COHO,14,40,6.176470588,8.529411765
+338,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,0,13,6.176470588,8.529411765
+340,Hoplitai (Greek ClassIcal Hoplites),HOPL,8,19,6.176470588,8.529411765
+341,Hoplitai (Greek ClassIcal Hoplites),HOPL,0,13,6.176470588,8.529411765
+346,Dorkim Shardanim (Sardinian Infantry),SARD,51,14,6.176470588,8.529411765
+351,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,20,28,4.421052632,10
+354,Cohors Reformata (Post Marian Legionary Cohort),COHO,7,21,4.421052632,10
+358,Hoplitai (Greek ClassIcal Hoplites),HOPL,0,15,4.421052632,10
+364,Dorkim Shardanim (Sardinian Infantry),SARD,15,11,4.421052632,10
+367,Dorkim Shardanim (Sardinian Infantry),SARD,1,28,4.421052632,10
+368,Dorkim Shardanim (Sardinian Infantry),SARD,0,13,4.421052632,10
+376,Qasatim Numidim (Numidian Archers),QASA,0,42,0,8.428571429
+380,Iberi Milites (Iberian Light Spearman),IBER,5,18,1.578947368,9.526315789
+385,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,71,1.578947368,9.526315789
+387,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,8,56,1.578947368,9.526315789
+391,Qasatim Numidim (Numidian Archers),QASA,9,6,1.578947368,9.526315789
+398,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,23,8.277777778,26.88888889
+399,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,2,115,8.277777778,26.88888889
+400,Gaeroas (Celtic Spearmen),GAER,0,11,8.277777778,26.88888889
+405,Principes (Camillan Heavy Infantry Maniple),PRIN,7,9,8.277777778,26.88888889
+406,Principes (Camillan Heavy Infantry Maniple),PRIN,18,27,8.277777778,26.88888889
+408,Dorkim Shardanim (Sardinian Infantry),SARD,0,17,8.277777778,26.88888889
+409,Dorkim Shardanim (Sardinian Infantry),SARD,0,19,8.277777778,26.88888889
+410,Dorkim Shardanim (Sardinian Infantry),SARD,0,25,8.277777778,26.88888889
+411,Dorkim Shardanim (Sardinian Infantry),SARD,3,46,8.277777778,26.88888889
+412,Dorkim Shardanim (Sardinian Infantry),SARD,69,37,8.277777778,26.88888889
+416,Cohors Reformata (Post Marian Legionary Cohort),COHO,49,24,36.16666667,26.5
+417,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,39,12,36.16666667,26.5
+418,Gaeroas (Celtic Spearmen),GAER,60,23,36.16666667,26.5
+423,Principes (Camillan Heavy Infantry Maniple),PRIN,69,70,36.16666667,26.5
+424,Principes (Camillan Heavy Infantry Maniple),PRIN,22,69,36.16666667,26.5
+425,Dorkim Shardanim (Sardinian Infantry),SARD,14,59,36.16666667,26.5
+426,Dorkim Shardanim (Sardinian Infantry),SARD,42,6,36.16666667,26.5
+427,Dorkim Shardanim (Sardinian Infantry),SARD,56,26,36.16666667,26.5
+428,Dorkim Shardanim (Sardinian Infantry),SARD,52,18,36.16666667,26.5
+429,Dorkim Shardanim (Sardinian Infantry),SARD,23,9,36.16666667,26.5
+430,Dorkim Shardanim (Sardinian Infantry),SARD,37,3,36.16666667,26.5
+432,Appea Gaedotos (Alpine Phalanx),APPE,9,8,0.9,7.2
+438,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,0,14,0.9,7.2
+442,Kluddacorii (Alpine Shortswordsmen),KLUD,1,14,0.9,7.2
+443,Kluddacorii (Alpine Shortswordsmen),KLUD,2,18,0.9,7.2
+444,Lugoae (Celtic Levy Spearmen),LUGO,2,15,0.9,7.2
+449,Teceitos (CeltIc Axemen),TECE,0,18,0.9,7.2
+452,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,27,22,18.5,33.86666667
+454,Merkabim Garamantim(Garamantine Chariots),GARC,36,32,18.5,33.86666667
+455,Hoplital Haplol (Greek Levy Hoplites),HOPH,0,23,18.5,33.86666667
+456,Hoplitai (Greek ClassIcal Hoplites),HOPL,17,41,18.5,33.86666667
+457,Hoplitai (Greek ClassIcal Hoplites),HOPL,71,57,18.5,33.86666667
+458,Hoplitai (Greek ClassIcal Hoplites),HOPL,19,41,18.5,33.86666667
+459,Hoplitai (Greek ClassIcal Hoplites),HOPL,6,23,18.5,33.86666667
+460,Machimoi (Native Egyptian Infantry),MACH,59,110,18.5,33.86666667
+461,Machimoi (Native Egyptian Infantry),MACH,27,60,18.5,33.86666667
+462,Machimoi (Native Egyptian Infantry),MACH,34,41,18.5,33.86666667
+463,Machimoi (Native Egyptian Infantry),MACH,8,19,18.5,33.86666667
+464,Machimoi (Native Egyptian Infantry),MACH,1,17,18.5,33.86666667
+465,Machimoi (Native Egyptian Infantry),MACH,34,12,18.5,33.86666667
+466,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,10,9,18.5,33.86666667
+467,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,10,61,18.5,33.86666667
+468,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,87,114,18.5,33.86666667
+469,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,13,66,18.5,33.86666667
+470,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,15,23,18.5,33.86666667
+471,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,101,18.5,33.86666667
+478,Peltastai (Hellenic Heavy Skirmishers),PELT,11,36,18.5,33.86666667
+479,Peltastai (Hellenic Heavy Skirmishers),PELT,5,36,18.5,33.86666667
+480,Peltastai (Hellenic Heavy Skirmishers),PELT,21,15,18.5,33.86666667
+484,Appea Gaedotos (Alpine Phalanx),APPE,0,40,16.07894737,34.44736842
+485,Appea Gaedotos (Alpine Phalanx),APPE,23,71,16.07894737,34.44736842
+486,Appea Gaedotos (Alpine Phalanx),APPE,2,34,16.07894737,34.44736842
+487,Celtae Vollorix (Celtic Lesser King),CELT,1,106,16.07894737,34.44736842
+488,Cohors Reformata (Post Marian Legionary Cohort),COHO,1,12,16.07894737,34.44736842
+489,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,11,16.07894737,34.44736842
+492,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,14,60,16.07894737,34.44736842
+493,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,17,54,16.07894737,34.44736842
+494,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,16,26,16.07894737,34.44736842
+495,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,23,11,16.07894737,34.44736842
+498,Hoplitai (Greek ClassIcal Hoplites),HOPL,3,42,16.07894737,34.44736842
+499,Hoplitai (Greek ClassIcal Hoplites),HOPL,20,94,16.07894737,34.44736842
+500,Hoplitai (Greek ClassIcal Hoplites),HOPL,2,29,16.07894737,34.44736842
+501,Iaosatae (Celtic Slingers),IOSA,0,22,16.07894737,34.44736842
+502,Iaosatae (Celtic Slingers),IOSA,39,31,16.07894737,34.44736842
+503,Kluddacorii (Alpine Shortswordsmen),KLUD,1,22,16.07894737,34.44736842
+504,Kluddacorii (Alpine Shortswordsmen),KLUD,1,18,16.07894737,34.44736842
+505,Lugoae (Celtic Levy Spearmen),LUGO,35,19,16.07894737,34.44736842
+506,Lugoae (Celtic Levy Spearmen),LUGO,62,15,16.07894737,34.44736842
+507,Mori Gaesum (Helvetii Phalanx),MORI,9,64,16.07894737,34.44736842
+509,Principes (Camillan Heavy Infantry Maniple),PRIN,8,39,16.07894737,34.44736842
+510,Principes (Camillan Heavy Infantry Maniple),PRIN,4,53,16.07894737,34.44736842
+511,Teceitos (CeltIc Axemen),TECE,0,23,16.07894737,34.44736842
+512,Teceitos (CeltIc Axemen),TECE,3,25,16.07894737,34.44736842
+513,Teceitos (CeltIc Axemen),TECE,1,26,16.07894737,34.44736842
+514,Teceitos (CeltIc Axemen),TECE,39,62,16.07894737,34.44736842
+518,Vigiles (Town Watch),VIGI,74,47,16.07894737,34.44736842
+519,Vigiles (Town Watch),VIGI,50,15,16.07894737,34.44736842
+523,Cohors Reformata (Post Marian Legionary Cohort),COHO,1,14,12,8.526315789
+524,Cohors Reformata (Post Marian Legionary Cohort),COHO,12,26,12,8.526315789
+525,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,11,26,12,8.526315789
+527,Hoplitai (Greek ClassIcal Hoplites),HOPL,0,12,12,8.526315789
+528,Hoplitai (Greek ClassIcal Hoplites),HOPL,1,25,12,8.526315789
+533,Dorkim Shardanim (Sardinian Infantry),SARD,22,3,12,8.526315789
+534,Dorkim Shardanim (Sardinian Infantry),SARD,14,1,12,8.526315789
+535,Dorkim Shardanim (Sardinian Infantry),SARD,21,10,12,8.526315789
+536,Dorkim Shardanim (Sardinian Infantry),SARD,27,3,12,8.526315789
+537,Dorkim Shardanim (Sardinian Infantry),SARD,27,10,12,8.526315789
+538,Dorkim Shardanim (Sardinian Infantry),SARD,19,4,12,8.526315789
+541,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,33,120,7.4,28.2
+542,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,33,7.4,28.2
+543,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,20,85,7.4,28.2
+544,Parasim Numidim (Numidian Cavalry),PARN,7,16,7.4,28.2
+545,Parasim Numidim (Numidian Cavalry),PARN,6,8,7.4,28.2
+549,Appea Gaedotos (Alpine Phalanx),APPE,8,47,27.25,62.5
+550,Kluddacorii (Alpine Shortswordsmen),KLUD,49,89,27.25,62.5
+552,Vigiles (Town Watch),VIGI,34,37,27.25,62.5
+554,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,16,10,30.97435897,38.275
+555,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,3,29,30.97435897,38.275
+556,Appea Gaedotos (Alpine Phalanx),APPE,82,71,30.97435897,38.275
+557,Appea Gaedotos (Alpine Phalanx),APPE,79,41,30.97435897,38.275
+558,Appea Gaedotos (Alpine Phalanx),APPE,45,18,30.97435897,38.275
+559,Appea Gaedotos (Alpine Phalanx),APPE,66,14,30.97435897,38.275
+560,Appea Gaedotos (Alpine Phalanx),APPE,24,55,30.97435897,38.275
+561,Appea Gaedotos (Alpine Phalanx),APPE,53,69,30.97435897,38.275
+562,Celtae Vollorix (Celtic Lesser King),CELT,3,47,30.97435897,38.275
+563,Cohors Reformata (Post Marian Legionary Cohort),COHO,24,36,30.97435897,38.275
+564,Cohors Reformata (Post Marian Legionary Cohort),COHO,10,28,30.97435897,38.275
+566,Cohors Reformata (Post Marian Legionary Cohort),COHO,38,23,30.97435897,38.275
+567,Cohors Reformata (Post Marian Legionary Cohort),COHO,16,39,30.97435897,38.275
+574,Kluddacorii (Alpine Shortswordsmen),KLUD,20,19,30.97435897,38.275
+575,Mistophoros Strategos (Hellenistic Mercenary General),MIST,51,21,30.97435897,38.275
+576,Mori Gaesum (Helvetii Phalanx),MORI,75,85,30.97435897,38.275
+577,Mori Gaesum (Helvetii Phalanx),MORI,66,31,30.97435897,38.275
+578,Mori Gaesum (Helvetii Phalanx),MORI,81,32,30.97435897,38.275
+579,Peltastai (Hellenic Heavy Skirmishers),PELT,2,42,30.97435897,38.275
+580,Pezoi Brettioi (Bruttlan Infantry),PEZO,39,57,30.97435897,38.275
+584,Teceitos (CeltIc Axemen),TECE,52,58,30.97435897,38.275
+585,Teceitos (CeltIc Axemen),TECE,46,98,30.97435897,38.275
+586,Teceitos (CeltIc Axemen),TECE,19,78,30.97435897,38.275
+587,Teceitos (CeltIc Axemen),TECE,13,36,30.97435897,38.275
+588,Tekastos (RhaetJc Axemen),TEKA,44,77,30.97435897,38.275
+589,Tekastos (RhaetJc Axemen),TEKA,41,112,30.97435897,38.275
+590,Tekastos (RhaetJc Axemen),TEKA,16,41,30.97435897,38.275
+591,Tekastos (RhaetJc Axemen),TEKA,33,83,30.97435897,38.275
+594,Gaesamica (Javelineers),GAES,1,19,0.85,9.4
+598,Mezugenoi (Celtiberian Swordsmen),MEZU,5,70,0.85,9.4
+599,Mezugenoi (Celtiberian Swordsmen),MEZU,0,21,0.85,9.4
+601,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,9,0.85,9.4
+604,Parasim Numidim (Numidian Cavalry),PARN,0,12,0.85,9.4
+613,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,3,24,2.526315789,28.8
+614,Cohors Reformata (Post Marian Legionary Cohort),COHO,3,13,2.526315789,28.8
+615,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,42,2.526315789,28.8
+616,Cohors Reformata (Post Marian Legionary Cohort),COHO,10,89,2.526315789,28.8
+617,Cohors Reformata (Post Marian Legionary Cohort),COHO,10,75,2.526315789,28.8
+618,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,2,112,2.526315789,28.8
+620,Hoplitai (Greek ClassIcal Hoplites),HOPL,10,21,2.526315789,28.8
+621,Hoplitai (Greek ClassIcal Hoplites),HOPL,3,39,2.526315789,28.8
+624,Peltastai (Hellenic Heavy Skirmishers),PELT,1,19,2.526315789,28.8
+625,Peltastai (Hellenic Heavy Skirmishers),PELT,1,28,2.526315789,28.8
+626,Dorkim Shardanim (Sardinian Infantry),SARD,0,17,2.526315789,28.8
+629,Dorkim Shardanim (Sardinian Infantry),SARD,4,7,2.526315789,28.8
+630,Dorkim Shardanim (Sardinian Infantry),SARD,0,12,2.526315789,28.8
+631,Dorkim Shardanim (Sardinian Infantry),SARD,0,17,2.526315789,28.8
+633,Celtae Vollorix (Celtic Lesser King),CELT,0,16,31,84.125
+634,Mori Gaesum (Helvetii Phalanx),MORI,76,274,31,84.125
+636,Teceitos (CeltIc Axemen),TECE,38,28,31,84.125
+638,Tekastos (RhaetJc Axemen),TEKA,5,19,31,84.125
+639,Tekastos (RhaetJc Axemen),TEKA,79,258,31,84.125
+640,Tekastos (RhaetJc Axemen),TEKA,21,68,31,84.125
+641,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,1,45,0.4,14.8
+644,Iberi Milites (Iberian Light Spearman),IBER,0,41,0.4,14.8
+645,Iberi Milites (Iberian Light Spearman),IBER,0,17,0.4,14.8
+649,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,6,32,0.4,14.8
+653,Parasim Numidim (Numidian Cavalry),PARN,0,66,0.4,14.8
+656,Qasatim Numidim (Numidian Archers),QASA,0,13,0.4,14.8
+657,Qasatim Numidim (Numidian Archers),QASA,1,11,0.4,14.8
+658,Dorkim Shardanim (Sardinian Infantry),SARD,0,25,0.4,14.8
+660,Dorkim Shardanim (Sardinian Infantry),SARD,0,11,0.4,14.8
+662,Unlocalized Arabic General,ARAB,49,2,10.16666667,5.444444444
+666,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,10,3,10.16666667,5.444444444
+668,Hoplitai (Greek ClassIcal Hoplites),HOPL,10,10,10.16666667,5.444444444
+670,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,31,15,10.16666667,5.444444444
+679,Appea Gaedotos (Alpine Phalanx),APPE,8,19,7.7,22.85
+680,Appea Gaedotos (Alpine Phalanx),APPE,11,66,7.7,22.85
+682,Cohors Reformata (Post Marian Legionary Cohort),COHO,24,16,7.7,22.85
+683,Cohors Reformata (Post Marian Legionary Cohort),COHO,5,19,7.7,22.85
+684,Cohors Reformata (Post Marian Legionary Cohort),COHO,4,8,7.7,22.85
+686,Hoplitai (Greek ClassIcal Hoplites),HOPL,12,97,7.7,22.85
+689,Kluddacorii (Alpine Shortswordsmen),KLUD,48,18,7.7,22.85
+690,Lugoae (Celtic Levy Spearmen),LUGO,10,50,7.7,22.85
+691,Mori Gaesum (Helvetii Phalanx),MORI,6,21,7.7,22.85
+693,Pezoi Brettioi (Bruttlan Infantry),PEZO,4,28,7.7,22.85
+694,Principes (Camillan Heavy Infantry Maniple),PRIN,3,23,7.7,22.85
+695,Principes (Camillan Heavy Infantry Maniple),PRIN,2,19,7.7,22.85
+696,Teceitos (CeltIc Axemen),TECE,0,15,7.7,22.85
+699,Cohors Reformata (Post Marian Legionary Cohort),COHO,8,10,12.45,33.55
+702,Cohors Reformata (Post Marian Legionary Cohort),COHO,7,20,12.45,33.55
+703,Cohors Reformata (Post Marian Legionary Cohort),COHO,3,28,12.45,33.55
+704,Hoplitai (Greek ClassIcal Hoplites),HOPL,38,15,12.45,33.55
+708,Mistophoros Strategos (Hellenistic Mercenary General),MIST,20,83,12.45,33.55
+713,Teceitos (CeltIc Axemen),TECE,20,51,12.45,33.55
+714,Teceitos (CeltIc Axemen),TECE,6,20,12.45,33.55
+716,Teceitos (CeltIc Axemen),TECE,82,76,12.45,33.55
+717,Teceitos (CeltIc Axemen),TECE,19,84,12.45,33.55
+719,Appea Gaedotos (Alpine Phalanx),APPE,1,50,3.4,17.05
+720,Appea Gaedotos (Alpine Phalanx),APPE,1,40,3.4,17.05
+721,Celtae Vollorix (Celtic Lesser King),CELT,5,84,3.4,17.05
+725,Gaeroas (Celtic Spearmen),GAER,16,0,3.4,17.05
+726,Gaeroas (Celtic Spearmen),GAER,13,44,3.4,17.05
+728,Hoplitai (Greek ClassIcal Hoplites),HOPL,0,13,3.4,17.05
+729,Hoplitai (Greek ClassIcal Hoplites),HOPL,0,15,3.4,17.05
+731,Mori Gaesum (Helvetii Phalanx),MORI,6,48,3.4,17.05
+736,Teceitos (CeltIc Axemen),TECE,16,35,3.4,17.05
+741,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,22,42,5.736842105,27.36842105
+742,Gaesamica (Javelineers),GAES,0,12,5.736842105,27.36842105
+744,Iberi Milites (Iberian Light Spearman),IBER,19,58,5.736842105,27.36842105
+745,Iberi Milites (Iberian Light Spearman),IBER,12,12,5.736842105,27.36842105
+746,Mezugenoi (Celtiberian Swordsmen),MEZU,0,13,5.736842105,27.36842105
+747,Mezugenoi (Celtiberian Swordsmen),MEZU,0,30,5.736842105,27.36842105
+748,Mezugenoi (Celtiberian Swordsmen),MEZU,0,17,5.736842105,27.36842105
+749,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,5,64,5.736842105,27.36842105
+752,Qasatim Numidim (Numidian Archers),QASA,0,46,5.736842105,27.36842105
+753,Qasatim Numidim (Numidian Archers),QASA,3,70,5.736842105,27.36842105
+754,Qasatim Numidim (Numidian Archers),QASA,47,69,5.736842105,27.36842105
+755,Dorkim Shardanim (Sardinian Infantry),SARD,0,35,5.736842105,27.36842105
+756,Dorkim Shardanim (Sardinian Infantry),SARD,1,11,5.736842105,27.36842105
+757,Dorkim Shardanim (Sardinian Infantry),SARD,0,15,5.736842105,27.36842105
+760,Celtae Vollorix (Celtic Lesser King),CELT,0,55,10.3,34
+761,Cohors Reformata (Post Marian Legionary Cohort),COHO,11,65,10.3,34
+762,Cohors Reformata (Post Marian Legionary Cohort),COHO,5,54,10.3,34
+763,Gaeroas (Celtic Spearmen),GAER,38,34,10.3,34
+764,Gaeroas (Celtic Spearmen),GAER,68,82,10.3,34
+765,Gaeroas (Celtic Spearmen),GAER,36,70,10.3,34
+767,Hoplitai (Greek ClassIcal Hoplites),HOPL,4,70,10.3,34
+769,Kluddacorii (Alpine Shortswordsmen),KLUD,14,35,10.3,34
+772,Pezoi Brettioi (Bruttlan Infantry),PEZO,3,22,10.3,34
+773,Principes (Camillan Heavy Infantry Maniple),PRIN,1,22,10.3,34
+775,Teceitos (CeltIc Axemen),TECE,5,61,10.3,34
+777,Vigiles (Town Watch),VIGI,1,23,10.3,34
+778,Unlocalized Arabic General,ARAB,28,160,24,42.55555556
+779,Unlocalized Arabic General,ARAB,12,57,24,42.55555556
+780,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,3,23,24,42.55555556
+781,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,9,26,24,42.55555556
+782,Pantodapoi (Hellenic Native Spearmen),PANT,17,49,24,42.55555556
+783,Pantodapoi (Hellenic Native Spearmen),PANT,102,10,24,42.55555556
+784,Pantodapoi (Hellenic Native Spearmen),PANT,1,17,24,42.55555556
+785,Pantodapoi (Hellenic Native Spearmen),PANT,44,1,24,42.55555556
+786,Qala'im 'Arabim (Arabian Slingers),QALA,0,40,24,42.55555556
+787,Appea Gaedotos (Alpine Phalanx),APPE,4,50,8.15,35.35
+788,Appea Gaedotos (Alpine Phalanx),APPE,3,47,8.15,35.35
+789,Celtae Vollorix (Celtic Lesser King),CELT,3,42,8.15,35.35
+790,Cohors Reformata (Post Marian Legionary Cohort),COHO,5,44,8.15,35.35
+791,Cohors Reformata (Post Marian Legionary Cohort),COHO,3,66,8.15,35.35
+793,Gaeroas (Celtic Spearmen),GAER,7,13,8.15,35.35
+794,Gaeroas (Celtic Spearmen),GAER,3,25,8.15,35.35
+797,Hoplitai (Greek ClassIcal Hoplites),HOPL,8,87,8.15,35.35
+798,Kluddacorii (Alpine Shortswordsmen),KLUD,17,39,8.15,35.35
+799,Mori Gaesum (Helvetii Phalanx),MORI,9,39,8.15,35.35
+801,Pezoi Brettioi (Bruttlan Infantry),PEZO,16,43,8.15,35.35
+802,Principes (Camillan Heavy Infantry Maniple),PRIN,0,14,8.15,35.35
+803,Principes (Camillan Heavy Infantry Maniple),PRIN,4,31,8.15,35.35
+804,Teceitos (CeltIc Axemen),TECE,23,53,8.15,35.35
+806,Vigiles (Town Watch),VIGI,19,26,8.15,35.35
+807,Celtae Vollorix (Celtic Lesser King),CELT,5,59,21.58333333,54.66666667
+808,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,4,20,21.58333333,54.66666667
+809,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,3,28,21.58333333,54.66666667
+814,Teceitos (CeltIc Axemen),TECE,26,43,21.58333333,54.66666667
+815,Teceitos (CeltIc Axemen),TECE,27,41,21.58333333,54.66666667
+816,Tekastos (RhaetJc Axemen),TEKA,76,124,21.58333333,54.66666667
+817,Tekastos (RhaetJc Axemen),TEKA,2,49,21.58333333,54.66666667
+818,Tekastos (RhaetJc Axemen),TEKA,34,134,21.58333333,54.66666667
+819,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,22,57,35.92307692,46.53846154
+820,Cohors Reformata (Post Marian Legionary Cohort),COHO,30,63,35.92307692,46.53846154
+821,Cohors Reformata (Post Marian Legionary Cohort),COHO,73,46,35.92307692,46.53846154
+822,Cohors Reformata (Post Marian Legionary Cohort),COHO,62,63,35.92307692,46.53846154
+823,Cohors Reformata (Post Marian Legionary Cohort),COHO,88,53,35.92307692,46.53846154
+824,Cohors Reformata (Post Marian Legionary Cohort),COHO,4,25,35.92307692,46.53846154
+825,Cohors Reformata (Post Marian Legionary Cohort),COHO,16,87,35.92307692,46.53846154
+826,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,26,7,35.92307692,46.53846154
+827,Hoplitai (Greek ClassIcal Hoplites),HOPL,15,20,35.92307692,46.53846154
+828,Hoplitai (Greek ClassIcal Hoplites),HOPL,34,79,35.92307692,46.53846154
+829,Hoplitai (Greek ClassIcal Hoplites),HOPL,0,44,35.92307692,46.53846154
+830,Pezoi Brettioi (Bruttlan Infantry),PEZO,57,26,35.92307692,46.53846154
+831,Pezoi Brettioi (Bruttlan Infantry),PEZO,40,35,35.92307692,46.53846154
+834,Celtae Vollorix (Celtic Lesser King),CELT,1,52,8.105263158,33.10526316
+835,Cohors Reformata (Post Marian Legionary Cohort),COHO,40,193,8.105263158,33.10526316
+836,Cohors Reformata (Post Marian Legionary Cohort),COHO,21,161,8.105263158,33.10526316
+837,Gaeroas (Celtic Spearmen),GAER,0,11,8.105263158,33.10526316
+838,Gaeroas (Celtic Spearmen),GAER,19,1,8.105263158,33.10526316
+839,Gaeroas (Celtic Spearmen),GAER,0,24,8.105263158,33.10526316
+842,Hoplitai (Greek ClassIcal Hoplites),HOPL,0,33,8.105263158,33.10526316
+846,Pezoi Brettioi (Bruttlan Infantry),PEZO,5,8,8.105263158,33.10526316
+847,Principes (Camillan Heavy Infantry Maniple),PRIN,54,91,8.105263158,33.10526316
+850,Vigiles (Town Watch),VIGI,0,23,8.105263158,33.10526316
+852,Appea Gaedotos (Alpine Phalanx),APPE,4,34,2.5,12.3
+853,Appea Gaedotos (Alpine Phalanx),APPE,0,22,2.5,12.3
+854,Celtae Vollorix (Celtic Lesser King),CELT,4,35,2.5,12.3
+855,Cohors Reformata (Post Marian Legionary Cohort),COHO,7,9,2.5,12.3
+857,Gaeroas (Celtic Spearmen),GAER,1,12,2.5,12.3
+858,Gaeroas (Celtic Spearmen),GAER,0,11,2.5,12.3
+862,Iaosatae (Celtic Slingers),IOSA,0,19,2.5,12.3
+863,Kluddacorii (Alpine Shortswordsmen),KLUD,3,9,2.5,12.3
+864,Lugoae (Celtic Levy Spearmen),LUGO,8,3,2.5,12.3
+867,Teceitos (CeltIc Axemen),TECE,8,17,2.5,12.3
+872,Unlocalized Arabic General,ARAB,30,77,16.42857143,37.95238095
+873,Unlocalized Arabic General,ARAB,14,69,16.42857143,37.95238095
+874,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,1,21,16.42857143,37.95238095
+875,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,18,38,16.42857143,37.95238095
+876,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,63,38,16.42857143,37.95238095
+877,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,12,53,16.42857143,37.95238095
+878,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,28,47,16.42857143,37.95238095
+879,Hoplitai (Greek ClassIcal Hoplites),HOPL,4,34,16.42857143,37.95238095
+881,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,10,21,16.42857143,37.95238095
+883,Pantodapoi (Hellenic Native Spearmen),PANT,11,11,16.42857143,37.95238095
+884,Pantodapoi (Hellenic Native Spearmen),PANT,46,16,16.42857143,37.95238095
+887,Peltastai (Hellenic Heavy Skirmishers),PELT,7,15,16.42857143,37.95238095
+888,Qala'im 'Arabim (Arabian Slingers),QALA,4,71,16.42857143,37.95238095
+889,Qala'im 'Arabim (Arabian Slingers),QALA,1,58,16.42857143,37.95238095
+890,Qala'im 'Arabim (Arabian Slingers),QALA,6,33,16.42857143,37.95238095
+891,Qala'im 'Arabim (Arabian Slingers),QALA,1,63,16.42857143,37.95238095
+895,Hoplital Haplol (Greek Levy Hoplites),HOPH,1,35,25.69230769,46.61538462
+896,Hoplital Haplol (Greek Levy Hoplites),HOPH,6,12,25.69230769,46.61538462
+897,Hoplitai (Greek ClassIcal Hoplites),HOPL,9,36,25.69230769,46.61538462
+898,Machimoi (Native Egyptian Infantry),MACH,57,12,25.69230769,46.61538462
+899,Machimoi (Native Egyptian Infantry),MACH,24,58,25.69230769,46.61538462
+900,Machimoi (Native Egyptian Infantry),MACH,12,76,25.69230769,46.61538462
+901,Machimoi (Native Egyptian Infantry),MACH,19,57,25.69230769,46.61538462
+903,Mistophoros Strategos (Hellenistic Mercenary General),MIST,22,87,25.69230769,46.61538462
+904,Mistophoros Strategos (Hellenistic Mercenary General),MIST,16,97,25.69230769,46.61538462
+905,Pantodapoi (Hellenic Native Spearmen),PANT,27,34,25.69230769,46.61538462
+906,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,5,75,12.68421053,45.68421053
+907,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,8,41,12.68421053,45.68421053
+908,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,11,49,12.68421053,45.68421053
+911,Mistophoros Strategos (Hellenistic Mercenary General),MIST,10,47,12.68421053,45.68421053
+912,Peltastai (Hellenic Heavy Skirmishers),PELT,4,28,12.68421053,45.68421053
+913,Pezoi Brettioi (Bruttlan Infantry),PEZO,10,30,12.68421053,45.68421053
+918,Teceitos (CeltIc Axemen),TECE,1,38,12.68421053,45.68421053
+919,Teceitos (CeltIc Axemen),TECE,3,55,12.68421053,45.68421053
+920,Teceitos (CeltIc Axemen),TECE,9,33,12.68421053,45.68421053
+921,Teceitos (CeltIc Axemen),TECE,18,70,12.68421053,45.68421053
+922,Teceitos (CeltIc Axemen),TECE,12,103,12.68421053,45.68421053
+923,Tekastos (RhaetJc Axemen),TEKA,26,91,12.68421053,45.68421053
+924,Vigiles (Town Watch),VIGI,38,72,12.68421053,45.68421053
+926,Appea Gaedotos (Alpine Phalanx),APPE,2,46,6.5,41.6
+927,Appea Gaedotos (Alpine Phalanx),APPE,8,59,6.5,41.6
+928,Celtae Vollorix (Celtic Lesser King),CELT,0,64,6.5,41.6
+929,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,1,18,6.5,41.6
+930,Cohors Reformata (Post Marian Legionary Cohort),COHO,34,85,6.5,41.6
+931,Gaeroas (Celtic Spearmen),GAER,5,23,6.5,41.6
+932,Gaeroas (Celtic Spearmen),GAER,2,12,6.5,41.6
+934,Hoplitai (Greek ClassIcal Hoplites),HOPL,5,23,6.5,41.6
+935,Hoplitai (Greek ClassIcal Hoplites),HOPL,6,74,6.5,41.6
+936,Iaosatae (Celtic Slingers),IOSA,0,101,6.5,41.6
+938,Lugoae (Celtic Levy Spearmen),LUGO,40,70,6.5,41.6
+940,Teceitos (CeltIc Axemen),TECE,4,33,6.5,41.6
+942,Teceitos (CeltIc Axemen),TECE,1,31,6.5,41.6
+944,Vigiles (Town Watch),VIGI,15,94,6.5,41.6
+946,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,26,52,19.5,32
+952,Parasim Numidim (Numidian Cavalry),PARN,2,30,19.5,32
+953,Parasim Numidim (Numidian Cavalry),PARN,33,16,19.5,32
+954,Qasatim Numidim (Numidian Archers),QASA,12,31,19.5,32
+955,Qasatim Numidim (Numidian Archers),QASA,1,47,19.5,32
+956,Qasatim Numidim (Numidian Archers),QASA,27,25,19.5,32
+958,Unlocalized Arabic General,ARAB,27,11,2.4,8.95
+959,Unlocalized Arabic General,ARAB,14,36,2.4,8.95
+960,Unlocalized Arabic General,ARAB,1,13,2.4,8.95
+961,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,0,14,2.4,8.95
+963,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,0,19,2.4,8.95
+970,Parasim Numidim (Numidian Cavalry),PARN,5,46,2.4,8.95
+977,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,0,12,7.45,38.1
+978,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,0,25,7.45,38.1
+979,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,2,27,7.45,38.1
+982,Mistophoros Strategos (Hellenistic Mercenary General),MIST,5,21,7.45,38.1
+983,Mori Gaesum (Helvetii Phalanx),MORI,9,27,7.45,38.1
+984,Peltastai (Hellenic Heavy Skirmishers),PELT,1,21,7.45,38.1
+985,Pezoi Brettioi (Bruttlan Infantry),PEZO,1,13,7.45,38.1
+990,Teceitos (CeltIc Axemen),TECE,1,13,7.45,38.1
+991,Teceitos (CeltIc Axemen),TECE,5,44,7.45,38.1
+992,Teceitos (CeltIc Axemen),TECE,8,54,7.45,38.1
+993,Teceitos (CeltIc Axemen),TECE,0,19,7.45,38.1
+994,Teceitos (CeltIc Axemen),TECE,10,31,7.45,38.1
+995,Tekastos (RhaetJc Axemen),TEKA,58,180,7.45,38.1
+996,Vigiles (Town Watch),VIGI,14,2,7.45,38.1
+998,Appea Gaedotos (Alpine Phalanx),APPE,9,67,10.52941176,39.54166667
+999,Celtae Vollorix (Celtic Lesser King),CELT,5,78,10.52941176,39.54166667
+1000,Cohors Reformata (Post Marian Legionary Cohort),COHO,1,11,10.52941176,39.54166667
+1001,Cohors Reformata (Post Marian Legionary Cohort),COHO,9,69,10.52941176,39.54166667
+1002,Gaeroas (Celtic Spearmen),GAER,11,53,10.52941176,39.54166667
+1003,Gaeroas (Celtic Spearmen),GAER,26,46,10.52941176,39.54166667
+1006,Hoplitai (Greek ClassIcal Hoplites),HOPL,2,20,10.52941176,39.54166667
+1007,Iaosatae (Celtic Slingers),IOSA,3,72,10.52941176,39.54166667
+1009,Lugoae (Celtic Levy Spearmen),LUGO,33,57,10.52941176,39.54166667
+1010,Mori Gaesum (Helvetii Phalanx),MORI,3,46,10.52941176,39.54166667
+1011,Teceitos (CeltIc Axemen),TECE,35,83,10.52941176,39.54166667
+1013,Vigiles (Town Watch),VIGI,22,72,10.52941176,39.54166667
+1015,Gaeroas (Celtic Spearmen),GAER,65,46,17.14285714,27.14285714
+1016,Iaosatae (Celtic Slingers),IOSA,0,13,17.14285714,27.14285714
+1017,Iaosatae (Celtic Slingers),IOSA,0,15,17.14285714,27.14285714
+1018,Lugoae (Celtic Levy Spearmen),LUGO,25,48,17.14285714,27.14285714
+1019,Vigiles (Town Watch),VIGI,7,14,17.14285714,27.14285714
+1020,Vigiles (Town Watch),VIGI,21,46,17.14285714,27.14285714
+1025,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,33,4,19.5,52.65
+1026,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,8,3,19.5,52.65
+1027,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,87,149,19.5,52.65
+1028,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,36,86,19.5,52.65
+1029,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,44,31,19.5,52.65
+1030,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,86,148,19.5,52.65
+1031,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,43,99,19.5,52.65
+1032,Hoplitai (Greek ClassIcal Hoplites),HOPL,15,134,19.5,52.65
+1034,Parasim Numidim (Numidian Cavalry),PARN,1,11,19.5,52.65
+1036,Qala'im 'Arabim (Arabian Slingers),QALA,0,57,19.5,52.65
+1037,Qala'im 'Arabim (Arabian Slingers),QALA,1,96,19.5,52.65
+1038,Qala'im 'Arabim (Arabian Slingers),QALA,1,37,19.5,52.65
+1039,Qala'im 'Arabim (Arabian Slingers),QALA,1,97,19.5,52.65
+1040,Qala'im 'Arabim (Arabian Slingers),QALA,4,48,19.5,52.65
+1041,Appea Gaedotos (Alpine Phalanx),APPE,3,21,5.162162162,36.05405405
+1042,Appea Gaedotos (Alpine Phalanx),APPE,20,62,5.162162162,36.05405405
+1043,Appea Gaedotos (Alpine Phalanx),APPE,4,64,5.162162162,36.05405405
+1044,Appea Gaedotos (Alpine Phalanx),APPE,0,37,5.162162162,36.05405405
+1045,Appea Gaedotos (Alpine Phalanx),APPE,1,26,5.162162162,36.05405405
+1046,Appea Gaedotos (Alpine Phalanx),APPE,0,48,5.162162162,36.05405405
+1049,Appea Gaedotos (Alpine Phalanx),APPE,0,15,5.162162162,36.05405405
+1050,Appea Gaedotos (Alpine Phalanx),APPE,10,136,5.162162162,36.05405405
+1052,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,1,23,5.162162162,36.05405405
+1054,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,19,37,5.162162162,36.05405405
+1055,Gaesamica (Javelineers),GAES,3,15,5.162162162,36.05405405
+1056,Merkabim Garamantim(Garamantine Chariots),GARC,0,11,5.162162162,36.05405405
+1058,Iberi Milites (Iberian Light Spearman),IBER,14,53,5.162162162,36.05405405
+1059,Lugoae (Celtic Levy Spearmen),LUGO,2,56,5.162162162,36.05405405
+1060,Mezugenoi (Celtiberian Swordsmen),MEZU,1,19,5.162162162,36.05405405
+1061,Mezugenoi (Celtiberian Swordsmen),MEZU,0,45,5.162162162,36.05405405
+1062,Mezugenoi (Celtiberian Swordsmen),MEZU,0,17,5.162162162,36.05405405
+1065,Mori Gaesum (Helvetii Phalanx),MORI,13,6,5.162162162,36.05405405
+1066,Mori Gaesum (Helvetii Phalanx),MORI,0,14,5.162162162,36.05405405
+1067,Mori Gaesum (Helvetii Phalanx),MORI,6,70,5.162162162,36.05405405
+1068,Mori Gaesum (Helvetii Phalanx),MORI,1,75,5.162162162,36.05405405
+1070,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,39,118,5.162162162,36.05405405
+1071,Parasim Numidim (Numidian Cavalry),PARN,23,62,5.162162162,36.05405405
+1073,Qasatim Numidim (Numidian Archers),QASA,1,81,5.162162162,36.05405405
+1074,Qasatim Numidim (Numidian Archers),QASA,0,44,5.162162162,36.05405405
+1075,Dorkim Shardanim (Sardinian Infantry),SARD,1,83,5.162162162,36.05405405
+1076,Dorkim Shardanim (Sardinian Infantry),SARD,0,58,5.162162162,36.05405405
+1077,Dorkim Shardanim (Sardinian Infantry),SARD,27,14,5.162162162,36.05405405
+1079,Celtae Vollorix (Celtic Lesser King),CELT,9,117,9.857142857,48.71428571
+1080,Celtae Vollorix (Celtic Lesser King),CELT,10,125,9.857142857,48.71428571
+1082,Gaeroas (Celtic Spearmen),GAER,28,49,9.857142857,48.71428571
+1083,Lugoae (Celtic Levy Spearmen),LUGO,19,35,9.857142857,48.71428571
+1085,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,39,25,50,32.1
+1086,Cohors Reformata (Post Marian Legionary Cohort),COHO,94,87,50,32.1
+1087,Cohors Reformata (Post Marian Legionary Cohort),COHO,44,43,50,32.1
+1088,Cohors Reformata (Post Marian Legionary Cohort),COHO,89,96,50,32.1
+1089,Cohors Reformata (Post Marian Legionary Cohort),COHO,55,25,50,32.1
+1090,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,34,7,50,32.1
+1092,Hoplitai (Greek ClassIcal Hoplites),HOPL,63,22,50,32.1
+1093,Hoplitai (Greek ClassIcal Hoplites),HOPL,74,48,50,32.1
+1096,Mori Gaesum (Helvetii Phalanx),MORI,73,62,50,32.1
+1097,Peltastai (Hellenic Heavy Skirmishers),PELT,50,21,50,32.1
+1098,Peltastai (Hellenic Heavy Skirmishers),PELT,46,24,50,32.1
+1099,Dorkim Shardanim (Sardinian Infantry),SARD,25,18,50,32.1
+1100,Dorkim Shardanim (Sardinian Infantry),SARD,15,21,50,32.1
+1101,Dorkim Shardanim (Sardinian Infantry),SARD,46,40,50,32.1
+1102,Dorkim Shardanim (Sardinian Infantry),SARD,28,12,50,32.1
+1103,Dorkim Shardanim (Sardinian Infantry),SARD,28,22,50,32.1
+1104,Dorkim Shardanim (Sardinian Infantry),SARD,27,41,50,32.1
+1105,Appea Gaedotos (Alpine Phalanx),APPE,33,109,7.85,36.3
+1106,Appea Gaedotos (Alpine Phalanx),APPE,9,60,7.85,36.3
+1107,Celtae Vollorix (Celtic Lesser King),CELT,0,11,7.85,36.3
+1110,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,74,7.85,36.3
+1111,Gaeroas (Celtic Spearmen),GAER,0,11,7.85,36.3
+1112,Gaeroas (Celtic Spearmen),GAER,39,87,7.85,36.3
+1113,Gaeroas (Celtic Spearmen),GAER,21,34,7.85,36.3
+1116,Iaosatae (Celtic Slingers),IOSA,12,39,7.85,36.3
+1117,Iaosatae (Celtic Slingers),IOSA,5,18,7.85,36.3
+1118,Iaosatae (Celtic Slingers),IOSA,0,30,7.85,36.3
+1119,Lugoae (Celtic Levy Spearmen),LUGO,34,121,7.85,36.3
+1121,Mori Gaesum (Helvetii Phalanx),MORI,3,119,7.85,36.3
+1125,Appea Gaedotos (Alpine Phalanx),APPE,13,84,8.540540541,24.16216216
+1126,Appea Gaedotos (Alpine Phalanx),APPE,7,24,8.540540541,24.16216216
+1128,Appea Gaedotos (Alpine Phalanx),APPE,8,70,8.540540541,24.16216216
+1132,Appea Gaedotos (Alpine Phalanx),APPE,14,54,8.540540541,24.16216216
+1133,Appea Gaedotos (Alpine Phalanx),APPE,2,12,8.540540541,24.16216216
+1135,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,45,47,8.540540541,24.16216216
+1136,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,24,35,8.540540541,24.16216216
+1137,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,22,101,8.540540541,24.16216216
+1138,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,24,45,8.540540541,24.16216216
+1139,Gaesamica (Javelineers),GAES,26,20,8.540540541,24.16216216
+1140,Merkabim Garamantim(Garamantine Chariots),GARC,11,39,8.540540541,24.16216216
+1148,Mori Gaesum (Helvetii Phalanx),MORI,4,47,8.540540541,24.16216216
+1150,Mori Gaesum (Helvetii Phalanx),MORI,5,6,8.540540541,24.16216216
+1152,Mori Gaesum (Helvetii Phalanx),MORI,5,32,8.540540541,24.16216216
+1153,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,2,53,8.540540541,24.16216216
+1154,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,3,80,8.540540541,24.16216216
+1155,Parasim Numidim (Numidian Cavalry),PARN,44,62,8.540540541,24.16216216
+1156,Qasatim Numidim (Numidian Archers),QASA,4,20,8.540540541,24.16216216
+1158,Qasatim Numidim (Numidian Archers),QASA,37,1,8.540540541,24.16216216
+1162,Celtae Vollorix (Celtic Lesser King),CELT,3,114,23,112.5
+1163,Gaeroas (Celtic Spearmen),GAER,43,111,23,112.5
+1165,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,11,32,9.222222222,11.33333333
+1166,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,10,31,9.222222222,11.33333333
+1168,Cohors Reformata (Post Marian Legionary Cohort),COHO,2,9,9.222222222,11.33333333
+1169,Cohors Reformata (Post Marian Legionary Cohort),COHO,4,13,9.222222222,11.33333333
+1170,Cohors Reformata (Post Marian Legionary Cohort),COHO,5,24,9.222222222,11.33333333
+1171,Cohors Reformata (Post Marian Legionary Cohort),COHO,19,21,9.222222222,11.33333333
+1172,Cohors Reformata (Post Marian Legionary Cohort),COHO,41,30,9.222222222,11.33333333
+1173,Cohors Reformata (Post Marian Legionary Cohort),COHO,7,9,9.222222222,11.33333333
+1178,Hoplitai (Greek ClassIcal Hoplites),HOPL,31,15,9.222222222,11.33333333
+1179,Hoplitai (Greek ClassIcal Hoplites),HOPL,21,5,9.222222222,11.33333333
+1180,Pezoi Brettioi (Bruttlan Infantry),PEZO,15,11,9.222222222,11.33333333
+1182,Celtae Vollorix (Celtic Lesser King),CELT,28,147,58,96.33333333
+1183,Gaeroas (Celtic Spearmen),GAER,53,4,58,96.33333333
+1184,Gaeroas (Celtic Spearmen),GAER,93,138,58,96.33333333
+1185,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,61,50,71.65,29.1
+1186,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,74,19,71.65,29.1
+1187,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,74,31,71.65,29.1
+1188,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,57,33,71.65,29.1
+1189,Cohors Reformata (Post Marian Legionary Cohort),COHO,102,57,71.65,29.1
+1190,Cohors Reformata (Post Marian Legionary Cohort),COHO,100,10,71.65,29.1
+1191,Cohors Reformata (Post Marian Legionary Cohort),COHO,97,64,71.65,29.1
+1192,Cohors Reformata (Post Marian Legionary Cohort),COHO,87,46,71.65,29.1
+1193,Cohors Reformata (Post Marian Legionary Cohort),COHO,64,25,71.65,29.1
+1194,Cohors Reformata (Post Marian Legionary Cohort),COHO,5,34,71.65,29.1
+1195,Cohors Reformata (Post Marian Legionary Cohort),COHO,102,14,71.65,29.1
+1198,Hoplitai (Greek ClassIcal Hoplites),HOPL,82,14,71.65,29.1
+1199,Hoplitai (Greek ClassIcal Hoplites),HOPL,82,32,71.65,29.1
+1200,Pezoi Brettioi (Bruttlan Infantry),PEZO,57,6,71.65,29.1
+1201,Principes (Camillan Heavy Infantry Maniple),PRIN,82,46,71.65,29.1
+1202,Dorkim Shardanim (Sardinian Infantry),SARD,80,12,71.65,29.1
+1205,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,54,44,68.28,42.52
+1206,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,67,10,68.28,42.52
+1207,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,70,64,68.28,42.52
+1208,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,40,91,68.28,42.52
+1209,Cohors Reformata (Post Marian Legionary Cohort),COHO,88,51,68.28,42.52
+1210,Cohors Reformata (Post Marian Legionary Cohort),COHO,89,85,68.28,42.52
+1211,Cohors Reformata (Post Marian Legionary Cohort),COHO,93,21,68.28,42.52
+1212,Cohors Reformata (Post Marian Legionary Cohort),COHO,67,17,68.28,42.52
+1213,Cohors Reformata (Post Marian Legionary Cohort),COHO,58,10,68.28,42.52
+1214,Cohors Reformata (Post Marian Legionary Cohort),COHO,92,40,68.28,42.52
+1215,Cohors Reformata (Post Marian Legionary Cohort),COHO,87,37,68.28,42.52
+1216,Cohors Reformata (Post Marian Legionary Cohort),COHO,94,88,68.28,42.52
+1217,Cohors Reformata (Post Marian Legionary Cohort),COHO,100,114,68.28,42.52
+1218,Cohors Reformata (Post Marian Legionary Cohort),COHO,80,110,68.28,42.52
+1219,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,28,33,68.28,42.52
+1222,Hoplitai (Greek ClassIcal Hoplites),HOPL,78,10,68.28,42.52
+1223,Hoplitai (Greek ClassIcal Hoplites),HOPL,73,17,68.28,42.52
+1224,Pezoi Brettioi (Bruttlan Infantry),PEZO,52,9,68.28,42.52
+1225,Pezoi Brettioi (Bruttlan Infantry),PEZO,65,19,68.28,42.52
+1226,Principes (Camillan Heavy Infantry Maniple),PRIN,52,36,68.28,42.52
+1227,Dorkim Shardanim (Sardinian Infantry),SARD,54,74,68.28,42.52
+1236,Machimoi (Native Egyptian Infantry),MACH,13,3,11.35294118,18.64705882
+1237,Mistophoros Strategos (Hellenistic Mercenary General),MIST,14,99,11.35294118,18.64705882
+1238,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,31,12,11.35294118,18.64705882
+1239,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,11,13,11.35294118,18.64705882
+1240,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,3,10,11.35294118,18.64705882
+1241,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,6,54,11.35294118,18.64705882
+1244,Pantodapoi (Hellenic Native Spearmen),PANT,73,48,11.35294118,18.64705882
+1245,Parasim Numidim (Numidian Cavalry),PARN,23,38,11.35294118,18.64705882
+1246,Peltastai (Hellenic Heavy Skirmishers),PELT,11,1,11.35294118,18.64705882
+1250,Machimoi (Native Egyptian Infantry),MACH,10,11,10.58823529,16.58823529
+1251,Machimoi (Native Egyptian Infantry),MACH,7,16,10.58823529,16.58823529
+1252,Machimoi (Native Egyptian Infantry),MACH,9,5,10.58823529,16.58823529
+1253,Machimoi (Native Egyptian Infantry),MACH,3,12,10.58823529,16.58823529
+1254,Mistophoros Strategos (Hellenistic Mercenary General),MIST,24,35,10.58823529,16.58823529
+1255,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,19,27,10.58823529,16.58823529
+1257,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,23,92,10.58823529,16.58823529
+1258,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,10,55,10.58823529,16.58823529
+1261,Pantodapoi (Hellenic Native Spearmen),PANT,60,16,10.58823529,16.58823529
+1264,Merkabim Garamantim(Garamantine Chariots),GARC,5,20,11.6,31.35
+1265,Merkabim Garamantim(Garamantine Chariots),GARC,5,99,11.6,31.35
+1266,Hoplitai (Greek ClassIcal Hoplites),HOPL,2,17,11.6,31.35
+1271,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,2,14,11.6,31.35
+1273,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,31,185,11.6,31.35
+1275,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,28,110,11.6,31.35
+1276,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,83,78,11.6,31.35
+1280,Parasim Numidim (Numidian Cavalry),PARN,33,7,11.6,31.35
+1282,Peltastai (Hellenic Heavy Skirmishers),PELT,24,19,11.6,31.35
+1283,Peltastai (Hellenic Heavy Skirmishers),PELT,5,32,11.6,31.35
+1284,Appea Gaedotos (Alpine Phalanx),APPE,14,137,7.842105263,39.47368421
+1285,Celtae Vollorix (Celtic Lesser King),CELT,1,71,7.842105263,39.47368421
+1288,Cohors Reformata (Post Marian Legionary Cohort),COHO,7,109,7.842105263,39.47368421
+1289,Gaeroas (Celtic Spearmen),GAER,21,67,7.842105263,39.47368421
+1290,Gaeroas (Celtic Spearmen),GAER,36,0,7.842105263,39.47368421
+1291,Hoplitai (Greek ClassIcal Hoplites),HOPL,6,42,7.842105263,39.47368421
+1292,Hoplitai (Greek ClassIcal Hoplites),HOPL,19,56,7.842105263,39.47368421
+1293,Iaosatae (Celtic Slingers),IOSA,2,44,7.842105263,39.47368421
+1294,Iaosatae (Celtic Slingers),IOSA,1,37,7.842105263,39.47368421
+1295,Iaosatae (Celtic Slingers),IOSA,8,103,7.842105263,39.47368421
+1296,Iaosatae (Celtic Slingers),IOSA,0,26,7.842105263,39.47368421
+1301,Vigiles (Town Watch),VIGI,14,1,7.842105263,39.47368421
+1303,Merkabim Garamantim(Garamantine Chariots),GARC,7,43,5.8,7.5
+1305,Hoplitai (Greek ClassIcal Hoplites),HOPL,12,0,5.8,7.5
+1306,Machimoi (Native Egyptian Infantry),MACH,16,0,5.8,7.5
+1308,Mistophoros Strategos (Hellenistic Mercenary General),MIST,15,0,5.8,7.5
+1310,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,0,19,5.8,7.5
+1312,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,15,0,5.8,7.5
+1313,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,1,10,5.8,7.5
+1319,Parasim Numidim (Numidian Cavalry),PARN,19,19,5.8,7.5
+1321,Peltastai (Hellenic Heavy Skirmishers),PELT,3,44,5.8,7.5
+1323,Appea Gaedotos (Alpine Phalanx),APPE,56,26,51.34482759,48.55172414
+1324,Appea Gaedotos (Alpine Phalanx),APPE,39,57,51.34482759,48.55172414
+1325,Appea Gaedotos (Alpine Phalanx),APPE,80,14,51.34482759,48.55172414
+1326,Appea Gaedotos (Alpine Phalanx),APPE,42,101,51.34482759,48.55172414
+1327,Appea Gaedotos (Alpine Phalanx),APPE,22,94,51.34482759,48.55172414
+1328,Celtae Vollorix (Celtic Lesser King),CELT,27,50,51.34482759,48.55172414
+1329,Celtae Vollorix (Celtic Lesser King),CELT,34,154,51.34482759,48.55172414
+1330,Celtae Vollorix (Celtic Lesser King),CELT,39,85,51.34482759,48.55172414
+1331,Iberi Milites (Iberian Light Spearman),IBER,84,21,51.34482759,48.55172414
+1332,Mezugenoi (Celtiberian Swordsmen),MEZU,23,45,51.34482759,48.55172414
+1333,Mezugenoi (Celtiberian Swordsmen),MEZU,96,39,51.34482759,48.55172414
+1334,Mori Gaesum (Helvetii Phalanx),MORI,34,48,51.34482759,48.55172414
+1335,Mori Gaesum (Helvetii Phalanx),MORI,52,58,51.34482759,48.55172414
+1336,Mori Gaesum (Helvetii Phalanx),MORI,35,16,51.34482759,48.55172414
+1337,Mori Gaesum (Helvetii Phalanx),MORI,41,65,51.34482759,48.55172414
+1338,Mori Gaesum (Helvetii Phalanx),MORI,80,46,51.34482759,48.55172414
+1340,Teceitos (CeltIc Axemen),TECE,35,47,51.34482759,48.55172414
+1341,Teceitos (CeltIc Axemen),TECE,69,13,51.34482759,48.55172414
+1342,Teceitos (CeltIc Axemen),TECE,55,22,51.34482759,48.55172414
+1343,Teceitos (CeltIc Axemen),TECE,71,16,51.34482759,48.55172414
+1344,Teceitos (CeltIc Axemen),TECE,78,58,51.34482759,48.55172414
+1345,Teceitos (CeltIc Axemen),TECE,25,41,51.34482759,48.55172414
+1346,Teceitos (CeltIc Axemen),TECE,67,34,51.34482759,48.55172414
+1347,Teceitos (CeltIc Axemen),TECE,54,58,51.34482759,48.55172414
+1348,Teceitos (CeltIc Axemen),TECE,36,44,51.34482759,48.55172414
+1349,Teceitos (CeltIc Axemen),TECE,60,36,51.34482759,48.55172414
+1350,Tekastos (RhaetJc Axemen),TEKA,75,16,51.34482759,48.55172414
+1351,Tekastos (RhaetJc Axemen),TEKA,52,90,51.34482759,48.55172414
+1353,Unlocalized Arabic General,ARAB,47,55,40.45,50.35
+1354,Unlocalized Arabic General,ARAB,8,43,40.45,50.35
+1355,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,63,62,40.45,50.35
+1356,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,87,58,40.45,50.35
+1357,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,92,41,40.45,50.35
+1358,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,90,94,40.45,50.35
+1359,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,54,99,40.45,50.35
+1360,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,93,47,40.45,50.35
+1364,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,3,14,40.45,50.35
+1365,Parasim Numidim (Numidian Cavalry),PARN,36,44,40.45,50.35
+1366,Peltastai (Hellenic Heavy Skirmishers),PELT,31,43,40.45,50.35
+1367,Qala'im 'Arabim (Arabian Slingers),QALA,20,40,40.45,50.35
+1368,Qala'im 'Arabim (Arabian Slingers),QALA,4,29,40.45,50.35
+1369,Qala'im 'Arabim (Arabian Slingers),QALA,9,54,40.45,50.35
+1370,Qala'im 'Arabim (Arabian Slingers),QALA,20,68,40.45,50.35
+1372,Appea Gaedotos (Alpine Phalanx),APPE,15,29,40.45,50.35
+1373,Mori Gaesum (Helvetii Phalanx),MORI,13,22,40.45,50.35
+1374,Teceitos (CeltIc Axemen),TECE,7,36,40.45,50.35
+1375,Teceitos (CeltIc Axemen),TECE,6,31,40.45,50.35
+1376,Teceitos (CeltIc Axemen),TECE,19,45,40.45,50.35
+1377,Teceitos (CeltIc Axemen),TECE,0,27,40.45,50.35
+1380,Cohors Reformata (Post Marian Legionary Cohort),COHO,1,32,7.833333333,13.05555556
+1381,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,16,16,7.833333333,13.05555556
+1383,Lugoae (Celtic Levy Spearmen),LUGO,36,8,7.833333333,13.05555556
+1384,Mori Gaesum (Helvetii Phalanx),MORI,0,20,7.833333333,13.05555556
+1392,Teceitos (CeltIc Axemen),TECE,14,60,7.833333333,13.05555556
+1393,Teceitos (CeltIc Axemen),TECE,11,14,7.833333333,13.05555556
+1395,Vigiles (Town Watch),VIGI,59,28,7.833333333,13.05555556
+1396,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,45,12,5.314285714,10.45714286
+1401,Merkabim Garamantim(Garamantine Chariots),GARC,14,0,5.314285714,10.45714286
+1409,Machimoi (Native Egyptian Infantry),MACH,16,11,5.314285714,10.45714286
+1411,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,0,15,5.314285714,10.45714286
+1412,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,24,0,5.314285714,10.45714286
+1413,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,0,22,5.314285714,10.45714286
+1414,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,5,113,5.314285714,10.45714286
+1416,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,1,15,5.314285714,10.45714286
+1417,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,36,54,5.314285714,10.45714286
+1427,Peltastai (Hellenic Heavy Skirmishers),PELT,7,31,5.314285714,10.45714286
+1429,Peltastai (Hellenic Heavy Skirmishers),PELT,4,42,5.314285714,10.45714286
+1430,Peltastai (Hellenic Heavy Skirmishers),PELT,13,0,5.314285714,10.45714286
+1431,Appea Gaedotos (Alpine Phalanx),APPE,11,14,7.411764706,20
+1432,Celtae Vollorix (Celtic Lesser King),CELT,1,16,7.411764706,20
+1433,Celtae Vollorix (Celtic Lesser King),CELT,4,12,7.411764706,20
+1434,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,15,7.411764706,20
+1436,Gaeroas (Celtic Spearmen),GAER,11,25,7.411764706,20
+1437,Gaeroas (Celtic Spearmen),GAER,18,67,7.411764706,20
+1438,Hoplitai (Greek ClassIcal Hoplites),HOPL,20,24,7.411764706,20
+1439,Hoplitai (Greek ClassIcal Hoplites),HOPL,5,33,7.411764706,20
+1442,Iaosatae (Celtic Slingers),IOSA,34,12,7.411764706,20
+1443,Mori Gaesum (Helvetii Phalanx),MORI,13,41,7.411764706,20
+1446,Vigiles (Town Watch),VIGI,1,11,7.411764706,20
+1447,Vigiles (Town Watch),VIGI,5,23,7.411764706,20
+1448,Appea Gaedotos (Alpine Phalanx),APPE,67,88,27.53125,83.375
+1449,Appea Gaedotos (Alpine Phalanx),APPE,30,13,27.53125,83.375
+1450,Brigantinoi (Celtiberian Champions),BRIG,8,109,27.53125,83.375
+1451,Brigantinoi (Celtiberian Champions),BRIG,2,81,27.53125,83.375
+1452,Brigantinoi (Celtiberian Champions),BRIG,1,90,27.53125,83.375
+1453,Brigantinoi (Celtiberian Champions),BRIG,11,86,27.53125,83.375
+1454,Brigantinoi (Celtiberian Champions),BRIG,30,165,27.53125,83.375
+1455,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,44,30,27.53125,83.375
+1456,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,50,62,27.53125,83.375
+1457,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,38,103,27.53125,83.375
+1458,Celtae Vollorix (Celtic Lesser King),CELT,30,151,27.53125,83.375
+1459,Celtae Vollorix (Celtic Lesser King),CELT,27,159,27.53125,83.375
+1460,Celtae Vollorix (Celtic Lesser King),CELT,45,227,27.53125,83.375
+1461,Gaesamica (Javelineers),GAES,11,71,27.53125,83.375
+1462,Iberi Milites (Iberian Light Spearman),IBER,18,0,27.53125,83.375
+1463,Iberi Milites (Iberian Light Spearman),IBER,24,38,27.53125,83.375
+1464,Iberi Milites (Iberian Light Spearman),IBER,34,96,27.53125,83.375
+1465,Iberi Milites (Iberian Light Spearman),IBER,61,69,27.53125,83.375
+1466,Iaosatae (Celtic Slingers),IOSA,8,34,27.53125,83.375
+1467,Mezugenoi (Celtiberian Swordsmen),MEZU,44,26,27.53125,83.375
+1468,Mezugenoi (Celtiberian Swordsmen),MEZU,28,117,27.53125,83.375
+1469,Mezugenoi (Celtiberian Swordsmen),MEZU,3,45,27.53125,83.375
+1470,Mezugenoi (Celtiberian Swordsmen),MEZU,2,80,27.53125,83.375
+1471,Mezugenoi (Celtiberian Swordsmen),MEZU,35,67,27.53125,83.375
+1472,Mistophoros Strategos (Hellenistic Mercenary General),MIST,34,234,27.53125,83.375
+1473,Mori Gaesum (Helvetii Phalanx),MORI,33,54,27.53125,83.375
+1475,Teceitos (CeltIc Axemen),TECE,34,68,27.53125,83.375
+1476,Teceitos (CeltIc Axemen),TECE,19,73,27.53125,83.375
+1477,Teceitos (CeltIc Axemen),TECE,70,100,27.53125,83.375
+1478,Tekastos (RhaetJc Axemen),TEKA,24,89,27.53125,83.375
+1479,Tekastos (RhaetJc Axemen),TEKA,15,37,27.53125,83.375
+1480,Appea Gaedotos (Alpine Phalanx),APPE,27,92,6.9,23.9
+1481,Celtae Vollorix (Celtic Lesser King),CELT,3,20,6.9,23.9
+1482,Celtae Vollorix (Celtic Lesser King),CELT,6,17,6.9,23.9
+1483,Cohors Reformata (Post Marian Legionary Cohort),COHO,17,17,6.9,23.9
+1484,Cohors Reformata (Post Marian Legionary Cohort),COHO,8,22,6.9,23.9
+1485,Gaeroas (Celtic Spearmen),GAER,4,13,6.9,23.9
+1486,Gaeroas (Celtic Spearmen),GAER,11,30,6.9,23.9
+1487,Hoplitai (Greek ClassIcal Hoplites),HOPL,18,47,6.9,23.9
+1488,Hoplitai (Greek ClassIcal Hoplites),HOPL,16,12,6.9,23.9
+1489,Iaosatae (Celtic Slingers),IOSA,0,58,6.9,23.9
+1490,Iaosatae (Celtic Slingers),IOSA,1,48,6.9,23.9
+1491,Iaosatae (Celtic Slingers),IOSA,0,23,6.9,23.9
+1493,Mori Gaesum (Helvetii Phalanx),MORI,8,25,6.9,23.9
+1495,Teceitos (CeltIc Axemen),TECE,0,11,6.9,23.9
+1498,Vigiles (Town Watch),VIGI,14,9,6.9,23.9
+1502,Merkabim Garamantim(Garamantine Chariots),GARC,8,14,8.722222222,18.44444444
+1503,Hoplitai (Greek ClassIcal Hoplites),HOPL,17,10,8.722222222,18.44444444
+1504,Machimoi (Native Egyptian Infantry),MACH,10,69,8.722222222,18.44444444
+1505,Machimoi (Native Egyptian Infantry),MACH,47,7,8.722222222,18.44444444
+1506,Machimoi (Native Egyptian Infantry),MACH,4,63,8.722222222,18.44444444
+1507,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,20,53,8.722222222,18.44444444
+1508,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,0,16,8.722222222,18.44444444
+1509,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,7,34,8.722222222,18.44444444
+1516,Peltastai (Hellenic Heavy Skirmishers),PELT,21,35,8.722222222,18.44444444
+1517,Peltastai (Hellenic Heavy Skirmishers),PELT,3,11,8.722222222,18.44444444
+1518,Unlocalized Arabic General,ARAB,22,104,3.875,46.375
+1519,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,4,44,3.875,46.375
+1521,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,0,35,3.875,46.375
+1522,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,4,56,3.875,46.375
+1523,Qala'im 'Arabim (Arabian Slingers),QALA,0,40,3.875,46.375
+1524,Qala'im 'Arabim (Arabian Slingers),QALA,0,49,3.875,46.375
+1525,Qala'im 'Arabim (Arabian Slingers),QALA,1,43,3.875,46.375
+1526,Appea Gaedotos (Alpine Phalanx),APPE,11,18,3.842105263,18.21052632
+1527,Celtae Vollorix (Celtic Lesser King),CELT,2,45,3.842105263,18.21052632
+1529,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,17,3.842105263,18.21052632
+1530,Gaeroas (Celtic Spearmen),GAER,5,21,3.842105263,18.21052632
+1531,Gaeroas (Celtic Spearmen),GAER,12,15,3.842105263,18.21052632
+1532,Hoplitai (Greek ClassIcal Hoplites),HOPL,0,11,3.842105263,18.21052632
+1534,Iaosatae (Celtic Slingers),IOSA,0,18,3.842105263,18.21052632
+1535,Iaosatae (Celtic Slingers),IOSA,8,28,3.842105263,18.21052632
+1536,Iaosatae (Celtic Slingers),IOSA,3,8,3.842105263,18.21052632
+1537,Iaosatae (Celtic Slingers),IOSA,4,13,3.842105263,18.21052632
+1538,Kluddacorii (Alpine Shortswordsmen),KLUD,13,40,3.842105263,18.21052632
+1541,Teceitos (CeltIc Axemen),TECE,8,36,3.842105263,18.21052632
+1545,Appea Gaedotos (Alpine Phalanx),APPE,49,23,10.14285714,30.28571429
+1547,Appea Gaedotos (Alpine Phalanx),APPE,5,43,10.14285714,30.28571429
+1548,Appea Gaedotos (Alpine Phalanx),APPE,21,6,10.14285714,30.28571429
+1549,Appea Gaedotos (Alpine Phalanx),APPE,3,9,10.14285714,30.28571429
+1550,Appea Gaedotos (Alpine Phalanx),APPE,1,34,10.14285714,30.28571429
+1551,Appea Gaedotos (Alpine Phalanx),APPE,1,21,10.14285714,30.28571429
+1552,Appea Gaedotos (Alpine Phalanx),APPE,22,49,10.14285714,30.28571429
+1554,Mori Gaesum (Helvetii Phalanx),MORI,5,46,10.14285714,30.28571429
+1555,Mori Gaesum (Helvetii Phalanx),MORI,6,27,10.14285714,30.28571429
+1556,Mori Gaesum (Helvetii Phalanx),MORI,8,17,10.14285714,30.28571429
+1557,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,14,137,10.14285714,30.28571429
+1559,Unlocalized Arabic General,ARAB,3,12,4.35,18.95
+1560,Unlocalized Arabic General,ARAB,6,48,4.35,18.95
+1563,Hoplitai (Greek ClassIcal Hoplites),HOPL,18,15,4.35,18.95
+1564,Machimoi (Native Egyptian Infantry),MACH,5,16,4.35,18.95
+1567,Mistophoros Strategos (Hellenistic Mercenary General),MIST,23,128,4.35,18.95
+1568,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,1,17,4.35,18.95
+1569,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,3,42,4.35,18.95
+1570,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,5,40,4.35,18.95
+1573,Pantodapoi (Hellenic Native Spearmen),PANT,15,33,4.35,18.95
+1580,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,1,18,1.823529412,14.88235294
+1581,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,13,1.823529412,14.88235294
+1582,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,9,83,1.823529412,14.88235294
+1585,Mori Gaesum (Helvetii Phalanx),MORI,2,26,1.823529412,14.88235294
+1593,Teceitos (CeltIc Axemen),TECE,9,32,1.823529412,14.88235294
+1594,Teceitos (CeltIc Axemen),TECE,0,18,1.823529412,14.88235294
+1595,Tekastos (RhaetJc Axemen),TEKA,0,12,1.823529412,14.88235294
+1597,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,1,38,0.375,32.25
+1598,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,0,12,0.375,32.25
+1599,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,1,33,0.375,32.25
+1600,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,1,19,0.375,32.25
+1601,Qala'im 'Arabim (Arabian Slingers),QALA,0,29,0.375,32.25
+1602,Qala'im 'Arabim (Arabian Slingers),QALA,0,43,0.375,32.25
+1603,Qala'im 'Arabim (Arabian Slingers),QALA,0,84,0.375,32.25
+1606,Mistophoros Strategos (Hellenistic Mercenary General),MIST,5,30,6.642857143,8
+1609,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,10,9,6.642857143,8
+1611,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,14,6.642857143,8
+1612,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,49,13,6.642857143,8
+1613,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,22,14,6.642857143,8
+1617,Dorkim Shardanim (Sardinian Infantry),SARD,0,14,6.642857143,8
+1619,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,15,49,9.333333333,32.66666667
+1620,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,15,121,9.333333333,32.66666667
+1621,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,12,10,9.333333333,32.66666667
+1623,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,6,58,9.333333333,32.66666667
+1624,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,5,7,9.333333333,32.66666667
+1625,Parasim Numidim (Numidian Cavalry),PARN,5,81,9.333333333,32.66666667
+1626,Parasim Numidim (Numidian Cavalry),PARN,6,6,9.333333333,32.66666667
+1627,Qasatim Numidim (Numidian Archers),QASA,18,13,9.333333333,32.66666667
+1628,Qasatim Numidim (Numidian Archers),QASA,14,6,9.333333333,32.66666667
+1629,Qasatim Numidim (Numidian Archers),QASA,14,9,9.333333333,32.66666667
+1632,Unlocalized Arabic General,ARAB,8,107,18.33333333,35.08333333
+1633,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,47,7,18.33333333,35.08333333
+1634,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,58,20,18.33333333,35.08333333
+1635,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,14,25,18.33333333,35.08333333
+1638,Pantodapoi (Hellenic Native Spearmen),PANT,11,15,18.33333333,35.08333333
+1640,Qala'im 'Arabim (Arabian Slingers),QALA,6,7,18.33333333,35.08333333
+1642,Unlocalized Arabic General,ARAB,21,63,4.95,28.05
+1643,Unlocalized Arabic General,ARAB,0,19,4.95,28.05
+1644,Unlocalized Arabic General,ARAB,3,89,4.95,28.05
+1649,Machimoi (Native Egyptian Infantry),MACH,7,29,4.95,28.05
+1652,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,28,136,4.95,28.05
+1653,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,27,105,4.95,28.05
+1656,Pantodapoi (Hellenic Native Spearmen),PANT,3,23,4.95,28.05
+1658,Peltastai (Hellenic Heavy Skirmishers),PELT,0,17,4.95,28.05
+1659,Peltastai (Hellenic Heavy Skirmishers),PELT,0,20,4.95,28.05
+1660,Peltastai (Hellenic Heavy Skirmishers),PELT,0,11,4.95,28.05
+1661,Peltastai (Hellenic Heavy Skirmishers),PELT,0,15,4.95,28.05
+1662,Unlocalized Arabic General,ARAB,23,121,10.75,32.85
+1663,Unlocalized Arabic General,ARAB,37,74,10.75,32.85
+1664,Unlocalized Arabic General,ARAB,42,14,10.75,32.85
+1665,Merkabim Garamantim(Garamantine Chariots),GARC,8,28,10.75,32.85
+1668,Machimoi (Native Egyptian Infantry),MACH,14,11,10.75,32.85
+1669,Machimoi (Native Egyptian Infantry),MACH,0,12,10.75,32.85
+1670,Mistophoros Strategos (Hellenistic Mercenary General),MIST,18,146,10.75,32.85
+1671,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,23,10.75,32.85
+1672,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,3,9,10.75,32.85
+1673,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,16,10.75,32.85
+1676,Pantodapoi (Hellenic Native Spearmen),PANT,4,24,10.75,32.85
+1677,Peltastai (Hellenic Heavy Skirmishers),PELT,1,13,10.75,32.85
+1678,Peltastai (Hellenic Heavy Skirmishers),PELT,0,13,10.75,32.85
+1679,Peltastai (Hellenic Heavy Skirmishers),PELT,10,26,10.75,32.85
+1680,Peltastai (Hellenic Heavy Skirmishers),PELT,27,38,10.75,32.85
+1681,Peltastai (Hellenic Heavy Skirmishers),PELT,12,5,10.75,32.85
+1682,Unlocalized Arabic General,ARAB,30,47,45.125,43.125
+1683,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,71,84,45.125,43.125
+1684,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,33,31,45.125,43.125
+1685,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,62,20,45.125,43.125
+1686,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,72,48,45.125,43.125
+1687,Qala'im 'Arabim (Arabian Slingers),QALA,30,28,45.125,43.125
+1688,Qala'im 'Arabim (Arabian Slingers),QALA,34,42,45.125,43.125
+1689,Qala'im 'Arabim (Arabian Slingers),QALA,29,45,45.125,43.125
+1691,Hoplital Haplol (Greek Levy Hoplites),HOPH,73,10,70.25,38.375
+1692,Hoplital Haplol (Greek Levy Hoplites),HOPH,64,16,70.25,38.375
+1693,Hoplitai (Greek ClassIcal Hoplites),HOPL,67,50,70.25,38.375
+1694,Hoplitai (Greek ClassIcal Hoplites),HOPL,56,21,70.25,38.375
+1695,Machimoi (Native Egyptian Infantry),MACH,63,69,70.25,38.375
+1696,Machimoi (Native Egyptian Infantry),MACH,69,53,70.25,38.375
+1697,Machimoi (Native Egyptian Infantry),MACH,72,30,70.25,38.375
+1698,Machimoi (Native Egyptian Infantry),MACH,66,39,70.25,38.375
+1707,Mistophoros Strategos (Hellenistic Mercenary General),MIST,40,61,70.25,38.375
+1708,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,43,67,70.25,38.375
+1709,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,83,113,70.25,38.375
+1710,Pantodapoi (Hellenic Native Spearmen),PANT,109,15,70.25,38.375
+1711,Pantodapoi (Hellenic Native Spearmen),PANT,103,37,70.25,38.375
+1712,Pantodapoi (Hellenic Native Spearmen),PANT,104,6,70.25,38.375
+1713,Pantodapoi (Hellenic Native Spearmen),PANT,80,0,70.25,38.375
+1714,Unlocalized Arabic General,ARAB,21,11,14.04166667,29.45833333
+1715,Unlocalized Arabic General,ARAB,36,15,14.04166667,29.45833333
+1716,Unlocalized Arabic General,ARAB,23,24,14.04166667,29.45833333
+1717,Unlocalized Arabic General,ARAB,42,114,14.04166667,29.45833333
+1719,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,26,134,14.04166667,29.45833333
+1729,Mistophoros Strategos (Hellenistic Mercenary General),MIST,31,6,14.04166667,29.45833333
+1730,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,2,10,14.04166667,29.45833333
+1731,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,34,118,14.04166667,29.45833333
+1732,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,9,40,14.04166667,29.45833333
+1733,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,9,37,14.04166667,29.45833333
+1734,Pantodapoi (Hellenic Native Spearmen),PANT,45,34,14.04166667,29.45833333
+1735,Peltastai (Hellenic Heavy Skirmishers),PELT,0,11,14.04166667,29.45833333
+1736,Peltastai (Hellenic Heavy Skirmishers),PELT,1,14,14.04166667,29.45833333
+1740,Mistophoros Strategos (Hellenistic Mercenary General),MIST,31,13,12.5,16.35714286
+1741,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,52,83,12.5,16.35714286
+1745,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,32,43,12.5,16.35714286
+1746,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,31,44,12.5,16.35714286
+1747,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,7,10,12.5,16.35714286
+1748,Qasatim Numidim (Numidian Archers),QASA,19,6,12.5,16.35714286
+1753,Merkabim Garamantim(Garamantine Chariots),GARC,6,25,50.875,43.91666667
+1755,Hoplital Haplol (Greek Levy Hoplites),HOPH,69,35,50.875,43.91666667
+1756,Hoplital Haplol (Greek Levy Hoplites),HOPH,77,17,50.875,43.91666667
+1757,Hoplital Haplol (Greek Levy Hoplites),HOPH,76,3,50.875,43.91666667
+1758,Hoplitai (Greek ClassIcal Hoplites),HOPL,30,5,50.875,43.91666667
+1759,Machimoi (Native Egyptian Infantry),MACH,58,23,50.875,43.91666667
+1760,Machimoi (Native Egyptian Infantry),MACH,66,18,50.875,43.91666667
+1761,Machimoi (Native Egyptian Infantry),MACH,62,73,50.875,43.91666667
+1762,Machimoi (Native Egyptian Infantry),MACH,60,63,50.875,43.91666667
+1763,Mistophoros Strategos (Hellenistic Mercenary General),MIST,44,32,50.875,43.91666667
+1764,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,54,98,50.875,43.91666667
+1765,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,93,26,50.875,43.91666667
+1766,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,72,44,50.875,43.91666667
+1767,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,42,107,50.875,43.91666667
+1768,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,91,186,50.875,43.91666667
+1769,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,82,78,50.875,43.91666667
+1770,Parasim Numidim (Numidian Cavalry),PARN,33,69,50.875,43.91666667
+1771,Parasim Numidim (Numidian Cavalry),PARN,15,33,50.875,43.91666667
+1772,Peltastai (Hellenic Heavy Skirmishers),PELT,49,21,50.875,43.91666667
+1773,Qasatim Numidim (Numidian Archers),QASA,38,9,50.875,43.91666667
+1774,Qasatim Numidim (Numidian Archers),QASA,34,34,50.875,43.91666667
+1775,Qasatim Numidim (Numidian Archers),QASA,24,27,50.875,43.91666667
+1777,Merkabim Garamantim(Garamantine Chariots),GARC,2,24,37.20833333,38.91666667
+1779,Hoplitai (Greek ClassIcal Hoplites),HOPL,34,4,37.20833333,38.91666667
+1780,Hoplitai (Greek ClassIcal Hoplites),HOPL,72,16,37.20833333,38.91666667
+1781,Hoplitai (Greek ClassIcal Hoplites),HOPL,78,22,37.20833333,38.91666667
+1782,Hoplitai (Greek ClassIcal Hoplites),HOPL,76,6,37.20833333,38.91666667
+1783,Machimoi (Native Egyptian Infantry),MACH,59,12,37.20833333,38.91666667
+1784,Machimoi (Native Egyptian Infantry),MACH,44,30,37.20833333,38.91666667
+1785,Machimoi (Native Egyptian Infantry),MACH,10,16,37.20833333,38.91666667
+1786,Machimoi (Native Egyptian Infantry),MACH,64,19,37.20833333,38.91666667
+1787,Mistophoros Strategos (Hellenistic Mercenary General),MIST,53,31,37.20833333,38.91666667
+1788,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,35,70,37.20833333,38.91666667
+1789,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,68,207,37.20833333,38.91666667
+1790,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,19,57,37.20833333,38.91666667
+1791,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,8,106,37.20833333,38.91666667
+1792,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,46,73,37.20833333,38.91666667
+1793,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,41,88,37.20833333,38.91666667
+1794,Parasim Numidim (Numidian Cavalry),PARN,9,23,37.20833333,38.91666667
+1795,Parasim Numidim (Numidian Cavalry),PARN,14,32,37.20833333,38.91666667
+1796,Peltastai (Hellenic Heavy Skirmishers),PELT,41,26,37.20833333,38.91666667
+1797,Qasatim Numidim (Numidian Archers),QASA,29,22,37.20833333,38.91666667
+1798,Qasatim Numidim (Numidian Archers),QASA,30,28,37.20833333,38.91666667
+1799,Qasatim Numidim (Numidian Archers),QASA,10,11,37.20833333,38.91666667
+1800,Merkabim Garamantim(Garamantine Chariots),GARC,8,22,35.1,30.75
+1802,Hoplital Haplol (Greek Levy Hoplites),HOPH,41,21,35.1,30.75
+1804,Machimoi (Native Egyptian Infantry),MACH,69,9,35.1,30.75
+1805,Machimoi (Native Egyptian Infantry),MACH,71,30,35.1,30.75
+1809,Mistophoros Strategos (Hellenistic Mercenary General),MIST,23,19,35.1,30.75
+1810,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,29,48,35.1,30.75
+1811,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,56,7,35.1,30.75
+1812,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,69,28,35.1,30.75
+1813,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,36,152,35.1,30.75
+1814,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,47,88,35.1,30.75
+1815,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,35,44,35.1,30.75
+1816,Parasim Numidim (Numidian Cavalry),PARN,7,11,35.1,30.75
+1817,Peltastai (Hellenic Heavy Skirmishers),PELT,6,26,35.1,30.75
+1818,Qasatim Numidim (Numidian Archers),QASA,1,55,35.1,30.75
+1819,Qasatim Numidim (Numidian Archers),QASA,8,3,35.1,30.75
+1826,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,1,34,12.2,16.6
+1827,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,14,27,12.2,16.6
+1828,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,19,29,12.2,16.6
+1829,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,40,16,12.2,16.6
+1830,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,24,41,12.2,16.6
+1831,Parasim Numidim (Numidian Cavalry),PARN,8,52,12.2,16.6
+1833,Qasatim Numidim (Numidian Archers),QASA,1,10,12.2,16.6
+1834,Qasatim Numidim (Numidian Archers),QASA,11,9,12.2,16.6
+1835,Appea Gaedotos (Alpine Phalanx),APPE,7,5,4.875,10.5625
+1836,Appea Gaedotos (Alpine Phalanx),APPE,8,3,4.875,10.5625
+1837,Gaeroas (Celtic Spearmen),GAER,24,10,4.875,10.5625
+1841,Iaosatae (Celtic Slingers),IOSA,0,26,4.875,10.5625
+1843,Kluddacorii (Alpine Shortswordsmen),KLUD,10,9,4.875,10.5625
+1844,Lugoae (Celtic Levy Spearmen),LUGO,10,9,4.875,10.5625
+1850,Teceitos (CeltIc Axemen),TECE,7,7,4.875,10.5625
+1852,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,29,111,40.21875,19.53125
+1853,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,12,0,40.21875,19.53125
+1854,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,37,14,40.21875,19.53125
+1855,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,35,0,40.21875,19.53125
+1856,Brigantinoi (Celtiberian Champions),BRIG,16,38,40.21875,19.53125
+1857,Brigantinoi (Celtiberian Champions),BRIG,26,17,40.21875,19.53125
+1858,Brigantinoi (Celtiberian Champions),BRIG,7,14,40.21875,19.53125
+1859,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,50,13,40.21875,19.53125
+1860,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,50,19,40.21875,19.53125
+1861,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,12,2,40.21875,19.53125
+1862,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,50,7,40.21875,19.53125
+1865,Cohors Reformata (Post Marian Legionary Cohort),COHO,69,16,40.21875,19.53125
+1866,Cohors Reformata (Post Marian Legionary Cohort),COHO,52,20,40.21875,19.53125
+1867,Cohors Reformata (Post Marian Legionary Cohort),COHO,27,7,40.21875,19.53125
+1868,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,16,14,40.21875,19.53125
+1870,Gaesamica (Javelineers),GAES,50,11,40.21875,19.53125
+1871,Gaesamica (Javelineers),GAES,83,28,40.21875,19.53125
+1872,Gaesamica (Javelineers),GAES,48,16,40.21875,19.53125
+1873,Hoplitai (Greek ClassIcal Hoplites),HOPL,81,37,40.21875,19.53125
+1874,Iberi Milites (Iberian Light Spearman),IBER,121,60,40.21875,19.53125
+1875,Iberi Milites (Iberian Light Spearman),IBER,121,23,40.21875,19.53125
+1876,Mezugenoi (Celtiberian Swordsmen),MEZU,11,18,40.21875,19.53125
+1877,Mezugenoi (Celtiberian Swordsmen),MEZU,27,27,40.21875,19.53125
+1878,Mezugenoi (Celtiberian Swordsmen),MEZU,1,14,40.21875,19.53125
+1879,Mezugenoi (Celtiberian Swordsmen),MEZU,16,22,40.21875,19.53125
+1881,Qasatim Numidim (Numidian Archers),QASA,80,36,40.21875,19.53125
+1882,Dorkim Shardanim (Sardinian Infantry),SARD,69,16,40.21875,19.53125
+1886,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,9,10,39.53125,19.90625
+1888,Brigantinoi (Celtiberian Champions),BRIG,70,54,39.53125,19.90625
+1889,Brigantinoi (Celtiberian Champions),BRIG,45,46,39.53125,19.90625
+1890,Brigantinoi (Celtiberian Champions),BRIG,28,0,39.53125,19.90625
+1891,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,48,23,39.53125,19.90625
+1892,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,42,26,39.53125,19.90625
+1893,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,12,3,39.53125,19.90625
+1894,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,50,17,39.53125,19.90625
+1897,Cohors Reformata (Post Marian Legionary Cohort),COHO,28,16,39.53125,19.90625
+1898,Cohors Reformata (Post Marian Legionary Cohort),COHO,56,13,39.53125,19.90625
+1900,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,5,32,39.53125,19.90625
+1902,Gaesamica (Javelineers),GAES,109,32,39.53125,19.90625
+1903,Gaesamica (Javelineers),GAES,120,21,39.53125,19.90625
+1904,Gaesamica (Javelineers),GAES,79,39,39.53125,19.90625
+1905,Hoplitai (Greek ClassIcal Hoplites),HOPL,80,14,39.53125,19.90625
+1906,Iberi Milites (Iberian Light Spearman),IBER,119,54,39.53125,19.90625
+1907,Iberi Milites (Iberian Light Spearman),IBER,119,74,39.53125,19.90625
+1908,Mezugenoi (Celtiberian Swordsmen),MEZU,27,24,39.53125,19.90625
+1909,Mezugenoi (Celtiberian Swordsmen),MEZU,8,22,39.53125,19.90625
+1910,Mezugenoi (Celtiberian Swordsmen),MEZU,23,5,39.53125,19.90625
+1911,Mezugenoi (Celtiberian Swordsmen),MEZU,10,10,39.53125,19.90625
+1913,Qasatim Numidim (Numidian Archers),QASA,77,6,39.53125,19.90625
+1914,Dorkim Shardanim (Sardinian Infantry),SARD,61,19,39.53125,19.90625
+1915,Brigantinoi (Celtiberian Champions),BRIG,3,24,22,70.5
+1916,Brigantinoi (Celtiberian Champions),BRIG,9,41,22,70.5
+1917,Brigantinoi (Celtiberian Champions),BRIG,13,90,22,70.5
+1918,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,36,45,22,70.5
+1919,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,27,27,22,70.5
+1921,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,20,52,22,70.5
+1922,Gaesamica (Javelineers),GAES,58,111,22,70.5
+1923,Iberi Milites (Iberian Light Spearman),IBER,37,35,22,70.5
+1929,Mezugenoi (Celtiberian Swordsmen),MEZU,10,129,22,70.5
+1930,Mezugenoi (Celtiberian Swordsmen),MEZU,2,107,22,70.5
+1931,Mezugenoi (Celtiberian Swordsmen),MEZU,0,44,22,70.5
+1932,Mezugenoi (Celtiberian Swordsmen),MEZU,1,34,22,70.5
+1933,Qasatim Numidim (Numidian Archers),QASA,33,58,22,70.5
+1934,Dorkim Shardanim (Sardinian Infantry),SARD,31,27,22,70.5
+1935,Unlocalized Arabic General,ARAB,7,39,8.15,16.35
+1936,Unlocalized Arabic General,ARAB,14,53,8.15,16.35
+1940,Machimoi (Native Egyptian Infantry),MACH,26,20,8.15,16.35
+1946,Mistophoros Strategos (Hellenistic Mercenary General),MIST,12,89,8.15,16.35
+1947,Mistophoros Strategos (Hellenistic Mercenary General),MIST,11,27,8.15,16.35
+1948,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,5,25,8.15,16.35
+1949,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,23,41,8.15,16.35
+1952,Peltastai (Hellenic Heavy Skirmishers),PELT,2,9,8.15,16.35
+1955,Unlocalized Arabic General,ARAB,9,49,11.55,18.65
+1956,Unlocalized Arabic General,ARAB,5,10,11.55,18.65
+1959,Hoplitai (Greek ClassIcal Hoplites),HOPL,9,6,11.55,18.65
+1962,Machimoi (Native Egyptian Infantry),MACH,27,11,11.55,18.65
+1966,Mistophoros Strategos (Hellenistic Mercenary General),MIST,1,34,11.55,18.65
+1967,Mistophoros Strategos (Hellenistic Mercenary General),MIST,4,118,11.55,18.65
+1968,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,1,13,11.55,18.65
+1969,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,10,6,11.55,18.65
+1970,Pantodapoi (Hellenic Native Spearmen),PANT,76,1,11.55,18.65
+1971,Peltastai (Hellenic Heavy Skirmishers),PELT,16,15,11.55,18.65
+1973,Peltastai (Hellenic Heavy Skirmishers),PELT,22,10,11.55,18.65
+1974,Peltastai (Hellenic Heavy Skirmishers),PELT,39,58,11.55,18.65
+1975,Unlocalized Arabic General,ARAB,28,166,29.85714286,71.57142857
+1976,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,19,54,29.85714286,71.57142857
+1977,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,28,76,29.85714286,71.57142857
+1978,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,44,167,29.85714286,71.57142857
+1979,Qala'im 'Arabim (Arabian Slingers),QALA,27,11,29.85714286,71.57142857
+1980,Qala'im 'Arabim (Arabian Slingers),QALA,26,10,29.85714286,71.57142857
+1981,Qala'im 'Arabim (Arabian Slingers),QALA,37,17,29.85714286,71.57142857
+1983,Unlocalized Arabic General,ARAB,1,30,0.421052632,10.05
+1988,Machimoi (Native Egyptian Infantry),MACH,3,33,0.421052632,10.05
+1994,Mistophoros Strategos (Hellenistic Mercenary General),MIST,4,58,0.421052632,10.05
+1999,Peltastai (Hellenic Heavy Skirmishers),PELT,0,16,0.421052632,10.05
+2002,Unlocalized Arabic General,ARAB,0,20,5.85,11.75
+2004,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,13,3,5.85,11.75
+2006,Hoplitai (Greek ClassIcal Hoplites),HOPL,45,49,5.85,11.75
+2013,Mistophoros Strategos (Hellenistic Mercenary General),MIST,3,33,5.85,11.75
+2014,Mistophoros Strategos (Hellenistic Mercenary General),MIST,37,55,5.85,11.75
+2016,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,2,16,5.85,11.75
+2022,Appea Gaedotos (Alpine Phalanx),APPE,2,16,19.7,61.2
+2023,Appea Gaedotos (Alpine Phalanx),APPE,35,8,19.7,61.2
+2024,Appea Gaedotos (Alpine Phalanx),APPE,9,26,19.7,61.2
+2025,Appea Gaedotos (Alpine Phalanx),APPE,1,11,19.7,61.2
+2026,Appea Gaedotos (Alpine Phalanx),APPE,11,48,19.7,61.2
+2027,Mori Gaesum (Helvetii Phalanx),MORI,37,63,19.7,61.2
+2028,Mori Gaesum (Helvetii Phalanx),MORI,8,29,19.7,61.2
+2029,Mori Gaesum (Helvetii Phalanx),MORI,6,83,19.7,61.2
+2030,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,62,251,19.7,61.2
+2031,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,26,77,19.7,61.2
+2032,Appea Gaedotos (Alpine Phalanx),APPE,20,104,32.7,93.7
+2033,Appea Gaedotos (Alpine Phalanx),APPE,4,78,32.7,93.7
+2034,Appea Gaedotos (Alpine Phalanx),APPE,53,71,32.7,93.7
+2035,Appea Gaedotos (Alpine Phalanx),APPE,50,60,32.7,93.7
+2036,Appea Gaedotos (Alpine Phalanx),APPE,34,34,32.7,93.7
+2037,Mori Gaesum (Helvetii Phalanx),MORI,16,109,32.7,93.7
+2038,Mori Gaesum (Helvetii Phalanx),MORI,44,130,32.7,93.7
+2039,Mori Gaesum (Helvetii Phalanx),MORI,62,150,32.7,93.7
+2040,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,19,88,32.7,93.7
+2041,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,25,113,32.7,93.7
+2046,Unlocalized Arabic General,ARAB,40,91,40.71428571,58.78571429
+2047,Unlocalized Arabic General,ARAB,49,91,40.71428571,58.78571429
+2048,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,75,29,40.71428571,58.78571429
+2049,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,64,60,40.71428571,58.78571429
+2052,Qala'im 'Arabim (Arabian Slingers),QALA,60,2,40.71428571,58.78571429
+2053,Qala'im 'Arabim (Arabian Slingers),QALA,9,10,40.71428571,58.78571429
+2054,Qala'im 'Arabim (Arabian Slingers),QALA,48,20,40.71428571,58.78571429
+2056,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,11,69,13.76923077,30.61538462
+2057,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,12,29,13.76923077,30.61538462
+2058,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,16,45,13.76923077,30.61538462
+2059,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,9,27,13.76923077,30.61538462
+2061,Cohors Reformata (Post Marian Legionary Cohort),COHO,28,83,13.76923077,30.61538462
+2064,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,65,13.76923077,30.61538462
+2065,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,31,33,13.76923077,30.61538462
+2066,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,31,17,13.76923077,30.61538462
+2067,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,24,9,13.76923077,30.61538462
+2070,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,9,21,6.3,9
+2071,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,20,8,6.3,9
+2072,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,2,43,6.3,9
+2073,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,1,14,6.3,9
+2077,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,2,9,6.3,9
+2078,Cohors Reformata (Post Marian Legionary Cohort),COHO,16,51,6.3,9
+2079,Cohors Reformata (Post Marian Legionary Cohort),COHO,2,13,6.3,9
+2080,Cohors Reformata (Post Marian Legionary Cohort),COHO,9,20,6.3,9
+2082,Hoplitai (Greek ClassIcal Hoplites),HOPL,24,7,6.3,9
+2094,Mistophoros Strategos (Hellenistic Mercenary General),MIST,3,52,6.3,9
+2101,Pezoi Brettioi (Bruttlan Infantry),PEZO,21,12,6.3,9
+2102,Dorkim Shardanim (Sardinian Infantry),SARD,5,6,6.3,9
+2106,Dorkim Shardanim (Sardinian Infantry),SARD,16,18,6.3,9
+2107,Dorkim Shardanim (Sardinian Infantry),SARD,0,11,6.3,9
+2109,Brigantinoi (Celtiberian Champions),BRIG,2,21,15.75,55.2
+2110,Brigantinoi (Celtiberian Champions),BRIG,23,42,15.75,55.2
+2111,Brigantinoi (Celtiberian Champions),BRIG,19,127,15.75,55.2
+2112,Brigantinoi (Celtiberian Champions),BRIG,28,65,15.75,55.2
+2113,Brigantinoi (Celtiberian Champions),BRIG,0,59,15.75,55.2
+2114,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,1,31,15.75,55.2
+2115,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,10,62,15.75,55.2
+2116,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,16,4,15.75,55.2
+2117,Celtae Vollorix (Celtic Lesser King),CELT,7,140,15.75,55.2
+2118,Celtae Vollorix (Celtic Lesser King),CELT,21,48,15.75,55.2
+2121,Gaesamica (Javelineers),GAES,44,76,15.75,55.2
+2122,Iberi Milites (Iberian Light Spearman),IBER,10,133,15.75,55.2
+2123,Iaosatae (Celtic Slingers),IOSA,0,50,15.75,55.2
+2124,Mezugenoi (Celtiberian Swordsmen),MEZU,43,33,15.75,55.2
+2125,Mezugenoi (Celtiberian Swordsmen),MEZU,10,30,15.75,55.2
+2126,Mezugenoi (Celtiberian Swordsmen),MEZU,0,30,15.75,55.2
+2127,Mezugenoi (Celtiberian Swordsmen),MEZU,5,62,15.75,55.2
+2128,Vigiles (Town Watch),VIGI,38,26,15.75,55.2
+2129,Brigantinoi (Celtiberian Champions),BRIG,34,60,23.45,53.65
+2130,Brigantinoi (Celtiberian Champions),BRIG,3,40,23.45,53.65
+2131,Brigantinoi (Celtiberian Champions),BRIG,2,71,23.45,53.65
+2132,Brigantinoi (Celtiberian Champions),BRIG,12,94,23.45,53.65
+2133,Brigantinoi (Celtiberian Champions),BRIG,17,31,23.45,53.65
+2134,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,24,65,23.45,53.65
+2135,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,19,5,23.45,53.65
+2136,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,17,7,23.45,53.65
+2137,Celtae Vollorix (Celtic Lesser King),CELT,14,104,23.45,53.65
+2138,Celtae Vollorix (Celtic Lesser King),CELT,43,126,23.45,53.65
+2140,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,21,67,23.45,53.65
+2141,Gaesamica (Javelineers),GAES,25,64,23.45,53.65
+2142,Iberi Milites (Iberian Light Spearman),IBER,18,57,23.45,53.65
+2143,Iaosatae (Celtic Slingers),IOSA,22,2,23.45,53.65
+2144,Mezugenoi (Celtiberian Swordsmen),MEZU,42,63,23.45,53.65
+2145,Mezugenoi (Celtiberian Swordsmen),MEZU,42,18,23.45,53.65
+2146,Mezugenoi (Celtiberian Swordsmen),MEZU,0,44,23.45,53.65
+2147,Mezugenoi (Celtiberian Swordsmen),MEZU,11,86,23.45,53.65
+2148,Vigiles (Town Watch),VIGI,27,48,23.45,53.65
+2149,Brigantinoi (Celtiberian Champions),BRIG,5,52,11.4,26.7
+2150,Brigantinoi (Celtiberian Champions),BRIG,0,14,11.4,26.7
+2151,Brigantinoi (Celtiberian Champions),BRIG,0,23,11.4,26.7
+2152,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,17,21,11.4,26.7
+2153,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,13,23,11.4,26.7
+2155,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,22,16,11.4,26.7
+2156,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,11,14,11.4,26.7
+2157,Gaesamica (Javelineers),GAES,12,5,11.4,26.7
+2159,Iaosatae (Celtic Slingers),IOSA,1,11,11.4,26.7
+2160,Iaosatae (Celtic Slingers),IOSA,2,23,11.4,26.7
+2161,Iaosatae (Celtic Slingers),IOSA,0,43,11.4,26.7
+2164,Mezugenoi (Celtiberian Swordsmen),MEZU,0,14,11.4,26.7
+2165,Mistophoros Strategos (Hellenistic Mercenary General),MIST,35,25,11.4,26.7
+2170,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,10,30,12.15,33.7
+2171,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,6,58,12.15,33.7
+2172,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,43,49,12.15,33.7
+2173,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,18,33,12.15,33.7
+2174,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,0,11,12.15,33.7
+2175,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,1,38,12.15,33.7
+2176,Cohors Reformata (Post Marian Legionary Cohort),COHO,13,63,12.15,33.7
+2177,Cohors Reformata (Post Marian Legionary Cohort),COHO,7,17,12.15,33.7
+2178,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,42,12.15,33.7
+2179,Cohors Reformata (Post Marian Legionary Cohort),COHO,6,95,12.15,33.7
+2180,Cohors Reformata (Post Marian Legionary Cohort),COHO,19,32,12.15,33.7
+2181,Cohors Reformata (Post Marian Legionary Cohort),COHO,10,23,12.15,33.7
+2184,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,20,20,12.15,33.7
+2185,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,1,83,12.15,33.7
+2187,Hoplitai (Greek ClassIcal Hoplites),HOPL,1,28,12.15,33.7
+2188,Peltastai (Hellenic Heavy Skirmishers),PELT,47,31,12.15,33.7
+2189,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,8,43,30.85714286,58.76190476
+2190,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,9,66,30.85714286,58.76190476
+2191,Cohors Reformata (Post Marian Legionary Cohort),COHO,95,125,30.85714286,58.76190476
+2192,Cohors Reformata (Post Marian Legionary Cohort),COHO,5,29,30.85714286,58.76190476
+2193,Cohors Reformata (Post Marian Legionary Cohort),COHO,81,113,30.85714286,58.76190476
+2194,Cohors Reformata (Post Marian Legionary Cohort),COHO,4,113,30.85714286,58.76190476
+2195,Cohors Reformata (Post Marian Legionary Cohort),COHO,49,48,30.85714286,58.76190476
+2196,Cohors Reformata (Post Marian Legionary Cohort),COHO,67,152,30.85714286,58.76190476
+2197,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,48,36,30.85714286,58.76190476
+2200,Hoplitai (Greek ClassIcal Hoplites),HOPL,29,17,30.85714286,58.76190476
+2201,Hoplitai (Greek ClassIcal Hoplites),HOPL,51,132,30.85714286,58.76190476
+2204,Mistophoros Strategos (Hellenistic Mercenary General),MIST,0,18,30.85714286,58.76190476
+2205,Peltastai (Hellenic Heavy Skirmishers),PELT,69,72,30.85714286,58.76190476
+2206,Peltastai (Hellenic Heavy Skirmishers),PELT,44,89,30.85714286,58.76190476
+2210,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,6,37,46.33333333,54.52380952
+2211,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,76,90,46.33333333,54.52380952
+2212,Cohors Reformata (Post Marian Legionary Cohort),COHO,55,50,46.33333333,54.52380952
+2213,Cohors Reformata (Post Marian Legionary Cohort),COHO,95,30,46.33333333,54.52380952
+2214,Cohors Reformata (Post Marian Legionary Cohort),COHO,44,72,46.33333333,54.52380952
+2215,Cohors Reformata (Post Marian Legionary Cohort),COHO,35,36,46.33333333,54.52380952
+2216,Cohors Reformata (Post Marian Legionary Cohort),COHO,78,49,46.33333333,54.52380952
+2217,Cohors Reformata (Post Marian Legionary Cohort),COHO,35,33,46.33333333,54.52380952
+2218,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,75,31,46.33333333,54.52380952
+2219,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,22,35,46.33333333,54.52380952
+2220,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,27,33,46.33333333,54.52380952
+2221,Hoplitai (Greek ClassIcal Hoplites),HOPL,31,51,46.33333333,54.52380952
+2222,Hoplitai (Greek ClassIcal Hoplites),HOPL,24,25,46.33333333,54.52380952
+2224,Mistophoros Strategos (Hellenistic Mercenary General),MIST,53,114,46.33333333,54.52380952
+2225,Mistophoros Strategos (Hellenistic Mercenary General),MIST,53,184,46.33333333,54.52380952
+2226,Peltastai (Hellenic Heavy Skirmishers),PELT,47,31,46.33333333,54.52380952
+2227,Peltastai (Hellenic Heavy Skirmishers),PELT,66,62,46.33333333,54.52380952
+2229,Principes (Camillan Heavy Infantry Maniple),PRIN,2,18,46.33333333,54.52380952
+2231,Brigantinoi (Celtiberian Champions),BRIG,1,25,3.9375,15.0625
+2233,Brigantinoi (Celtiberian Champions),BRIG,0,11,3.9375,15.0625
+2234,Brigantinoi (Celtiberian Champions),BRIG,1,30,3.9375,15.0625
+2236,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,16,19,3.9375,15.0625
+2239,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,13,30,3.9375,15.0625
+2240,Gaesamica (Javelineers),GAES,20,9,3.9375,15.0625
+2242,Mezugenoi (Celtiberian Swordsmen),MEZU,0,18,3.9375,15.0625
+2243,Mezugenoi (Celtiberian Swordsmen),MEZU,2,25,3.9375,15.0625
+2244,Mezugenoi (Celtiberian Swordsmen),MEZU,6,30,3.9375,15.0625
+2246,Vigiles (Town Watch),VIGI,1,17,3.9375,15.0625
+2251,Unlocalized Arabic General,ARAB,57,40,24.85714286,44
+2252,Unlocalized Arabic General,ARAB,26,83,24.85714286,44
+2253,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,22,17,24.85714286,44
+2254,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,38,47,24.85714286,44
+2257,Qala'im 'Arabim (Arabian Slingers),QALA,5,25,24.85714286,44
+2258,Qala'im 'Arabim (Arabian Slingers),QALA,11,13,24.85714286,44
+2259,Qala'im 'Arabim (Arabian Slingers),QALA,26,43,24.85714286,44
+2261,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,5,70,4.473684211,50.52631579
+2262,Merkabim Garamantim(Garamantine Chariots),GARC,8,35,4.473684211,50.52631579
+2264,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,1,21,4.473684211,50.52631579
+2265,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,8,72,4.473684211,50.52631579
+2266,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,2,42,4.473684211,50.52631579
+2267,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,1,11,4.473684211,50.52631579
+2269,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,0,51,4.473684211,50.52631579
+2270,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,0,59,4.473684211,50.52631579
+2271,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,1,78,4.473684211,50.52631579
+2272,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,8,50,4.473684211,50.52631579
+2273,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,0,11,4.473684211,50.52631579
+2277,Parasim Numidim (Numidian Cavalry),PARN,1,139,4.473684211,50.52631579
+2278,Parasim Numidim (Numidian Cavalry),PARN,25,134,4.473684211,50.52631579
+2279,Parasim Numidim (Numidian Cavalry),PARN,3,54,4.473684211,50.52631579
+2283,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,1,14,1.166666667,10.27777778
+2284,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,4,11,1.166666667,10.27777778
+2288,Cohors Reformata (Post Marian Legionary Cohort),COHO,2,30,1.166666667,10.27777778
+2293,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,4,7,1.166666667,10.27777778
+2295,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,8,71,1.166666667,10.27777778
+2298,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,12,21,54.36363636,34.18181818
+2300,Iberi Milites (Iberian Light Spearman),IBER,71,24,54.36363636,34.18181818
+2305,Mezugenoi (Celtiberian Swordsmen),MEZU,39,31,54.36363636,34.18181818
+2306,Mezugenoi (Celtiberian Swordsmen),MEZU,90,48,54.36363636,34.18181818
+2307,Qasatim Numidim (Numidian Archers),QASA,46,43,54.36363636,34.18181818
+2308,Dorkim Shardanim (Sardinian Infantry),SARD,45,54,54.36363636,34.18181818
+2310,Unlocalized Arabic General,ARAB,5,16,7.35,24.3
+2311,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,8,24,7.35,24.3
+2313,Hoplitai (Greek ClassIcal Hoplites),HOPL,1,21,7.35,24.3
+2315,Machimoi (Native Egyptian Infantry),MACH,8,16,7.35,24.3
+2322,Mistophoros Strategos (Hellenistic Mercenary General),MIST,12,88,7.35,24.3
+2323,Mistophoros Strategos (Hellenistic Mercenary General),MIST,2,14,7.35,24.3
+2324,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,6,89,7.35,24.3
+2325,Peltastai (Hellenic Heavy Skirmishers),PELT,46,48,7.35,24.3
+2326,Peltastai (Hellenic Heavy Skirmishers),PELT,7,37,7.35,24.3
+2327,Peltastai (Hellenic Heavy Skirmishers),PELT,7,9,7.35,24.3
+2329,Unlocalized Arabic General,ARAB,53,10,46.7,45.3
+2330,Unlocalized Arabic General,ARAB,52,27,46.7,45.3
+2331,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,25,17,46.7,45.3
+2333,Hoplitai (Greek ClassIcal Hoplites),HOPL,28,28,46.7,45.3
+2334,Machimoi (Native Egyptian Infantry),MACH,63,159,46.7,45.3
+2335,Machimoi (Native Egyptian Infantry),MACH,69,67,46.7,45.3
+2336,Machimoi (Native Egyptian Infantry),MACH,52,50,46.7,45.3
+2342,Mistophoros Strategos (Hellenistic Mercenary General),MIST,47,31,46.7,45.3
+2343,Mistophoros Strategos (Hellenistic Mercenary General),MIST,51,46,46.7,45.3
+2344,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,62,168,46.7,45.3
+2345,Peltastai (Hellenic Heavy Skirmishers),PELT,27,10,46.7,45.3
+2346,Peltastai (Hellenic Heavy Skirmishers),PELT,76,47,46.7,45.3
+2347,Peltastai (Hellenic Heavy Skirmishers),PELT,73,52,46.7,45.3
+2352,Gaeroas (Celtic Spearmen),GAER,26,19,8.65,11
+2354,Iaosatae (Celtic Slingers),IOSA,5,21,8.65,11
+2355,Iaosatae (Celtic Slingers),IOSA,2,18,8.65,11
+2356,Iaosatae (Celtic Slingers),IOSA,2,36,8.65,11
+2357,Iaosatae (Celtic Slingers),IOSA,4,31,8.65,11
+2358,Kluddacorii (Alpine Shortswordsmen),KLUD,22,20,8.65,11
+2359,Lugoae (Celtic Levy Spearmen),LUGO,7,17,8.65,11
+2366,Teceitos (CeltIc Axemen),TECE,5,14,8.65,11
+2367,Teceitos (CeltIc Axemen),TECE,11,8,8.65,11
+2373,Unlocalized Arabic General,ARAB,2,29,10.69230769,29.69230769
+2374,Unlocalized Arabic General,ARAB,2,27,10.69230769,29.69230769
+2375,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,9,27,10.69230769,29.69230769
+2378,Qala'im 'Arabim (Arabian Slingers),QALA,0,31,10.69230769,29.69230769
+2380,Qala'im 'Arabim (Arabian Slingers),QALA,35,20,10.69230769,29.69230769
+2382,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,13,21,48.64705882,55
+2383,Brigantinoi (Celtiberian Champions),BRIG,81,116,48.64705882,55
+2384,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,45,19,48.64705882,55
+2385,Cohors Reformata (Post Marian Legionary Cohort),COHO,59,33,48.64705882,55
+2386,Cohors Reformata (Post Marian Legionary Cohort),COHO,26,4,48.64705882,55
+2387,Cohors Reformata (Post Marian Legionary Cohort),COHO,26,41,48.64705882,55
+2389,Hoplitai (Greek ClassIcal Hoplites),HOPL,26,66,48.64705882,55
+2390,Hoplitai (Greek ClassIcal Hoplites),HOPL,24,41,48.64705882,55
+2391,Hoplitai (Greek ClassIcal Hoplites),HOPL,80,42,48.64705882,55
+2393,Mezugenoi (Celtiberian Swordsmen),MEZU,39,107,48.64705882,55
+2394,Mezugenoi (Celtiberian Swordsmen),MEZU,97,47,48.64705882,55
+2395,Mistophoros Strategos (Hellenistic Mercenary General),MIST,59,149,48.64705882,55
+2399,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,6,6,36.58823529,35.94117647
+2400,Brigantinoi (Celtiberian Champions),BRIG,59,72,36.58823529,35.94117647
+2401,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,30,41,36.58823529,35.94117647
+2402,Cohors Reformata (Post Marian Legionary Cohort),COHO,53,33,36.58823529,35.94117647
+2403,Cohors Reformata (Post Marian Legionary Cohort),COHO,16,7,36.58823529,35.94117647
+2404,Cohors Reformata (Post Marian Legionary Cohort),COHO,10,21,36.58823529,35.94117647
+2406,Hoplitai (Greek ClassIcal Hoplites),HOPL,15,8,36.58823529,35.94117647
+2407,Hoplitai (Greek ClassIcal Hoplites),HOPL,26,5,36.58823529,35.94117647
+2408,Hoplitai (Greek ClassIcal Hoplites),HOPL,38,26,36.58823529,35.94117647
+2410,Mezugenoi (Celtiberian Swordsmen),MEZU,50,81,36.58823529,35.94117647
+2411,Mezugenoi (Celtiberian Swordsmen),MEZU,101,100,36.58823529,35.94117647
+2412,Mistophoros Strategos (Hellenistic Mercenary General),MIST,39,11,36.58823529,35.94117647
+2416,Appea Gaedotos (Alpine Phalanx),APPE,18,65,27.8125,41
+2419,Brigantinoi (Celtiberian Champions),BRIG,34,23,27.8125,41
+2420,Brigantinoi (Celtiberian Champions),BRIG,66,31,27.8125,41
+2423,Celtae Vollorix (Celtic Lesser King),CELT,10,58,27.8125,41
+2425,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,13,4,27.8125,41
+2426,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,19,15,27.8125,41
+2428,Mezugenoi (Celtiberian Swordsmen),MEZU,42,17,27.8125,41
+2429,Mezugenoi (Celtiberian Swordsmen),MEZU,10,15,27.8125,41
+2430,Mezugenoi (Celtiberian Swordsmen),MEZU,36,32,27.8125,41
+2431,Mori Gaesum (Helvetii Phalanx),MORI,63,283,27.8125,41
+2433,Appea Gaedotos (Alpine Phalanx),APPE,46,71,48.0625,64.25
+2434,Appea Gaedotos (Alpine Phalanx),APPE,49,30,48.0625,64.25
+2435,Appea Gaedotos (Alpine Phalanx),APPE,48,76,48.0625,64.25
+2436,Appea Gaedotos (Alpine Phalanx),APPE,52,109,48.0625,64.25
+2437,Appea Gaedotos (Alpine Phalanx),APPE,67,38,48.0625,64.25
+2438,Appea Gaedotos (Alpine Phalanx),APPE,59,40,48.0625,64.25
+2439,Cohors Reformata (Post Marian Legionary Cohort),COHO,50,131,48.0625,64.25
+2440,Cohors Reformata (Post Marian Legionary Cohort),COHO,35,94,48.0625,64.25
+2442,Kluddacorii (Alpine Shortswordsmen),KLUD,40,17,48.0625,64.25
+2443,Kluddacorii (Alpine Shortswordsmen),KLUD,73,102,48.0625,64.25
+2444,Kluddacorii (Alpine Shortswordsmen),KLUD,60,88,48.0625,64.25
+2445,Mori Gaesum (Helvetii Phalanx),MORI,26,100,48.0625,64.25
+2447,Tekastos (RhaetJc Axemen),TEKA,33,12,48.0625,64.25
+2448,Tekastos (RhaetJc Axemen),TEKA,37,17,48.0625,64.25
+2451,Merkabim Garamantim(Garamantine Chariots),GARC,6,30,20.81818182,52.36363636
+2455,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,18,40,20.81818182,52.36363636
+2456,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,57,139,20.81818182,52.36363636
+2457,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,36,20.81818182,52.36363636
+2458,Parasim Numidim (Numidian Cavalry),PARN,48,99,20.81818182,52.36363636
+2459,Qasatim Numidim (Numidian Archers),QASA,3,44,20.81818182,52.36363636
+2460,Appea Gaedotos (Alpine Phalanx),APPE,77,6,24.5,38.66666667
+2461,Appea Gaedotos (Alpine Phalanx),APPE,13,97,24.5,38.66666667
+2462,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,60,63,24.5,38.66666667
+2463,Gaeroas (Celtic Spearmen),GAER,46,52,24.5,38.66666667
+2465,Iaosatae (Celtic Slingers),IOSA,52,7,24.5,38.66666667
+2466,Iaosatae (Celtic Slingers),IOSA,8,40,24.5,38.66666667
+2467,Iaosatae (Celtic Slingers),IOSA,20,19,24.5,38.66666667
+2468,Iaosatae (Celtic Slingers),IOSA,15,39,24.5,38.66666667
+2469,Kluddacorii (Alpine Shortswordsmen),KLUD,66,25,24.5,38.66666667
+2474,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,10,17,24.5,38.66666667
+2475,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,16,77,24.5,38.66666667
+2476,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,26,89,24.5,38.66666667
+2477,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,46,274,24.5,38.66666667
+2487,Teceitos (CeltIc Axemen),TECE,20,142,24.5,38.66666667
+2488,Teceitos (CeltIc Axemen),TECE,9,32,24.5,38.66666667
+2489,Tekastos (RhaetJc Axemen),TEKA,52,100,24.5,38.66666667
+2492,Merkabim Garamantim(Garamantine Chariots),GARC,0,49,24.81818182,88.18181818
+2496,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,73,283,24.81818182,88.18181818
+2497,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,30,130,24.81818182,88.18181818
+2498,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,64,158,24.81818182,88.18181818
+2500,Qasatim Numidim (Numidian Archers),QASA,0,46,24.81818182,88.18181818
+2502,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,32,137,5.636363636,30.36363636
+2504,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,32,5.636363636,30.36363636
+2505,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,2,12,5.636363636,30.36363636
+2506,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,10,5.636363636,30.36363636
+2508,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,9,116,5.636363636,30.36363636
+2511,Parasim Numidim (Numidian Cavalry),PARN,7,9,5.636363636,30.36363636
+2513,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,9,23,4.454545455,29.54545455
+2515,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,12,38,4.454545455,29.54545455
+2516,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,2,14,4.454545455,29.54545455
+2517,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,37,4.454545455,29.54545455
+2518,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,1,112,4.454545455,29.54545455
+2519,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,7,18,4.454545455,29.54545455
+2520,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,0,51,4.454545455,29.54545455
+2522,Parasim Numidim (Numidian Cavalry),PARN,7,17,4.454545455,29.54545455
+2523,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,0,16,29.55,77.55
+2524,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,64,169,29.55,77.55
+2525,Cohors Reformata (Post Marian Legionary Cohort),COHO,14,123,29.55,77.55
+2526,Cohors Reformata (Post Marian Legionary Cohort),COHO,22,98,29.55,77.55
+2527,Cohors Reformata (Post Marian Legionary Cohort),COHO,86,109,29.55,77.55
+2528,Cohors Reformata (Post Marian Legionary Cohort),COHO,21,107,29.55,77.55
+2531,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,19,61,29.55,77.55
+2532,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,25,39,29.55,77.55
+2533,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,28,50,29.55,77.55
+2534,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,30,35,29.55,77.55
+2535,Merkabim Garamantim(Garamantine Chariots),GARC,13,204,29.55,77.55
+2536,Hoplitai (Greek ClassIcal Hoplites),HOPL,3,71,29.55,77.55
+2537,Hoplitai (Greek ClassIcal Hoplites),HOPL,29,53,29.55,77.55
+2538,Mistophoros Strategos (Hellenistic Mercenary General),MIST,50,128,29.55,77.55
+2539,Mistophoros Strategos (Hellenistic Mercenary General),MIST,49,25,29.55,77.55
+2540,Peltastai (Hellenic Heavy Skirmishers),PELT,38,90,29.55,77.55
+2541,Pezoi Brettioi (Bruttlan Infantry),PEZO,22,38,29.55,77.55
+2543,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,2,57,7.125,51.1875
+2544,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,0,15,7.125,51.1875
+2545,Cohors Reformata (Post Marian Legionary Cohort),COHO,5,88,7.125,51.1875
+2546,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,39,7.125,51.1875
+2547,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,65,7.125,51.1875
+2550,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,14,27,7.125,51.1875
+2551,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,3,36,7.125,51.1875
+2552,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,0,52,7.125,51.1875
+2553,Merkabim Garamantim(Garamantine Chariots),GARC,10,53,7.125,51.1875
+2554,Hoplitai (Greek ClassIcal Hoplites),HOPL,3,61,7.125,51.1875
+2555,Hoplitai (Greek ClassIcal Hoplites),HOPL,19,33,7.125,51.1875
+2556,Peltastai (Hellenic Heavy Skirmishers),PELT,28,101,7.125,51.1875
+2557,Pezoi Brettioi (Bruttlan Infantry),PEZO,5,81,7.125,51.1875
+2563,Machimoi (Native Egyptian Infantry),MACH,14,61,11.77777778,20.33333333
+2564,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,77,54,11.77777778,20.33333333
+2565,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,81,72,11.77777778,20.33333333
+2566,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,30,42,11.77777778,20.33333333
+2567,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,10,68,11.77777778,20.33333333
+2577,Brigantinoi (Celtiberian Champions),BRIG,45,10,9.9375,22.75
+2578,Brigantinoi (Celtiberian Champions),BRIG,0,20,9.9375,22.75
+2579,Brigantinoi (Celtiberian Champions),BRIG,0,65,9.9375,22.75
+2582,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,12,61,9.9375,22.75
+2583,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,14,23,9.9375,22.75
+2584,Gaesamica (Javelineers),GAES,14,55,9.9375,22.75
+2587,Iaosatae (Celtic Slingers),IOSA,6,7,9.9375,22.75
+2589,Mezugenoi (Celtiberian Swordsmen),MEZU,3,27,9.9375,22.75
+2590,Mezugenoi (Celtiberian Swordsmen),MEZU,8,15,9.9375,22.75
+2593,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,15,105,3.8,19.83333333
+2595,Cohors Reformata (Post Marian Legionary Cohort),COHO,21,58,3.8,19.83333333
+2596,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,19,3.8,19.83333333
+2597,Cohors Reformata (Post Marian Legionary Cohort),COHO,0,21,3.8,19.83333333
+2602,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,3,74,3.8,19.83333333
+2604,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,14,6,3.8,19.83333333
+2605,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,8,27,3.8,19.83333333
+2606,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,12,16,3.8,19.83333333
+2608,Hoplitai (Greek ClassIcal Hoplites),HOPL,1,32,3.8,19.83333333
+2609,Hoplitai (Greek ClassIcal Hoplites),HOPL,7,10,3.8,19.83333333
+2616,Parasim Numidim (Numidian Cavalry),PARN,0,17,3.8,19.83333333
+2617,Peltastai (Hellenic Heavy Skirmishers),PELT,13,83,3.8,19.83333333
+2618,Pezoi Brettioi (Bruttlan Infantry),PEZO,0,14,3.8,19.83333333
+2627,Unlocalized Arabic General,ARAB,0,98,4.166666667,37.83333333
+2628,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,1,17,4.166666667,37.83333333
+2631,Qala'im 'Arabim (Arabian Slingers),QALA,0,43,4.166666667,37.83333333
+2632,Qala'im 'Arabim (Arabian Slingers),QALA,2,16,4.166666667,37.83333333
+2633,Qala'im 'Arabim (Arabian Slingers),QALA,1,24,4.166666667,37.83333333
+2639,Merkabim Garamantim(Garamantine Chariots),GARC,18,97,39.32,64.4
+2640,Hoplital Haplol (Greek Levy Hoplites),HOPH,12,12,39.32,64.4
+2641,Hoplitai (Greek ClassIcal Hoplites),HOPL,55,134,39.32,64.4
+2642,Hoplitai (Greek ClassIcal Hoplites),HOPL,66,112,39.32,64.4
+2643,Hoplitai (Greek ClassIcal Hoplites),HOPL,67,51,39.32,64.4
+2647,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,29,27,39.32,64.4
+2648,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,40,207,39.32,64.4
+2649,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,46,75,39.32,64.4
+2651,Peltastai (Hellenic Heavy Skirmishers),PELT,71,15,39.32,64.4
+2652,Peltastai (Hellenic Heavy Skirmishers),PELT,25,35,39.32,64.4
+2653,Peltastai (Hellenic Heavy Skirmishers),PELT,47,120,39.32,64.4
+2654,Qasatim Numidim (Numidian Archers),QASA,50,97,39.32,64.4
+2661,Merkabim Garamantim(Garamantine Chariots),GARC,0,25,3.722222222,25.77777778
+2663,Machimoi (Native Egyptian Infantry),MACH,26,18,3.722222222,25.77777778
+2664,Machimoi (Native Egyptian Infantry),MACH,9,85,3.722222222,25.77777778
+2665,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,4,12,3.722222222,25.77777778
+2666,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,9,78,3.722222222,25.77777778
+2667,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,3,67,3.722222222,25.77777778
+2671,Dorkim Shardanim (Sardinian Infantry),SARD,5,78,3.722222222,25.77777778
+2673,Dorkim Shardanim (Sardinian Infantry),SARD,2,15,3.722222222,25.77777778
+2678,Brigantinoi (Celtiberian Champions),BRIG,23,91,11.3125,36.75
+2679,Brigantinoi (Celtiberian Champions),BRIG,4,53,11.3125,36.75
+2680,Brigantinoi (Celtiberian Champions),BRIG,1,23,11.3125,36.75
+2684,Cohors Reformata (Post Marian Legionary Cohort),COHO,2,36,11.3125,36.75
+2686,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,25,35,11.3125,36.75
+2687,Gaesamica (Javelineers),GAES,24,15,11.3125,36.75
+2688,Gaesamica (Javelineers),GAES,3,13,11.3125,36.75
+2689,Gaesamica (Javelineers),GAES,28,41,11.3125,36.75
+2693,Mezugenoi (Celtiberian Swordsmen),MEZU,6,56,11.3125,36.75
+2694,Lugoae (Celtic Levy Spearmen),LUGO,85,78,77.5,38.66666667
+2696,Vigiles (Town Watch),VIGI,69,41,77.5,38.66666667
+2697,Vigiles (Town Watch),VIGI,73,41,77.5,38.66666667
+2698,Vigiles (Town Watch),VIGI,120,6,77.5,38.66666667
+2699,Vigiles (Town Watch),VIGI,96,14,77.5,38.66666667
+2700,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,30,21,7.388888889,7.833333333
+2703,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,30,19,7.388888889,7.833333333
+2704,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,10,10,7.388888889,7.833333333
+2705,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,23,6,7.388888889,7.833333333
+2712,Mistophoros Strategos (Hellenistic Mercenary General),MIST,5,44,7.388888889,7.833333333
+2716,Qala'im 'Arabim (Arabian Slingers),QALA,9,6,7.388888889,7.833333333
+2720,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,45,71,54.925,50.3
+2722,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,44,95,54.925,50.3
+2723,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,37,40,54.925,50.3
+2724,Cohors Reformata (Post Marian Legionary Cohort),COHO,88,38,54.925,50.3
+2725,Cohors Reformata (Post Marian Legionary Cohort),COHO,80,122,54.925,50.3
+2726,Cohors Reformata (Post Marian Legionary Cohort),COHO,86,135,54.925,50.3
+2727,Cohors Reformata (Post Marian Legionary Cohort),COHO,64,150,54.925,50.3
+2728,Cohors Reformata (Post Marian Legionary Cohort),COHO,76,113,54.925,50.3
+2729,Cohors Reformata (Post Marian Legionary Cohort),COHO,14,172,54.925,50.3
+2731,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,94,0,54.925,50.3
+2732,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,41,36,54.925,50.3
+2733,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,29,47,54.925,50.3
+2735,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,19,12,54.925,50.3
+2736,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,21,20,54.925,50.3
+2737,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,24,44,54.925,50.3
+2738,Hoplitai (Greek ClassIcal Hoplites),HOPL,23,0,54.925,50.3
+2739,Hoplitai (Greek ClassIcal Hoplites),HOPL,43,47,54.925,50.3
+2740,Hoplitai (Greek ClassIcal Hoplites),HOPL,38,47,54.925,50.3
+2741,Hoplitai (Greek ClassIcal Hoplites),HOPL,69,48,54.925,50.3
+2744,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,120,42,54.925,50.3
+2745,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,87,106,54.925,50.3
+2747,Parasim Numidim (Numidian Cavalry),PARN,50,4,54.925,50.3
+2748,Peltastai (Hellenic Heavy Skirmishers),PELT,60,1,54.925,50.3
+2749,Peltastai (Hellenic Heavy Skirmishers),PELT,69,82,54.925,50.3
+2750,Peltastai (Hellenic Heavy Skirmishers),PELT,71,132,54.925,50.3
+2751,Pezoi Brettioi (Bruttlan Infantry),PEZO,65,47,54.925,50.3
+2752,Qasatim Numidim (Numidian Archers),QASA,54,1,54.925,50.3
+2753,Qasatim Numidim (Numidian Archers),QASA,61,3,54.925,50.3
+2754,Qasatim Numidim (Numidian Archers),QASA,69,2,54.925,50.3
+2762,Hoplital Haplol (Greek Levy Hoplites),HOPH,66,46,41.27272727,68.45454545
+2763,Hoplital Haplol (Greek Levy Hoplites),HOPH,41,33,41.27272727,68.45454545
+2764,Hoplital Haplol (Greek Levy Hoplites),HOPH,48,86,41.27272727,68.45454545
+2766,Mistophoros Strategos (Hellenistic Mercenary General),MIST,6,34,41.27272727,68.45454545
+2767,Peltastai (Hellenic Heavy Skirmishers),PELT,0,16,41.27272727,68.45454545
+2775,Cohors Reformata (Post Marian Legionary Cohort),COHO,13,108,7.586206897,7.24137931
+2776,Cohors Reformata (Post Marian Legionary Cohort),COHO,12,6,7.586206897,7.24137931
+2781,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,12,11,7.586206897,7.24137931
+2787,Hoplital Haplol (Greek Levy Hoplites),HOPH,18,0,7.586206897,7.24137931
+2793,Peltastai (Hellenic Heavy Skirmishers),PELT,25,6,7.586206897,7.24137931
+2794,Pezoi Brettioi (Bruttlan Infantry),PEZO,30,12,7.586206897,7.24137931
+2795,Qasatim Numidim (Numidian Archers),QASA,24,18,7.586206897,7.24137931
+2800,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,9,27,14.52173913,21.17391304
+2802,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,1,10,14.52173913,21.17391304
+2803,Cohors Reformata (Post Marian Legionary Cohort),COHO,4,29,14.52173913,21.17391304
+2804,Cohors Reformata (Post Marian Legionary Cohort),COHO,18,55,14.52173913,21.17391304
+2805,Cohors Reformata (Post Marian Legionary Cohort),COHO,9,10,14.52173913,21.17391304
+2808,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,3,24,14.52173913,21.17391304
+2809,Hoplitai (Greek ClassIcal Hoplites),HOPL,35,52,14.52173913,21.17391304
+2810,Hoplitai (Greek ClassIcal Hoplites),HOPL,13,11,14.52173913,21.17391304
+2811,Hoplitai (Greek ClassIcal Hoplites),HOPL,20,16,14.52173913,21.17391304
+2812,Hoplitai (Greek ClassIcal Hoplites),HOPL,25,5,14.52173913,21.17391304
+2816,Mistophoros Strategos (Hellenistic Mercenary General),MIST,22,108,14.52173913,21.17391304
+2817,Peltastai (Hellenic Heavy Skirmishers),PELT,14,7,14.52173913,21.17391304
+2818,Peltastai (Hellenic Heavy Skirmishers),PELT,14,49,14.52173913,21.17391304
+2819,Pezoi Brettioi (Bruttlan Infantry),PEZO,4,9,14.52173913,21.17391304
+2821,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,11,41,35.71428571,33.85714286
+2824,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,17,14,35.71428571,33.85714286
+2825,Gaesamica (Javelineers),GAES,4,27,35.71428571,33.85714286
+2826,Mezugenoi (Celtiberian Swordsmen),MEZU,0,22,35.71428571,33.85714286
+2827,Mezugenoi (Celtiberian Swordsmen),MEZU,5,78,35.71428571,33.85714286
+2829,Brigantinoi (Celtiberian Champions),BRIG,40,64,32.46875,35.53125
+2830,Brigantinoi (Celtiberian Champions),BRIG,0,23,32.46875,35.53125
+2831,Brigantinoi (Celtiberian Champions),BRIG,28,80,32.46875,35.53125
+2832,Brigantinoi (Celtiberian Champions),BRIG,18,90,32.46875,35.53125
+2833,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,5,7,32.46875,35.53125
+2836,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,76,97,32.46875,35.53125
+2837,Cohors Reformata (Post Marian Legionary Cohort),COHO,63,67,32.46875,35.53125
+2838,Cohors Reformata (Post Marian Legionary Cohort),COHO,76,27,32.46875,35.53125
+2841,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,22,17,32.46875,35.53125
+2844,Gaesamica (Javelineers),GAES,12,1,32.46875,35.53125
+2845,Hoplitai (Greek ClassIcal Hoplites),HOPL,24,42,32.46875,35.53125
+2846,Hoplitai (Greek ClassIcal Hoplites),HOPL,66,50,32.46875,35.53125
+2847,Hoplitai (Greek ClassIcal Hoplites),HOPL,35,45,32.46875,35.53125
+2848,Mezugenoi (Celtiberian Swordsmen),MEZU,2,15,32.46875,35.53125
+2849,Mezugenoi (Celtiberian Swordsmen),MEZU,57,34,32.46875,35.53125
+2852,Mistophoros Strategos (Hellenistic Mercenary General),MIST,50,72,32.46875,35.53125
+2853,Mistophoros Strategos (Hellenistic Mercenary General),MIST,53,27,32.46875,35.53125
+2854,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,10,12,32.46875,35.53125
+2855,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,12,83,32.46875,35.53125
+2856,Pantodapoi (Hellenic Native Spearmen),PANT,95,16,32.46875,35.53125
+2858,Dorkim Shardanim (Sardinian Infantry),SARD,8,26,32.46875,35.53125
+2859,Dorkim Shardanim (Sardinian Infantry),SARD,16,7,32.46875,35.53125
+2860,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,37,18,59.66666667,33.33333333
+2861,Hoplital Haplol (Greek Levy Hoplites),HOPH,71,53,59.66666667,33.33333333
+2862,Hoplital Haplol (Greek Levy Hoplites),HOPH,71,29,59.66666667,33.33333333
+2863,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,33,15,44.33333333,12.2
+2866,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,81,7,44.33333333,12.2
+2867,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,92,10,44.33333333,12.2
+2868,Machimoi (Native Egyptian Infantry),MACH,55,12,44.33333333,12.2
+2869,Machimoi (Native Egyptian Infantry),MACH,48,5,44.33333333,12.2
+2870,Mistophoros Strategos (Hellenistic Mercenary General),MIST,47,4,44.33333333,12.2
+2871,Peltastai (Hellenic Heavy Skirmishers),PELT,37,13,44.33333333,12.2
+2872,Peltastai (Hellenic Heavy Skirmishers),PELT,38,32,44.33333333,12.2
+2874,Qala'im 'Arabim (Arabian Slingers),QALA,0,19,44.33333333,12.2
+2876,Qala'im 'Arabim (Arabian Slingers),QALA,34,7,44.33333333,12.2
+2877,Qala'im 'Arabim (Arabian Slingers),QALA,50,3,44.33333333,12.2
+2886,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,43,28,9.368421053,10.68421053
+2887,Hoplital Haplol (Greek Levy Hoplites),HOPH,18,11,9.368421053,10.68421053
+2891,Mezugenoi (Celtiberian Swordsmen),MEZU,13,90,9.368421053,10.68421053
+2895,Pantodapoi (Hellenic Native Spearmen),PANT,30,0,9.368421053,10.68421053
+2897,Unlocalized Arabic General,ARAB,12,109,18.43478261,17.47826087
+2899,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,16,17,18.43478261,17.47826087
+2902,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,3,21,18.43478261,17.47826087
+2903,Machimoi (Native Egyptian Infantry),MACH,7,9,18.43478261,17.47826087
+2904,Machimoi (Native Egyptian Infantry),MACH,21,15,18.43478261,17.47826087
+2911,Mistophoros Strategos (Hellenistic Mercenary General),MIST,23,85,18.43478261,17.47826087
+2912,Pantodapoi (Hellenic Native Spearmen),PANT,62,15,18.43478261,17.47826087
+2913,Pantodapoi (Hellenic Native Spearmen),PANT,5,7,18.43478261,17.47826087
+2914,Peltastai (Hellenic Heavy Skirmishers),PELT,9,7,18.43478261,17.47826087
+2916,Peltastai (Hellenic Heavy Skirmishers),PELT,47,6,18.43478261,17.47826087
+2917,Qala'im 'Arabim (Arabian Slingers),QALA,0,23,18.43478261,17.47826087
+2919,Qala'im 'Arabim (Arabian Slingers),QALA,1,12,18.43478261,17.47826087
+2921,Brigantinoi (Celtiberian Champions),BRIG,0,17,5.35,19.10526316
+2922,Brigantinoi (Celtiberian Champions),BRIG,0,45,5.35,19.10526316
+2923,Brigantinoi (Celtiberian Champions),BRIG,0,28,5.35,19.10526316
+2924,Brigantinoi (Celtiberian Champions),BRIG,2,23,5.35,19.10526316
+2928,Cohors Reformata (Post Marian Legionary Cohort),COHO,7,19,5.35,19.10526316
+2929,Cohors Reformata (Post Marian Legionary Cohort),COHO,24,12,5.35,19.10526316
+2932,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,19,17,5.35,19.10526316
+2935,Gaesamica (Javelineers),GAES,1,12,5.35,19.10526316
+2937,Mezugenoi (Celtiberian Swordsmen),MEZU,0,37,5.35,19.10526316
+2938,Mezugenoi (Celtiberian Swordsmen),MEZU,0,21,5.35,19.10526316
+2940,Brigantinoi (Celtiberian Champions),BRIG,9,22,14.25,28.05
+2941,Brigantinoi (Celtiberian Champions),BRIG,58,29,14.25,28.05
+2942,Brigantinoi (Celtiberian Champions),BRIG,10,76,14.25,28.05
+2943,Brigantinoi (Celtiberian Champions),BRIG,1,34,14.25,28.05
+2944,Brigantinoi (Celtiberian Champions),BRIG,3,89,14.25,28.05
+2945,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,21,29,14.25,28.05
+2949,Cohors Reformata (Post Marian Legionary Cohort),COHO,8,15,14.25,28.05
+2952,Gaesamica (Javelineers),GAES,1,17,14.25,28.05
+2954,Gaesamica (Javelineers),GAES,2,31,14.25,28.05
+2956,Mezugenoi (Celtiberian Swordsmen),MEZU,0,24,14.25,28.05
+2957,Mezugenoi (Celtiberian Swordsmen),MEZU,0,12,14.25,28.05
+2958,Mezugenoi (Celtiberian Swordsmen),MEZU,2,29,14.25,28.05
+2959,Mezugenoi (Celtiberian Swordsmen),MEZU,73,30,14.25,28.05
+2960,Antesignati (Post Marian Elite Legionary Light Infantry),ANTE,23,0,18.05555556,28.11111111
+2961,Celtae Vollorix (Celtic Lesser King),CELT,11,0,18.05555556,28.11111111
+2962,Celtae Vollorix (Celtic Lesser King),CELT,6,38,18.05555556,28.11111111
+2963,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,4,18,18.05555556,28.11111111
+2964,Cohors Reformata (Post Marian Legionary Cohort),COHO,27,60,18.05555556,28.11111111
+2969,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,25,47,18.05555556,28.11111111
+2973,Kluddacorii (Alpine Shortswordsmen),KLUD,28,14,18.05555556,28.11111111
+2974,Mori Gaesum (Helvetii Phalanx),MORI,21,151,18.05555556,28.11111111
+2975,Peltastai (Hellenic Heavy Skirmishers),PELT,12,25,18.05555556,28.11111111
+2976,Peltastai (Hellenic Heavy Skirmishers),PELT,14,20,18.05555556,28.11111111
+2977,Tekastos (RhaetJc Axemen),TEKA,14,92,18.05555556,28.11111111
+2978,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,46,77,29.46666667,87.8
+2979,Cohors Reformata (Post Marian Legionary Cohort),COHO,50,9,29.46666667,87.8
+2983,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,7,19,29.46666667,87.8
+2985,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,4,177,29.46666667,87.8
+2986,Gaesamica (Javelineers),GAES,71,65,29.46666667,87.8
+2988,Mezugenoi (Celtiberian Swordsmen),MEZU,2,38,29.46666667,87.8
+2989,Mezugenoi (Celtiberian Swordsmen),MEZU,91,11,29.46666667,87.8
+2990,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,83,254,29.46666667,87.8
+2991,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,6,253,29.46666667,87.8
+2992,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,7,83,29.46666667,87.8
+2997,Cantabrae Eponereidam (Cantabrian Light Cavalry),CANT,0,15,41.24,53.28
+2998,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,59,251,41.24,53.28
+2999,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,80,143,41.24,53.28
+3000,Cohors Evocata (Post Marian Reenlisted Veterans Consort),COHE,63,179,41.24,53.28
+3001,Cohors Reformata (Post Marian Legionary Cohort),COHO,101,93,41.24,53.28
+3004,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,54,31,41.24,53.28
+3006,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,100,10,41.24,53.28
+3007,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,60,11,41.24,53.28
+3008,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,22,6,41.24,53.28
+3010,Cohors Validum Auxiliarium (Imperial Heavy Auxiliary Infantry Cohort),COHV,76,111,41.24,53.28
+3013,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,33,73,41.24,53.28
+3014,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,23,48,41.24,53.28
+3015,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,32,78,41.24,53.28
+3016,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,26,45,41.24,53.28
+3017,Gaesamica (Javelineers),GAES,18,3,41.24,53.28
+3020,Hoplitai (Greek ClassIcal Hoplites),HOPL,82,74,41.24,53.28
+3021,Hoplitai (Greek ClassIcal Hoplites),HOPL,65,176,41.24,53.28
+3023,Mezugenoi (Celtiberian Swordsmen),MEZU,1,33,41.24,53.28
+3025,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,60,330,41.24,53.28
+3026,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,64,95,41.24,53.28
+3027,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,18,71,41.24,53.28
+3028,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,52,30,41.24,53.28
+3029,Peltastai (Hellenic Heavy Skirmishers),PELT,80,0,41.24,53.28
+3031,Peltastai (Hellenic Heavy Skirmishers),PELT,80,91,41.24,53.28
+3032,Peltastai (Hellenic Heavy Skirmishers),PELT,75,84,41.24,53.28
+3033,Principes (Camillan Heavy Infantry Maniple),PRIN,28,23,41.24,53.28
+3034,Qala'im 'Arabim (Arabian Slingers),QALA,34,31,41.24,53.28
+3047,Unlocalized Arabic General,ARAB,7,8,17.07692308,27.30769231
+3048,Unlocalized Arabic General,ARAB,14,45,17.07692308,27.30769231
+3049,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,3,22,17.07692308,27.30769231
+3052,Qala'im 'Arabim (Arabian Slingers),QALA,32,25,17.07692308,27.30769231
+3053,Qala'im 'Arabim (Arabian Slingers),QALA,10,11,17.07692308,27.30769231
+3054,Qala'im 'Arabim (Arabian Slingers),QALA,35,36,17.07692308,27.30769231
+3058,Unlocalized Arabic General,ARAB,34,216,17.07692308,27.30769231
+3060,Machimoi (Native Egyptian Infantry),MACH,49,119,17.07692308,27.30769231
+3061,Machimoi (Native Egyptian Infantry),MACH,24,13,17.07692308,27.30769231
+3062,Mistophoros Strategos (Hellenistic Mercenary General),MIST,34,272,17.07692308,27.30769231
+3063,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,48,220,17.07692308,27.30769231
+3064,Peltastai (Hellenic Heavy Skirmishers),PELT,9,11,17.07692308,27.30769231
+3070,Unlocalized Arabic General,ARAB,9,61,22.23076923,23.23076923
+3072,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,5,14,22.23076923,23.23076923
+3073,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,11,20,22.23076923,23.23076923
+3074,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,2,12,22.23076923,23.23076923
+3075,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,12,31,22.23076923,23.23076923
+3076,Bnei Shevet 'Arabim (Arabian Light Infantry),BNEI,5,18,22.23076923,23.23076923
+3079,Eqvites Consvlares (Republican Consular Guard Cavalry),EQVI,17,26,22.23076923,23.23076923
+3080,Hoplitai (Greek ClassIcal Hoplites),HOPL,17,34,22.23076923,23.23076923
+3081,Hoplitai (Greek ClassIcal Hoplites),HOPL,39,3,22.23076923,23.23076923
+3082,Hoplitai (Greek ClassIcal Hoplites),HOPL,12,7,22.23076923,23.23076923
+3083,Hoplitai (Greek ClassIcal Hoplites),HOPL,22,22,22.23076923,23.23076923
+3084,Hoplitai (Greek ClassIcal Hoplites),HOPL,54,12,22.23076923,23.23076923
+3085,Iberi Milites (Iberian Light Spearman),IBER,97,4,22.23076923,23.23076923
+3086,Iberi Milites (Iberian Light Spearman),IBER,60,2,22.23076923,23.23076923
+3092,Mistophoros Strategos (Hellenistic Mercenary General),MIST,52,79,22.23076923,23.23076923
+3093,Mistophoros Strategos (Hellenistic Mercenary General),MIST,63,106,22.23076923,23.23076923
+3094,Mistophoros Strategos (Hellenistic Mercenary General),MIST,45,49,22.23076923,23.23076923
+3095,Noshei-Romah Mashliyim (Numidian Infantry),NOSH,8,18,22.23076923,23.23076923
+3096,Pantodapoi (Hellenic Native Spearmen),PANT,3,41,22.23076923,23.23076923
+3097,Peltastai (Hellenic Heavy Skirmishers),PELT,1,44,22.23076923,23.23076923
+3098,Peltastai (Hellenic Heavy Skirmishers),PELT,4,23,22.23076923,23.23076923
+3099,Peltastai (Hellenic Heavy Skirmishers),PELT,18,47,22.23076923,23.23076923
+3100,Qala'im 'Arabim (Arabian Slingers),QALA,13,21,22.23076923,23.23076923
+3101,Qala'im 'Arabim (Arabian Slingers),QALA,0,12,22.23076923,23.23076923
+3102,Qasatim Numidim (Numidian Archers),QASA,5,8,22.23076923,23.23076923
+3103,Dorkim Shardanim (Sardinian Infantry),SARD,6,19,22.23076923,23.23076923
