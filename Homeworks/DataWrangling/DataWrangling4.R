@@ -26,7 +26,6 @@ rm(list = ls())
 
 MBTI <- read.csv("lib/mbti_1.csv")
 
-
 observed <- table(MBTI$type)
 # ENFJ ENFP ENTJ ENTP ESFJ ESFP ESTJ ESTP INFJ INFP INTJ INTP ISFJ ISFP ISTJ ISTP
 #  190  675  231  685   42   48   39   89 1470 1832 1091 1304  166  271  205  337
