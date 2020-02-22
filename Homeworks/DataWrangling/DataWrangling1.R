@@ -7,7 +7,7 @@
 #
 # Extracted by myself from GSS: https://gssdataexplorer.norc.org/projects/73889/extracts/53449
 
-# setwd("Homeworks/Week1")
+# setwd("Homeworks/DataWrangling")
 gss <- read.csv("lib/GSSDataWrangling.csv")
 attach(gss)
 # WRKSLF    = R self-emp (1) or works for somebody (2)

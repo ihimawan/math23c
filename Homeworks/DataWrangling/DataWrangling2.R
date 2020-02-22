@@ -1,4 +1,4 @@
-# setwd("Homeworks/Week2")
+# setwd("Homeworks/DataWrangling")
 rm(list = ls()) # cleanup
 
 # Find  on  the  Internet  some  data  about  the  sport  of  your  choice.

@@ -20,7 +20,7 @@
 # For these 16 personality types, I think it is reasonable to hypothesize
 # that for all 16 personality types, they should be uniformly distributed.
 
-# setwd("Homeworks/Week3")
+# setwd("Homeworks/DataWrangling")
 # cleanup
 rm(list = ls())
 
