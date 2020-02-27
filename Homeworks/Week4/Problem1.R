@@ -17,25 +17,20 @@ Mu_4 <- integrate(function (x) (x-mu)^4 * dnorm(x, mu), -Inf, Inf); Mu_4
 kurtosis <- Mu_4$value / Var$value^2 - 3; kurtosis
 # 1.625367e-13, which is very close to zero
 
-# B) find variance and kurtosis for uniform distribution ???
-# JUST GUESSING TODO NEED TO CHECK
+# B) find variance and kurtosis for uniform distribution
 start <- -1
 end <- 1
 mu <- 1/2
 
 # find variance
-
-y <- function(x) dunif(mu, -1,1)
-# regular integration
-Var <- integrate(Vectorize(y), start, end); Var
-
-Var <- integrate(function (x) (x-mu)^2 * dunif(mu, start, end), start, end); Var
-# 0.5833333 with absolute error < 6.5e-15
+#
+Var <- integrate(function (x) (x-mu)^2 * dunif(x), start, end); Var
+# 0.08333333 with absolute error < 9.2e-16
 
 # find mu_4
-Mu_4 <- integrate(function (x) (x-mu)^4 * dnorm(x, mu), -Inf, Inf); Mu_4
-# 3 with absolute error < 4.2e-06
+Mu_4 <- integrate(function (x) (x-mu)^4 * dunif(x), start, end); Mu_4
+# 0.0125 with absolute error < 1.4e-16
 
 # find kurtosis
-kurtosis <- Mu_4$value / Var$value^2 - 3; kurtosis
-# 5.816327
+kurtosis <- Mu_4$value / (Var$value)^2 - 3; kurtosis
+# Kurtosis is -1.2
