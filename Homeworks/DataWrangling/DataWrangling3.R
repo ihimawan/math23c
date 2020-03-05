@@ -22,7 +22,7 @@ MarriageAge <- subset(MarriageAge,
 head(MarriageAge)
 # obtained clean data!
 
-# PART 1: Testing difference between number of marriage age between those who are divorced and not divorced
+# Testing relationship between marriage age between those who are divorced and not divorced
 DivorcedAvgAge <- mean(as.numeric(MarriageAge$AgeWhenMarried[which(MarriageAge$DivorcedOrSeparated == "Yes")])) # 21.02222
 NotDivorcedAvgAge <- mean(as.numeric(MarriageAge$AgeWhenMarried[which(MarriageAge$DivorcedOrSeparated == "No")])) # 24.4125
 observed <- NotDivorcedAvgAge - DivorcedAvgAge; observed # Difference of 3.390278
