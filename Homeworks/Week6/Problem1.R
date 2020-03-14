@@ -2,8 +2,22 @@
 # cleanup
 rm(list=ls())
 
+# # installs
+# install.packages("MASS")
+# install.packages("combinat")
+#
+# # libraries
+# library("MASS")
+# library("combinat")
+
 # Find det for this matirx
-m <- cbind(c(1,1,0),c(1,1,2),c(1,0,1));m
+m <- matrix(c(1,4,5,3,-2,0,-1,2,3,1,2,1,0,2,1,0), nrow = 4)
+#      [,1] [,2] [,3] [,4]
+# [1,]    1   -2    3    0
+# [2,]    4    0    1    2
+# [3,]    5   -1    2    1
+# [4,]    3    2    1    0
+det(m) # 40 is the correct answer we can compare to
 
 # A) DEVELOPMENT BY FIRST COLUMN
 my.det1 <- function(A) {
@@ -14,7 +28,7 @@ my.det1 <- function(A) {
   }
   determ
 }
-my.det1(m) # 2
+my.det1(m) # 40! Correct!
 
 # B) SUM OVER PERMUTATIONS
 getSign <- function(perm) {
@@ -47,8 +61,30 @@ my.det2 <- function (matrix){
   sum(sgn.term)
 }
 
-my.det2(m) #2, same as above!
+my.det2(m) #40, same as above!
 
 # C) COLUMN REDUCTION
 
+m <- matrix(c(1,4,5,3,-2,0,-1,2,3,1,2,1,0,2,1,0), nrow = 4); m
+det <- 1
 
+# pivot first col
+m[,2] <- m[,2] + 2*m[,1]
+m[,3] <- m[,3] + (-3)*m[,1]
+# pivot second col
+m[,2] <- 1/8 * m[,2]; det <- det * 8
+m[,3] <- m[,3] + 11 * m[,2]
+m[,4] <- m[,4] + -2 * m[,2]
+# pivot 3rd col
+m[,3] <- -(1/0.625) * m[,3]; det <- det * (-0.625)
+m[,4] <- m[,4] + (1.25) * m[,3]
+# pivot 4th col
+m[,4] <- -1/8 * m[,4]; det<-det * (-8); m
+# Finally we get a triangular matrix
+#      [,1]  [,2] [,3] [,4]
+# [1,]    1 0.000  0.0    0
+# [2,]    4 1.000  0.0    0
+# [3,]    5 1.125  1.0    0
+# [4,]    3 1.000 -4.8    1
+
+det <- det * m[1,1] * m[2,2] * m[3,3] * m[4,4]; det #40 yay!
