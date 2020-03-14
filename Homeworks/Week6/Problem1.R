@@ -1,14 +1,12 @@
-# setwd("Homework/Week6")
+# setwd("Homeworks/Week6")
 # cleanup
 rm(list=ls())
 
 # # installs
-# install.packages("MASS")
 # install.packages("combinat")
 #
-# # libraries
-# library("MASS")
-# library("combinat")
+# libraries
+library("combinat")
 
 # Find det for this matirx
 m <- matrix(c(1,4,5,3,-2,0,-1,2,3,1,2,1,0,2,1,0), nrow = 4)
