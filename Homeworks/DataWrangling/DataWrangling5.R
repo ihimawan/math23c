@@ -25,39 +25,64 @@ eFrequencies <- read.csv("lib/numberOfE.csv"); head(eFrequencies)
 # 5 4000-4999       132
 # 6 5000-5999       123
 
-frequency <- eFrequencies$Frequency;
 
-barplot(table(frequency))
+# plot histogram of frequencies. Looks like a reasonable poisson distribution.
+frequency <- eFrequencies$Frequency;
+hist(frequency, breaks = "FD")
+breaks <- hist(frequency, breaks = "FD")$breaks
 
 # if this is a poisson distribution, find the mean
 lambda <- mean(frequency); lambda # 125.9347
 
-observed <- table(frequency)
-# seeing many tiny counts. going to try to clump them into buckets of:
-# x <= 113, 116, 117, ..., 140 <= x
-
-observed[15] <- sum(observed[0:15])
-observed <- observed[-(0:14)]
-observed[28] <- sum(observed[28:length(observed)])
-observed <- observed[-(29: length(observed))]; observed
-# 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140
-#  38   6   7  15  10   4  16  11  16  11   8   9   9  14  10  14  14  14  11  12   7  11   6  9   8  10   5  32
+# seeing many tiny counts. going to try to clump them into buckets this way:
+breaks <- hist(frequency, breaks = "FD", probability = TRUE)$breaks; breaks
+#  [1]  80  85  90  95 100 105 110 115 120 125 130 135 140 145 150 155 160
+observed <- hist(frequency, breaks = "FD", probability = TRUE)$count;
+# [1]  1  0  1  2  5 15 27 56 53 66 47 35 11 13  4  1
 #
-# Looking good!
+# Looking better.. but still has small values. Going to clump first 4 buckets (x<=105)
+# together as well as last 2 buckets (150 < x)
+observed[5] <- sum(observed[1:5])
+observed[15] <- sum(observed[15:16])
+observed <- observed[-(1:4)]
+observed <- observed[-12]; observed
+#  [1]  9 15 27 56 53 66 47 35 11 13  5
+# Looking more reasonable!
 
-# c(dpois(0:13, lambda), ppois(13, lambda, lower.tail = FALSE))
+# Now just need to create the EXPTECTED BUCKETS
+# The bins start from x<=105,105 < x <= 110, .... , 150 < x
+N <- length(frequency); N # 338
+expected <- N * c(sum(dpois(0:105, lambda)),
+              sum(dpois(106:110, lambda)),
+              sum(dpois(111:115, lambda)),
+              sum(dpois(116:120, lambda)),
+              sum(dpois(121:125, lambda)),
+              sum(dpois(126:130, lambda)),
+              sum(dpois(131:135, lambda)),
+              sum(dpois(136:140, lambda)),
+              sum(dpois(141:145, lambda)),
+              sum(dpois(146:150, lambda)),
+              ppois(150, lambda, lower.tail = FALSE))
 
-N <- nrow(eFrequencies)
-expected <- c(sum(dpois(0:112, lambda)), dpois(113:140, lambda), ppois(140, lambda, lower.tail = FALSE))
-sum(expected) # must sum up to 1
+# sanity check
+sum(expected) # indeed equals to N = 338. Yay!
 
-barplot(expected)
-barplot(observed)
+# put barplot side by side
+barplot(rbind(observed, expected), beside = TRUE, col = c("red", "blue"))
+# matches really well.
 
+# use chisquared test
 ChiSq <-function(Obs,Exp){
   sum((Obs-Exp)^2/Exp)
 }
 
-chisq <- sum((observed-expected)^2/expected); chisq
-pValue <- pchisq(chisq, df = 14, lower.tail = FALSE); pValue
-chisq.test(observed)
+n <- length(observed)
+# degrees of freedom is n-2 since we expected total equal to the actual total
+# and computed lambda from data
+chisq <- sum((observed-expected)^2/expected); chisq # 9.393988
+pValue <- pchisq(chisq, df = n-2, lower.tail = FALSE); pValue # 0.4017285
+# this means that there is 41.58% chance that this result happens as a
+# poisson distribution. With this value, there is not enough evidence against the
+# null hypothesis that our data did come from a poisson distribution.
+#
+# In fact the sample is consistent as a poisson distribution!
