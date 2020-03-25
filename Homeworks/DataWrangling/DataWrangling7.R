@@ -57,15 +57,18 @@ Exp <- rep(N/10,10); Exp     #expected means per bin
 #Count how many means are in each bin
 binmeans <- numeric(10)
 for (i in 1:10)  binmeans[i] <- sum((xbars >= dec[i]) & (xbars <= dec[i+1]) ); binmeans
+#  [1] 200 191 210 201 208 206 201 184 195 204
 
 #Test for uniformity using chi square.
-chisq <- sum((binmeans - Exp)^2/Exp); chisq #  12.46
+chisq <- sum((binmeans - Exp)^2/Exp); chisq #  2.9
 #We estimated two parameters, which costs two degrees of freedom
-pValue <- pchisq(chisq, df = 7, lower.tail = FALSE); pValue # 0.08641063; # which is even larger than before
-# Using 0.05 significance level, Since p-value 0.08641063 is larger than 0.05 significance level,
+pValue <- pchisq(chisq, df = 7, lower.tail = FALSE); pValue # 0.8940963; # which is even larger than before
+# Using 0.05 significance level, Since p-value 0.8940963 is much larger than 0.05 significance level,
 # we do not reject the null hypothesis that the normal distribution was a good model for the dataset.
 
 #This time the calculated chi-square value could easily have arisen by chance
 #This result illustrates the central-limit theorem:
 #Start with any distribution of finite variance and construct the mean of many samples
-#The sample means will have a distribution that is approximately normal
+#The sample means will have a distribution that is approximately normal.
+#
+# In this case the sample means is even more normal than the actual data.
