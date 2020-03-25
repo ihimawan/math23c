@@ -15,3 +15,7 @@
 #
 # 5.  Find some aspect of your datasets than can be modeled by a continuous distribution,
 # and support your model with a histogram overlaid with a curveplus a chi-square test.
+
+# https://www.kaggle.com/brendaso/2019-coronavirus-dataset-01212020-01262020
+# https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset
+

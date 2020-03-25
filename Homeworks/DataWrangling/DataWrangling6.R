@@ -5,3 +5,6 @@
 # to compute the expected number of counts in various bins,  and compare with the observed
 # number of counts.  The prototype is the analysis for the exponential distribution in script
 # 4D, but there the data were preassigned to bins.
+
+# setwd("Homeworks/DataWrangling")
+rm(list = ls())
