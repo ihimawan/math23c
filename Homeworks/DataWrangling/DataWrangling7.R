@@ -4,7 +4,7 @@
 # by  using  deciles.   Then  repeat,  using  the  mean for samples of modest size.
 # The prototype is the analysis of babies’ birthweights in script 5D.
 
-# Data from: https://www.kaggle.com/unsdsn/world-happiness
+# Data of World Happiness from: https://www.kaggle.com/unsdsn/world-happiness
 
 # setwd("Homeworks/DataWrangling")
 rm(list = ls())
