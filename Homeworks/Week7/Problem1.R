@@ -75,12 +75,12 @@ pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # around 9.999e-05
 # 4.  Find some aspect of your datasets than can be modeled by a discrete dis-tribution,
 # and support your model with histograms and a chi-square test.
 #
-# Looking at the number of COVID cases per day, it doesn't look like any particular discrete distribution.
-# Maybe a Poisson distribution?
+# Looking at the number of COVID cases per day, maybe a Poisson distribution?
 
 # we can just use the same `frequency` from the scatterplot
 lambda <- mean(frequency); lambda # if this were a poisson distribution, the mean would be 25.2093
-hist(frequency, breaks = "FD")  # looks reasonably like a poisson distribution! (reference for that guess is the orange dots: https://en.wikipedia.org/wiki/Poisson_distribution#/media/File:Poisson_pmf.svg)
+hist(frequency, breaks = "FD")  # looks reasonably like a poisson distribution!
+# (reference for that guess is the orange dots in this picture: https://en.wikipedia.org/wiki/Poisson_distribution#/media/File:Poisson_pmf.svg)
 # With that, let's use the following as my hypothesis.
 # (*)Hypothesis: The number of confirmed patients overtime each day is modeled by a Poisson distribution
 
