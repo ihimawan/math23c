@@ -80,7 +80,7 @@ pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # around 9.999e-05
 
 # we can just use the same `frequency` from the scatterplot
 lambda <- mean(frequency); lambda # if this were a poisson distribution, the mean would be 25.2093
-hist(frequency, breaks = "FD")  # looks reasonably like a poisson distribution!
+hist(frequency, breaks = "FD")  # looks reasonably like a poisson distribution! (reference for that guess is the orange dots: https://en.wikipedia.org/wiki/Poisson_distribution#/media/File:Poisson_pmf.svg)
 # With that, let's use the following as my hypothesis.
 # (*)Hypothesis: The number of confirmed patients overtime each day is modeled by a Poisson distribution
 
@@ -120,9 +120,8 @@ n <- length(observed)
 # and computed lambda from data
 chisq <- sum((observed-expected)^2/expected); chisq # 141660.6
 pValue <- pchisq(chisq, df = n-2, lower.tail = FALSE); pValue # 0
-# this means that there is 0% chance that this result happens as a
-# poisson distribution. With this value, we reject
-# null hypothesis that our data did come from a poisson distribution.
+# this means that there is 0% chance that this result happens as a poisson distribution. With this value, we reject
+# null hypothesis that our data did come from a poisson distribution. :(
 
 # 5.  Find some aspect of your datasets than can be modeled by a continuous distribution,
 # and support your model with a histogram overlaid with a curve plus a chi-square test.
