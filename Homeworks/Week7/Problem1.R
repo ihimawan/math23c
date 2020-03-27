@@ -11,7 +11,7 @@ rm(list=ls())
 # that can be used by other members of the class.
 #
 # Data source: Novel Corona Virus 2019 Dataset
-# Day level information on covid-19 affected caseshappyScorewww.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset
+# Day level information on covid-19 affected cases: www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset
 COVID <- read.csv("lib/COVID19_line_list_data.csv");
 
 # 2.  Using your datasets, make a boxplot show interesting relationships.
@@ -34,8 +34,8 @@ observed <- DiedAvgAge - RecoveredAvgAge # 26.37414 # The difference is up to 26
 
 # 2. Using your datasets, make a scatter plot that show interesting relationships.
 #
-# Looking at the data, I want to see if the more COVID cases as the date increases
-# first clean up the data, because the date formatting is not uniform
+# Looking at the data, I want to see if the more COVID cases as the date increases.
+# First, clean up the data, because the date formatting is not uniform
 COVID.confirmed <- subset(COVID, reporting.date != "NA", select=reporting.date)
 safe.ifelse <- function(cond, yes, no){ class.y <- class(yes)
                                   X <- ifelse(cond, yes, no)
@@ -63,7 +63,7 @@ for (i in 1:N){
 
 mean(diffs) # 0.03646172
 hist(diffs, breaks = "FD", xlim = c(-15,27)) # looking good
-abline(v = observed, col = "red") # way on the right
+abline(v = observed, col = "red") # way so far on the right
 pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # around 9.999e-05
 # the p-value says there is only 9.999e-05 chance that the
 # observed discrepancy is by chance. If we are using the significance
