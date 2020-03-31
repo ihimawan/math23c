@@ -17,17 +17,17 @@ AdmissionPredict <- read.csv("lib/Admission_Predict.csv")
 
 # let's create the histogram of admission probability
 hist(AdmissionPredict$Chance.of.Admit)
-# looks like a beta distribution. With this, my hypothesis is that the chance of admission fits a gamma distriibution.
+# looks like a beta distribution. With this, my hypothesis is that the chance of admission fits a beta distriibution.
+lambda <- mean(AdmissionPredict$Chance.of.Admit); lambda # 0.72435
+curve(dbeta(x,10,1))
+# https://rpubs.com/blakeobeans/fitdistrplus
 
-breaks <- hist(AdmissionPredict$Chance.of.Admit)$breaks
-#  [1] 0.30 0.35 0.40 0.45 0.50 0.55 0.60 0.65 0.70 0.75 0.80 0.85 0.90 0.95 1.00
-observed <- hist(AdmissionPredict$Chance.of.Admit)$count
-#  [1]  2  5  9 19 15 24 48 43 63 55 34 34 38 11
-# because of the low amount on bin 1, I will combine bin 1 and bin 2
-observed[2] <- sum(observed[1:2])
-observed <- observed[-1]
-#  [1]  7  9 19 15 24 48 43 63 55 34 34 38 11
-# Now the bins are x<0.4, 0.45-0.50, ... 0.95<x
+# using ten bins
+bins <- qgamma(0.1 * (0:10),  shape = r, rate = lambda)
+#[1] 0.00000000 0.04322688 0.08320508 0.12585916 0.17329786 0.22791820 0.29336562 0.37624613
+# [9] 0.49119244 0.68457743        Inf
+bincode <- cut(Service$Times, bins, labels = FALSE); head(bincode)
+# 10 10  9 10  7  9 (looks reasonable)
 
 nBins <- length(observed) # 13
 pBin1 <- integrate(dexp, 0, 0.25)$value; 100*pBin1
