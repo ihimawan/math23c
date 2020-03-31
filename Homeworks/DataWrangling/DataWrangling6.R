@@ -5,6 +5,10 @@
 # to compute the expected number of counts in various bins,  and compare with the observed
 # number of counts.  The prototype is the analysis for the exponential distribution in script
 # 4D, but there the data were preassigned to bins.
+#
+# Suicide Rates Overview 1985 to 2016
+# https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016
 
 # setwd("Homeworks/DataWrangling")
 rm(list = ls())
+
