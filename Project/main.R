@@ -52,8 +52,8 @@ hist(SuicideAge$age, main = "Age of those who attempted suicide",
     ylab = "number of people in this age that attempted suicide",
     col = "cyan")
 
-# the histogram above looks a lot like a beta distribution...
-######### [To ALEX: I'm having problems trying to find the shape parameter from the data :/]
+# the histogram above looks a lot like a beta/gamma distribution...
+######### [To ALEK: I'm having problems trying to find the shape parameter from the data :/]
 
 # Contigency Table: Seeing if being depressed has any correlation to suicide attempt
 observed <- table(ForeverAlone$depressed, ForeverAlone$attempt_suicide); observed
@@ -89,4 +89,4 @@ chisq.test(ForeverAlone$depressed, ForeverAlone$attempt_suicide, correct=FALSE)
 # With such a small p-value = 2.764e-06, we reject the null hypothesis that depression and suicide attempt are independent.
 # meaning there may be a correlation between those who are depressed and those who have attempted suicide.
 
-########## [To ALEX: is this enough "analysis for the contigency table"? Not sure what else is there to analyze besides the CHISQ test?]
+########## [To ALEK: is this enough "analysis for the contigency table"? Not sure what else is there to analyze besides the CHISQ test?]
