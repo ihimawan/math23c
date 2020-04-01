@@ -13,6 +13,10 @@
 # setwd("Homeworks/DataWrangling")
 rm(list = ls())
 
+# use fitdistrplus
+install.packages(fitdistrplus)
+library(fitdistrplus)
+
 AdmissionPredict <- read.csv("lib/Admission_Predict.csv")
 
 # let's create the histogram of admission probability
@@ -28,9 +32,3 @@ bins <- qgamma(0.1 * (0:10),  shape = r, rate = lambda)
 # [9] 0.49119244 0.68457743        Inf
 bincode <- cut(Service$Times, bins, labels = FALSE); head(bincode)
 # 10 10  9 10  7  9 (looks reasonable)
-
-nBins <- length(observed) # 13
-pBin1 <- integrate(dexp, 0, 0.25)$value; 100*pBin1
-pBin2 <- integrate(dexp, 0.25, 0.75)$value; 100*pBin2
-pBin3 <- integrate(dexp, 0.75, 1.25)$value; 100*pBin3
-pBin4 <- integrate(dexp, 1.25, Inf)$value; 100*pBin4
