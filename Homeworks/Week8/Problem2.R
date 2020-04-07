@@ -2,8 +2,11 @@
 # cleanup
 rm(list=ls())
 
+f <- function(x) dt(x,1)
+integrate(f, -Inf, Inf) # 1 with absolute error < 1.6e-10
+
 # Show that for 1 degree of freedom, attempting to calculate the variance
-# in R leads to a \probably divergent" integral. Use the formula from
+# in R leads to a "probably divergent" integral. Use the formula from
 # item 20 to show that R is correct.
 
 # For 1 degree of freedom, show that attempting to calculate the ex-
@@ -12,6 +15,9 @@ rm(list=ls())
 
 # 1. Do the integral from 0 to inf or from -inf to 0: it is "probably
 # divergent."
+integrate(f, -Inf, 0) # 1 with absolute error < 1.6e-10
+integrate(f, 0, Inf)
+
 
 # 2. Make a histogram of sample means for samples of size 1000 and
 # observe that the sample mean is not reliably close to zero.
