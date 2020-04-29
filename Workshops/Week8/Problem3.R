@@ -7,6 +7,7 @@ populationMean <- mean(BodyTemp$HeartRate)
 populationSd <- sd(BodyTemp$HeartRate)
 
 n <- 10
+N <- 10^4
 
 means <- numeric(N)
 stdSamplesT <- numeric(N)
