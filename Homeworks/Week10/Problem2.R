@@ -2,7 +2,7 @@
 # cleanup
 rm(list=ls())
 
-"The le CigCancer.csv contains data about cigarette sales and the incidence
+"The file CigCancer.csv contains data about cigarette sales and the incidence
 of various types of cancer in most of the states."
 
 "Center and scale the cancer data by the procedure described in Hub-

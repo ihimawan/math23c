@@ -12,8 +12,8 @@ plot using abline()."
 "Use summary() on the object returned by lm() and determine which of
 the reported R-squared values is equal to the square of the correlation."
 
-"Find the coecients of the regression line by using the Gram-Schmidt
+"Find the coeficients of the regression line by using the Gram-Schmidt
 approach."
 
-"Find the coecients of the regression line by using the projection ma-
+"Find the coeficients of the regression line by using the projection ma-
 trix approach."

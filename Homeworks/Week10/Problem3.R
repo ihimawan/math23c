@@ -6,7 +6,6 @@ rm(list=ls())
 Census data and kept just the numeric columns. The column \"RICH\" now
 has the value 1 to indicate income greater than $50K."
 
-
 "My modifed file, for use in this problem, is in census.csv on the Web site."
 
 "Use logistic regression, as in script 10D, to model the probability of being
