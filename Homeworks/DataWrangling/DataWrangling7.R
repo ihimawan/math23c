@@ -61,7 +61,7 @@ for (i in 1:10)  binmeans[i] <- sum((xbars >= dec[i]) & (xbars <= dec[i+1]) ); b
 
 #Test for uniformity using chi square.
 chisq <- sum((binmeans - Exp)^2/Exp); chisq #  2.9
-#We estimated two parameters, which costs two degrees of freedom
+# We estimated two parameters, which costs two degrees of freedom
 pValue <- pchisq(chisq, df = 7, lower.tail = FALSE); pValue # 0.8940963; # which is even larger than before
 # Using 0.05 significance level, Since p-value 0.8940963 is much larger than 0.05 significance level,
 # we do not reject the null hypothesis that the normal distribution was a good model for the dataset.
