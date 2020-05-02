@@ -153,6 +153,10 @@ for (i in 1:N){
 hist(diffs, breaks = "FD", probability = TRUE) # BEAUTIFUL! It looks like a proper normal distribution :)
 abline(v = observed, col = "red")
 
+pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # 0.08559144
+# If we're using 0.1 significations level, do reject that having friends and suicide attempt are independent.
+# Meaning that there is some correltion, which is no surprise to me.
+
 # Let's try to apply CLT to the number of friends to see if we can get the same normal distribution
 friendsNumber <- ForeverAlone.NoFriendOutliers$friends
 hist(friendsNumber, breaks="FD", probability = TRUE) # looks nothing like a normaldistribution.

@@ -1,0 +1,239 @@
+---
+title: "MATH-23C PROJECT - Analysis of /r/ForeverAlone Dataset"
+author: by Indri N. Himawan
+output: rmarkdown::html_vignette
+---
+
+## Introduction (if you want to go straight to the highlights of the data, you can ignore this introduction)
+The data is collected as  The Demographic `/r/ForeverAlone` Dataset: A survey taken by redditers in `/r/ForeverAlone`. Dataset source: https://www.kaggle.com/kingburrito666/the-demographic-rforeveralone-dataset. This data has all the standards specified in the project specifications. It is a dataframe, has at least two categorical/logical columns (e.g. `gender` and `sexuallity`), two numeric columns (e.g. `friends` and `age`).
+
+Why did I choose a dataset about such a sensitive topic? I could have chosen something about COVID-19 and see how the pandemic is increasing world's death rates and maybe come up with solutions to save the world. It would be selfless of me to do. However, if I were being honest, the pandemic has had me more concerned about my mental health than the world's declining population. 
+
+I feel like the mental health aspect is not that much talked about during this pandemic. Don't get me wrong, I _am_ an introvert and would rather shield myself from the outdoors. But when that option is taken away from me I am going to have to go crazy. I myself have struggled with suicidal ideation in the past and mental health recovery. I am the only person in my IRL friend group (that I know of) who struggles with depression and anxiety. If no-quarantine life was already lonely, imagine right now. My need for mental health comfort has been rising in the past few weeks. However, when I tell anyone about my struggles, they would have certain stigmas around them; and then I would feel less good about myself. Therefore, my goal in this project is of a more selfish reasons:
+
+**Can I use the Forever Alone dataset to feel less lonely in my mental health journey?**
+
+Let's find out. First, let's load up this data onto R. 
+
+```{r}
+ForeverAlone <- read.csv("lib/foreveralone.csv")
+```
+
+***
+
+# Salary and Suicide
+
+I want to see how many people in this subreddit has/n't attempted suicide depending on their income. In other words, does income level affect likelihood of suicide?
+
+## Salary and Suicide: finding correlation using a barplot.
+
+```{r fig.width=8, fig.height=5}
+count <- table(ForeverAlone$attempt_suicide, ForeverAlone$income)
+orderedCount <- count[,c(1,2,3,8,10,11,12,13,4,5,6,7,9)]
+barplot(orderedCount, main = "Number of suicide attempts by income level",
+        xlab = "Income Range",
+        ylab = "Number of suicide attempts",
+        legend.text = TRUE,
+        las = 1,
+        col = c("blue", "red"))
+```
+
+To no surprise, it looks like those whose income is the lower end has a higher rate ot suicide attempts. However, this could have also have come to light only because people who use the subreddit are mostly ones with lower income. From this data, we can tell that just because a person has a higher income, does not mean that they will never attempt suicide. I can see a number in the `$150,000 to $174,999` salary range to have had attempted suicide. 
+
+## Salary and Suicide: Conclusion
+Higher income can reduce suicide rate. But it does not eliminate the likelihood of attempting suicide.
+
+***
+
+# Friends and Suicide
+Another obvious thing that can influence a person's decision to die by suicide is the number of friends. The more alone a person is, the more they feel like it won't matter if they passed. I expect people who have least friends have a correlation to attempting who attempted suicide.
+
+## Friends and Suicide: finding correlation using histogram and probability density graph overlaid on a histogram
+
+```{r fig.width=8, fig.height=5}
+SuicideFriends <- subset(ForeverAlone, attempt_suicide == "Yes", friends)
+hist(SuicideFriends$friends, main = "Number of suicide attempts by # of friends",
+     xlab ="Number of friends",
+     ylab = "Number of suicide attempts",
+     col = "cyan", breaks="FD")
+```
+
+From here you can see that number of friends can exponentially reduce the likelyhood of suicide. In fact, let's try to overlay a exponential distribution. I use the `fitdistrplus` library to obtain a rate.
+
+```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE}
+rate <- 0.2652106
+hist(SuicideFriends$friends, main = "Age of those who attempted suicide w/ probability",
+     xlab ="Age of suicide",
+     col = "cyan",
+     probability = TRUE, breaks="FD")
+curve(dexp(x, rate = rate), add=TRUE, col="red")
+```
+
+It looks pretty fitting! We can say that the more friends you are EXPONENTIALLY less likely you are to attempt suicide. Let's try to test if this matches with a exponential distribution using distribution function
+
+```{r fig.show='hide', results='hide'}
+breaks <- hist(SuicideFriends$friends, breaks="FD")$breaks
+observed <- hist(SuicideFriends$friends, breaks="FD")$count
+observed[4] <- sum(observed[4:5])
+observed[5] <- sum(observed[6:13])
+observed <- observed[-(6:13)]
+numOfObservations <- sum(observed)
+expected <- numOfObservations*c(pexp(2, rate),
+                                pexp(4, rate)-pexp(2, rate),
+                                pexp(6, rate)-pexp(4, rate),
+                                pexp(10, rate)-pexp(6, rate),
+                                1-pexp(10, rate))
+Chi2 <-sum((observed-expected)^2/expected); Chi2 # 5.465886
+
+# Since we have our expected total equal to actual equal
+# and imposed the rate parameter, the df is 5-1-1 = 3
+Pvalue <- pchisq(Chi2,3,lower.tail = FALSE); Pvalue # 0.1406933
+```
+
+This means that there is 14% chance that this result happens as a exponential distribution. With this value, there is not enough evidence against the null hypothesis that our data did come from a exponential distribution.
+
+## Friends and Suicide: finding correlation using permutation test (simulation method)
+Let's see if through permutation test, whether or not number of friends has relation to whether or not to attempt suicide. Note that in order to come up with a proper normal distribution, I would need to get rid of outliers. Because the data was giving a max of `600` friends but a median of `3`.
+
+```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+ForeverAlone.NoFriendOutliers <- subset(ForeverAlone, friends <= 10) # getting rid of outliers
+AttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[
+        which(ForeverAlone.NoFriendOutliers$attempt_suicide == "Yes")])
+NotAttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[
+        which(ForeverAlone.NoFriendOutliers$attempt_suicide == "No")])
+observed <- NotAttemptedFriendNumAvg - AttemptedFriendNumAvg
+
+# using this simulation method
+N <- 10000
+diffs <- numeric(N)
+for (i in 1:N){
+  Attempted <- sample(ForeverAlone.NoFriendOutliers$attempt_suicide) 
+  AttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[
+          which(Attempted == 'Yes')])
+  NotAttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[
+          which(Attempted == 'No')])
+  diffs[i] <- NotAttemptedFriendNumAvg - AttemptedFriendNumAvg
+}
+
+hist(diffs, breaks = "FD", probability = TRUE)
+abline(v = observed, col = "red")
+
+pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # around 0.08559144
+```
+
+If we're using `0.1` significations level, do reject that having friends and suicide attempt are independent. Meaning that there is some correlation, which is no surprise to me. In fact, if we do not get rid of the outliers, the p-value would result to `0.00419958`, which enforces the correlation.
+
+## Friends and Suicide: Using CLT
+This graph of people having friends is not normal distribution. So let's use CLT so see if its mean is normal distribution.
+
+```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+friendsNumber <- ForeverAlone.NoFriendOutliers$friends
+hist(friendsNumber, breaks="FD", probability = TRUE) 
+nFriends <- length(friendsNumber) # the number of tested
+mu <- mean(friendsNumber); mu # 3.130123
+sigma <- sd(friendsNumber); sigma # 3.081096
+curve(dnorm(x, mu, sigma), add = TRUE, col = "red")
+```
+
+Now it shows the histogram of the data with an overlay of graph of normal density function
+with the same mean and variance
+
+```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+dec <- qnorm(seq(0.0, 1, by = 0.1), mu, sigma); dec   #11 bins
+Exp <- rep(nFriends/10,10); Exp     #expected friends per bin
+
+binScores <- numeric(10)
+for (i in 1:10)
+  binScores[i] <- sum((friendsNumber >= dec[i]) & (friendsNumber <= dec[i+1]) )
+
+binScores
+# [1]   0 111  54  42  44   0  27  45  36  46
+
+chisq <- sum((binScores - Exp)^2/Exp); chisq # 214.8272
+#We estimated two parameters, which costs two degrees of freedom
+pValue <- pchisq(chisq, df = 7, lower.tail = FALSE); pValue # 8.26185e-43
+```
+
+The very small p value which makes sense because this is nothing like a normal distribution.
+
+```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+# Now repeat, using average score for a sample of 25 friends
+N <- 2000; xbars <- numeric(N)
+for (i in 1:N) xbars[i] <- mean(sample(friendsNumber,25))
+hist(xbars, breaks = "FD", probability = TRUE)
+# looks like a normal distribution here
+
+#For the best fit, compute the mean and variance of the data
+mu25 <- mean(xbars); mu25;  # around 3.140168
+sig25 <- sd(xbars); sig25; # around 0.5961972
+curve(dnorm(x, mu25, sig25), add = TRUE, col = "red") # looks good!
+
+# Make a vector of deciles
+dec <- qnorm(seq(0.0, 1, by = 0.1), mu25, sig25); dec   #11 bins
+Exp <- rep(N/10,10); Exp     #expected means per bin
+
+#Count how many means are in each bin
+binmeans <- numeric(10)
+for (i in 1:10)  binmeans[i] <- sum((xbars >= dec[i]) & (xbars <= dec[i+1]) ); binmeans
+#  [1] 198 188 206 229 190 199 204 212 170 204
+
+#Test for uniformity using chi square.
+chisq <- sum((binmeans - Exp)^2/Exp); chisq #  11.01
+# We estimated two parameters, which costs two degrees of freedom
+pValue <- pchisq(chisq, df = 7, lower.tail = FALSE); pValue # 0.1381834;
+```
+Using 0.05 significance level, Since p-value 0.1381834 is much larger than 0.05 significance level, we do not reject the null hypothesis that the normal distribution was a good model for the dataset. This time the calculated chi-square value could easily have arisen by chance
+This result illustrates the central-limit theorem: Start with any distribution of finite variance and construct the mean of many samples. The sample means will have a distribution that is approximately normal.
+
+In this case the sample means is even more normal than the actual data.
+
+## Friends and Suicide: Conclusion
+Higher number of friends can exponentially reduce chance of suicide. If you know somebody who is suicidal, try to help them feel less lonely. Be their friend! If you are suicidal, try to identify your friends and reach out to them (it's a hard thing to do, I know. But data does not lie.)
+
+***
+
+# Depression and Suicide
+Is depression and suicide correlated?
+
+## Depression and Suicide: using Contingency table to find correlation
+```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+observed <- table(ForeverAlone$depressed, ForeverAlone$attempt_suicide); observed
+  #      No Yes
+  # No  147  10
+  # Yes 237  75
+```
+It's no surprise to me that those who are depressed are more likely to attempt suicide. Now let's try to compare with an expected contingency table.
+
+```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+pDepressed <- mean(ForeverAlone$depressed == 'Yes')
+pAttempted <- mean(ForeverAlone$attempt_suicide == 'Yes')
+expected <- nrow(ForeverAlone) * outer(c(1 - pDepressed, pDepressed), c(1 - pAttempted, pAttempted)); expected
+#          [,1]     [,2]
+# [1,] 128.5458 28.45416
+# [2,] 255.4542 56.54584
+#
+# looks pretty close from observed!
+
+chisq <- sum((observed-expected)^2/expected); chisq # 21.97367
+pValue <- 1 - pchisq(chisq, 1); pValue # 2.764167e-06
+```
+
+With such a small p-value = 2.764e-06, we reject the null hypothesis that depression and suicide attempt are independent. meaning there may be a correlation between those who are depressed and those who have attempted suicide.
+
+```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+# Using the built in chisq method...
+chisq.test(ForeverAlone$depressed, ForeverAlone$attempt_suicide, correct=FALSE)
+#
+# 	Pearson's Chi-squared test
+#
+# data:  ForeverAlone$depressed and ForeverAlone$attempt_suicide
+# X-squared = 21.974, df = 1, p-value = 2.764e-06
+#
+# (Same result)
+```
+With such a small `p-value = 2.764e-06`, we reject the null hypothesis that depression and suicide attempt are independent. Meaning there may be a correlation between those who are depressed and those who have attempted suicide.
+
+## Depression and Suicide: Conclusion
+Depression and suicide is correlated.
+
+
