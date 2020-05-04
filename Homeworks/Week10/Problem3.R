@@ -1,4 +1,4 @@
-# setwd("Homeworks/Week9")
+# setwd("Homeworks/Week10")
 # cleanup
 rm(list=ls())
 
@@ -9,6 +9,7 @@ has the value 1 to indicate income greater than $50K."
 "My modifed file, for use in this problem, is in census.csv on the Web site."
 
 #install.packages("stats4")
+#library("stats4")
 Census <- read.csv("lib/census.csv"); head(Census)
 
 "Use logistic regression, as in script 10D, to model the probability of being
@@ -23,7 +24,7 @@ richs <- (as.numeric(Census$RICH==1)); head(richs)
 
 # RICH as function of AGE
 ages <- Census$AGE
-plot(ages, richs)  # looks awful for a straight-line approximation
+plot(ages, richs, xlab = "age", ylab = "rich", main = "rich as function of age")
 b <- cov(ages, richs)/var(ages) # obtain slope
 # Find the intercept
 a <- mean(richs) - b*mean(ages);a
@@ -55,7 +56,7 @@ mean(richs[index])   #32%
 
 # RICH as function of YEARS OF EDUCATION
 school <- Census$SCHOOL
-plot(school, richs)
+plot(school, richs, xlab = "education", ylab = "rich", main = "rich as function of education")
 b <- cov(school, richs)/var(school) # obtain slope
 # Find the intercept
 a <- mean(richs) - b*mean(school);a
@@ -120,3 +121,23 @@ mean(richs[index])   #98%
 
 # I would say that this is also a good predictor for being rich.
 
+# create linear combination of these columns to use as predictor
+linearCombo <- 0.25*school + 0.25*gain + 0.25*hours + 0.25*rich
+
+# We start again with the likelihood function.
+MLL<- function(alpha, beta) {
+  -sum( log( exp(alpha+beta*linearCombo)/(1+exp(alpha+beta*linearCombo)) )*rich + log(1/(1+exp(alpha+beta*linearCombo)))*(1-rich) )
+}
+
+# Plot the data for our linear combination and rich.
+plot(LinearComb, rich,
+     xlab = "lin combo",
+     ylab = "Rich",
+     main = "Rich as a function of combined variable",
+     col = "red")
+
+# Fit the logistic regression curve. We use the same initial guess
+# of alpha = beta = 0.
+result4 <- mle(MLL, start = list(alpha = 0, beta = 0)); result4
+
+# We get alpha = -1.490699070, beta = 0.001500258.

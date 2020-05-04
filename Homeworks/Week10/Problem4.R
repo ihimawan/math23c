@@ -2,11 +2,6 @@
 # cleanup
 rm(list=ls())
 
-"The file Forbes.csv contains nancial data on a number of large U.S. com-
-panies. Bind the six numeric columns into a matrix, and then use var()
-to construct the covariance matrix A. (The point is just to get a large
-symmetric matrix based on real-world data.)"
-
 Forbes <- read.csv("lib/Forbes.csv")
 
 m <- nrow(Forbes);m
@@ -15,9 +10,7 @@ A <- cbind(Forbes$Assets, Forbes$Sales,Forbes$Market_Value,Forbes$Profits, Forbe
 #Make the covariance matrix
 S <- var(A); S
 
-"(a) Use eigen() to find the eigenvectors and eigenvalues of A."
-
-eigen(S)
+Eig <- eigen(S); Eig
 
 # eigen() decomposition
 # $values
@@ -32,20 +25,75 @@ eigen(S)
 # [5,] -0.074488379 -0.062473513 -0.03465773 -0.851659035 -0.512267185  0.0400824507
 # [6,] -0.003614418 -0.002215186  0.00873997  0.009664752  0.062222712  0.9979682202
 
+Eig$vectors # with eigenvectors
+Eig$values # and eigenvalues
 
-"(b) Find the largest eigenvalue of A, and the correponding eigenvector,
-by searching for the maximum of QA on the unit sphere in R6. Use
-the approach of R workshop problem 5. You already know the right
-answer; so you can tell when your optimization algorithm is good
-enough."
+QA <- function(x) {sum(x * (A %*% x))}
 
+# find largest eigenvector and its eigenvalue
+# by searching the unit sphere in R^6.
 
+# Run 100000 trials.
+N <- 10^5
 
-"(c) Construct the matrix I - P that projects onto the space orthogonal
-to the first eigenvector"
+# Create a random vector, Qval, to store the values of the function QA.
+# Then store the corresponding vectors to Xval as an N-component list.
+Qval <- numeric(N); Xval <- list(N)
 
-"(d) Find the second largest eigenvalue and the corresponding eigenvec-
-tor by searching for the maximum of QA on the set of unit vectors
-that are orthogonal to your rst eigenvector. Hint: apply I - P to
-your multivariate standard normal vectors before converting to a unit
-vector."
+# Run the loop.
+for (i in 1:N) {
+  x <- runif(6, min = -1, max = 1) #uniformly generated components from -1 to 1
+  x1 <- x/sqrt(sum(x*x)) # normalize
+  Qval[i] <- QA(x1)
+  Xval[[i]] <- x1
+}
+
+# Take maximum function value and compare to the maximum eigenvalue
+# from the eigen function, which should be similar
+lambda1 <- max(Qval); lambda1
+Eig$values[1]
+
+# corresponding eigenvector and Compare with the eigen function, which is close
+v1 <- Xval[[which.max(Qval)]]; v1
+Eig$vectors[,1]
+
+# We can also check directly that we've
+# found an eigenvector/eigenvalue using the definition, which is close
+A %*% v1; lambda1 * v1
+
+# Construct the matrix I - P that projects onto the space orthogonal to v1.
+
+P <- v1%*%solve(t(v1) %*% v1)%*%t(v1); P
+I <- diag(6); I
+IlessP <- I - P; IlessP
+
+# Now, we find the second largest eigenvalue and its corresponding eigenvector
+# by searching the orthogonal subspace.
+
+# Number of trials
+N <- 10^5
+
+# Store QA values and vectors
+Qval <- numeric(N); Xval <- list(N)
+
+# Run the loop
+for (i in 1:N) {
+  x <- rnorm(6) # sample of size 6
+  Ax <- IlessP %*% x
+  u <- Ax/sqrt(sum(Ax*Ax)) # normalize
+  Qval[i] <- QA(u)
+  Xval[[i]] <- u
+}
+
+# Largest eigenvalue, would be close
+lambda2 <- max(Qval); lambda2
+Eig$values[2]
+
+# Corresponding eigenvector and eigen function, close
+v2 <- Xval[[which.max(Qval)]]; v2
+Eig$vectors[,2]
+
+# Close match.
+
+# directly compare yields close match
+A%*%v2; lambda2*v2
