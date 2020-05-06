@@ -4,16 +4,7 @@ author: by Indri N. Himawan
 output: rmarkdown::html_vignette
 ---
 
-## Introduction (if you want to go straight to the highlights of the data, you can ignore this introduction)
-The data is collected as  The Demographic `/r/ForeverAlone` Dataset: A survey taken by redditers in `/r/ForeverAlone`. Dataset source: https://www.kaggle.com/kingburrito666/the-demographic-rforeveralone-dataset. This data has all the standards specified in the project specifications. It is a dataframe, has at least two categorical/logical columns (e.g. `gender` and `sexuallity`), two numeric columns (e.g. `friends` and `age`).
-
-Why did I choose a dataset about such a sensitive topic? I could have chosen something about COVID-19 and see how the pandemic is increasing world's death rates and maybe come up with solutions to save the world. It would be selfless of me to do. However, if I were being honest, the pandemic has had me more concerned about my mental health than the world's declining population. 
-
-I feel like the mental health aspect is not that much talked about during this pandemic. Don't get me wrong, I _am_ an introvert and would rather shield myself from the outdoors. But when that option is taken away from me I am going to have to go crazy. I myself have struggled with suicidal ideation in the past and mental health recovery. I am the only person in my IRL friend group (that I know of) who struggles with depression and anxiety. If no-quarantine life was already lonely, imagine right now. My need for mental health comfort has been rising in the past few weeks. However, when I tell anyone about my struggles, they would have certain stigmas around them; and then I would feel less good about myself. Therefore, my goal in this project is of a more selfish reasons:
-
-**Can I use the Forever Alone dataset to feel less lonely in my mental health journey?**
-
-Let's find out. First, let's load up this data onto R. 
+First, let's load up this data onto R.
 
 ```{r}
 ForeverAlone <- read.csv("lib/foreveralone.csv")
