@@ -7,6 +7,10 @@ rm(list=ls())
 # install.packages("stringr")
 library("fitdistrplus")
 library("stringr")
+library("stats4")
+library("e1071")
+library("ggplot2")
+
 
 "The Demographic /r/ForeverAlone Dataset: A survey taken by redditers in /r/ForeverAlone.
 Dataset source: https://www.kaggle.com/kingburrito666/the-demographic-rforeveralone-dataset"
@@ -25,13 +29,13 @@ barplot(orderedCount, main = "Number of suicide attempts by income level",
         las = 1,
         col = c("blue", "red"))
 # to no surprise, it looks like those whose income is the lower end has a higher rate ot suicide attempts..
-# However, through this barplot can look statistically significant.
+# Through this barplot, the correlation can look statistically significant.
 #
 # It's a shame that the columns of salary is an enumeration instead of an actual value.
 # I will create a function that given the text in $x to $y, it will find the average.
 # I will add this as another extra column in the `ForeverAlone`.
 
-
+# this function will convert the text "$x" or "$x to $y" and find the mean between x and y
 findAverage <- function(row){
   incomeRange <- row[5]
   cleanRange <- str_remove_all(incomeRange, "[$,A-z]")
@@ -111,11 +115,11 @@ for (i in 1:N){
 
 pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # 0.2918708..
 # If we say that statistically significant means they would need to have pvalue of <= 5%, this p-value is quite big (30%)
-# even though it seems like the histogram shows some correlation between income and suicide attempt.
+# even though it seems like the histogram shows some good correlation between income and suicide attempt.
 
 # I expect people who have least friends have a correlation to attempting who attempted suicide
 SuicideFriends <- subset(ForeverAlone, attempt_suicide == "Yes", friends)
-hist(SuicideFriends$friends, main = "Age of those who attempted suicide",
+hist(SuicideFriends$friends, main = "Number of suicide attempts vs number of friends",
      xlab ="Number of friends",
      ylab = "Number of suicide attempts",
      col = "cyan", breaks="FD")
@@ -190,86 +194,128 @@ pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # 0.00419958
 hist(diffs, breaks = "FD", probability = TRUE)
 # Honestly, this looks quite crazy... is there something wrong done here?
 # Possibly so many outliers? Let's try to plot the histogram of `ForeverAlone$friends`
-hist(ForeverAlone$friends) # there's mad amounts of outliers!
+hist(ForeverAlone$friends, breaks="FD") # there's mad amounts of outliers!
 
 # In fact...
 mean(ForeverAlone$friends) # 7.956716 is the mean
-max(ForeverAlone$friends) # 600 is the max! Maybe some people include internet friends as friends??
-median(ForeverAlone$friends) # and 3 is the median...
+# Let's find the trimmed mean
+mean(ForeverAlone$friends, trim = 0.05) # 4.524113 -- at 0.05% trimmed mean it already went down almost by half
+mean(ForeverAlone$friends, trim = 0.10) # 3.988594 -- reducing much less now.
+mean(ForeverAlone$friends, trim = 0.15) # 3.670821 -- reducing even less.
+
+# in addition:
+median(ForeverAlone$friends) # 3 seems extremely way off...
+max(ForeverAlone$friends) # no wonder! 600 is the max! Maybe some people include internet friends as friends??
+min(ForeverAlone$friends) # minimum is 0. The data ranges between 0 and 600. even though the median is 3.
+
+# realized R does not have built in mode function...
+findMode <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+
+findMode(ForeverAlone$friends) # mode is 0
+
+# With the value of mean, median, and mode, we can tell that this graph has positive skew. Therefore we have to throw out the larger values.
+
+# how skewed is this data?
+skewness(ForeverAlone$friends)  # 14.17621 this is so bad!
 
 # With this information, let's redo it while getting rid of the outliers.
-# Say using threshold of 10
-ForeverAlone.NoFriendOutliers <- subset(ForeverAlone, friends <= 10)
 
-# Now let's redo the permutation test with this new table
-AttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[which(ForeverAlone.NoFriendOutliers$attempt_suicide == "Yes")]) # 2.702532
-NotAttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[which(ForeverAlone.NoFriendOutliers$attempt_suicide == "No")]) # 3.233742 (way lower than before, which makes sense because those who put a lot amount of friends are those who haven't attempted suicide)
-observed <- NotAttemptedFriendNumAvg - AttemptedFriendNumAvg; observed # 0.5312107 (much lower than before)
+# this function will create the subset of the `ForeverAlone` dataset where the number of friends <= threshold
+# This function will graph the difference, which would be a normal distribution (if low enough threshold)
+# and will return the p-value given the threshold
+findPValueWithOutlierThreshold <- function (threshold) {
+  ForeverAlone.NoFriendOutliers <- subset(ForeverAlone, friends <= threshold)
 
-# let's see if through permutation test, whether or not number of friends has relation to whether or not to attempt suicide
-N <- 10000
-diffs <- numeric(N)
-for (i in 1:N){
-  Attempted <- sample(ForeverAlone.NoFriendOutliers$attempt_suicide)   # permuted suicide attempt column
-  AttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[which(Attempted == 'Yes')])
-  NotAttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[which(Attempted == 'No')])
-  diffs[i] <- NotAttemptedFriendNumAvg - AttemptedFriendNumAvg
+  cat("This is the skewness for your threshold=", skewness(ForeverAlone.NoFriendOutliers$friends))
+
+  # Now let's redo the permutation test with this new table
+  AttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[which(ForeverAlone.NoFriendOutliers$attempt_suicide == "Yes")])
+  NotAttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[which(ForeverAlone.NoFriendOutliers$attempt_suicide == "No")])
+  observed <- NotAttemptedFriendNumAvg - AttemptedFriendNumAvg; observed
+
+  # let's see if through permutation test, whether or not number of friends has relation to whether or not to attempt suicide
+  N <- 10000
+  diffs <- numeric(N)
+  for (i in 1:N){
+    Attempted <- sample(ForeverAlone.NoFriendOutliers$attempt_suicide)   # permuted suicide attempt column
+    AttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[which(Attempted == 'Yes')])
+    NotAttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[which(Attempted == 'No')])
+    diffs[i] <- NotAttemptedFriendNumAvg - AttemptedFriendNumAvg
+  }
+
+  hist(diffs, breaks = "FD", probability = TRUE) # BEAUTIFUL! It looks like a proper normal distribution :)
+  abline(v = observed, col = "red")
+
+  pvalue <- (sum(diffs >= observed)+1)/(N+1)
+  cat("This is your p-value = ", pvalue)
+  pvalue # 0.08559144
 }
 
-hist(diffs, breaks = "FD", probability = TRUE) # BEAUTIFUL! It looks like a proper normal distribution :)
-abline(v = observed, col = "red")
+# test out numbers, see which one is has low skewness and see if the p-value can still be statistically significant
+findPValueWithOutlierThreshold(20) # This is the skewness for your threshold= 1.475118 This is your p-value =  0.02549745
+findPValueWithOutlierThreshold(18) # This is the skewness for your threshold= 1.222063 This is your p-value =  0.02529747
+findPValueWithOutlierThreshold(15) # This is the skewness for your threshold= 1.134382 This is your p-value =  0.05569443
 
-pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # 0.08559144
-# If we're using 0.1 significations level, do reject that having friends and suicide attempt are independent.
-# Meaning that there is some correltion, which is no surprise to me.
-# However if we consider statistical significance is p-value of <=5%, it is not statistically significant after getting rid ot the outliers.
+# by testing out many numbers, I found that the threshold of 14 is the sweet spot to keep the skewness -1<=x<=1
+findPValueWithOutlierThreshold(14) # This is the skewness for your threshold = 0.9407331 This is your p-value = 0.04649535
+# If we're using 0.05 significationscelevel (and if we define statistical significance as p-value <= 0.05),
+# do not reject that having friends and suicide attempt are independent.
+# Meaning that there is some strong correltion, which is no surprise to me.
 
-# Let's try to see if using logistic regression can make it seem like it is statistical significant
-attemptedSuicide <- (as.numeric(ForeverAlone.NoFriendOutliers$attempt_suicide=="Yes")); head(attemptedSuicide)
+# Let's plot this as a logical regression graph to see if it can support this claim.
 
-friends <- ForeverAlone.NoFriendOutliers$friends
-plot(friends, attemptedSuicide)
-b <- cov(friends, attemptedSuicide)/var(income) # obtain slope
-# Find the intercept
-a <- mean(attemptedSuicide) - b*mean(friends);a
-#We can add this regression line to the plot of the data
-abline(a, b, col = "red")
+# this function will plot the logical regression graph and return a data frame of the number of friends
+# and the percentage of those who attempted suicide
+getLogicalRegressionValues <- function (threshold) {
+  ForeverAlone.NoFriendOutliers <- subset(ForeverAlone, friends <= threshold)
 
-MLL<- function(alpha, beta) {
-  -sum( log( exp(alpha+beta*friends)/(1+exp(alpha+beta*friends)) )*attemptedSuicide +
-          log(1/(1+exp(alpha+beta*friends)))*(1-attemptedSuicide) )
+  # Let's try to see if using logistic regression can make it seem like it is statistical significant
+  attemptedSuicide <- (as.numeric(ForeverAlone.NoFriendOutliers$attempt_suicide=="Yes")); head(attemptedSuicide)
+
+  friends <- ForeverAlone.NoFriendOutliers$friends
+  plot(friends, attemptedSuicide)
+  b <- cov(friends, attemptedSuicide)/var(income) # obtain slope
+  # Find the intercept
+  a <- mean(attemptedSuicide) - b*mean(friends);a
+  #We can add this regression line to the plot of the data
+  abline(a, b, col = "red")
+
+  MLL<- function(alpha, beta) {
+    -sum( log( exp(alpha+beta*friends)/(1+exp(alpha+beta*friends)) )*attemptedSuicide +
+            log(1/(1+exp(alpha+beta*friends)))*(1-attemptedSuicide) )
+  }
+
+  #R has a function that will maximize this function of alpha and beta
+  results<-mle(MLL, start = list(alpha = 0, beta = 0)) #an initial guess is required
+  results@coef
+  curve( exp(results@coef[1]+results@coef[2]*x)/ (1+exp(results@coef[1]+results@coef[2]*x)),col = "blue", add=TRUE)
+  # shows slight decline as number of friends grow
+
+  # test for all the income values to see if it is a good model
+  uniqueNumOfFriends <- sort(unique(friends))
+  findMean <- function (numOfFriendsToEvaluate) {
+    index <- which(friends == numOfFriendsToEvaluate); head(index)
+    mean(attemptedSuicide[index])   #20%
+  }
+
+  res <- lapply(uniqueNumOfFriends, findMean)
+  cleanRes <- numeric(length(res))
+  for (idx in 1: length(res)) {
+    cleanRes[idx] = res[[idx]]
+  }
+  cleanRes
+
+  data.frame(number_of_friends = uniqueNumOfFriends, mean_attempted_suicide=cleanRes)
 }
 
-#R has a function that will maximize this function of alpha and beta
-results<-mle(MLL, start = list(alpha = 0, beta = 0)) #an initial guess is required
-results@coef
-curve( exp(results@coef[1]+results@coef[2]*x)/ (1+exp(results@coef[1]+results@coef[2]*x)),col = "blue", add=TRUE)
-# shows slight decline as number of friends grow
-
-# test for all the income values to see if it is a good model
-uniqueNumOfFriends <- sort(unique(friends))
- # [1]  0.0  0.2  0.5  1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0 10.0
-
-findMean <- function (numOfFriendsToEvaluate) {
-  index <- which(friends == numOfFriendsToEvaluate); head(index)
-  mean(attemptedSuicide[index])   #20%
-}
-
-res <- lapply(uniqueNumOfFriends, findMean)
-cleanRes <- numeric(length(res))
-for (idx in 1: length(res)) {
-  cleanRes[idx] = res[[idx]]
-}
-
-cleanRes
-#  [1] 0.2293578 0.0000000 1.0000000 0.1666667 0.2142857 0.2045455 0.1851852 0.1777778 0.1923077
-# [10] 0.3000000 0.1000000 0.0000000 0.1176471
-
-# honestly, I do not see this to be the best prediction. I can see that the numbers are generally increasing,
-# but the spikes (like the one on the 10th and last index) makes me think that number of friends is a good
-# prediction model.
-#
-# Even though from the data it looks good and statistically significant, it really isn't (mostly because of removing the outliers)
+# Just for fun let's see if we increase the threshold for the threshold that is not too skewed but also statistically significant
+regressionWithThreshold16 <- getLogicalRegressionValues(14); head(regressionWithThreshold16)
+# This definitely looks more convincing of a inverse correlation between friends and likelihood of suicide.
+# honestly, I can see this as a potentially good correlation. With the treshold of 14, we find as well that the relationship
+# between friends and suicide attempt is statistically significant.
 
 # Let's try to apply CLT to the number of friends to see if we can get the same normal distribution
 friendsNumber <- ForeverAlone.NoFriendOutliers$friends
@@ -411,3 +457,33 @@ abline (v = populationMean, col = "red") #vertical line at true mean
 (N-missedL-missedU)/N #what fraction of the time did interval include the true mean?; 0.93
 missedL/N   #the confidence interval rarely lies to the right of the true mean; 0.006
 missedU/N   #the confidence interval often lies to the right of the true mean; 0.064
+
+# age of suicide & sexuality
+ForeverAlone.SuicideSubset <- subset(ForeverAlone, attempt_suicide == "Yes")
+ForeverAlone.SuicideSubset$isStraight <- ifelse(ForeverAlone.SuicideSubset$sexuallity == 'Straight', 1, 0)
+ForeverAlone.SuicideSubset$isStraight <- factor(ForeverAlone.SuicideSubset$isStraight,levels=c(0,1),
+   labels=c("Gay/Lesbian/Bisexual","Straight"))
+
+# both are centered more in mid-20s
+qplot(age, data=ForeverAlone.SuicideSubset, geom="density", fill=isStraight, alpha=I(.5),
+   main="Distribution of Suicide rate by sexuality", xlab="Age",
+   ylab="Density")
+
+# both are centered more in mid-20s
+qplot(isStraight, age, data=ForeverAlone.SuicideSubset, geom=c("boxplot", "jitter"),
+   fill=isStraight, main="Mileage by Gear Number",
+   xlab="", ylab="Miles per Gallon")
+
+ForeverAlone$hasSuicide <- ifelse(ForeverAlone$attempt_suicide == "Yes", 1, 0)
+ForeverAlone$isStraight <- ifelse(ForeverAlone$sexuallity == 'Straight', 1, 0)
+ForeverAlone$isStraight <- factor(ForeverAlone$isStraight,levels=c(0,1),
+   labels=c("Gay/Lesbian/Bisexual","Straight"))
+
+qplot(age, hasSuicide, data=ForeverAlone, geom=c("point", "smooth"),
+   method="lm", formula=y~x, color=isStraight,
+   main="Regression of Suicide density on Age divided by sexuality",
+   xlab="Age", ylab="Suicide density")
+
+# seeing an overwhelming amount of people with non-straight.
+# The likelihood of suicide doubles.
+
