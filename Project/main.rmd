@@ -4,21 +4,27 @@ author: by Indri N. Himawan
 output: rmarkdown::html_vignette
 ---
 
-First, let's load up this data onto R.
+First, let's load up this data onto R and load up the right libraries.
 
-```{r}
+```{r warning=FALSE, results='hide', message=FALSE}  
+library("fitdistrplus")
+library("stringr")
+library("stats4")
+library("e1071")
+library("ggplot2")
+
 ForeverAlone <- read.csv("lib/foreveralone.csv")
 ```
 
 ***
 
-# Salary and Suicide
+# Income and Suicide
 
 I want to see how many people in this subreddit has/n't attempted suicide depending on their income. In other words, does income level affect likelihood of suicide?
 
-## Salary and Suicide: finding correlation using a barplot.
+## Income and Suicide: using stacked barplot
 
-```{r fig.width=8, fig.height=5}
+```{r fig.width=7, fig.height=5}
 count <- table(ForeverAlone$attempt_suicide, ForeverAlone$income)
 orderedCount <- count[,c(1,2,3,8,10,11,12,13,4,5,6,7,9)]
 barplot(orderedCount, main = "Number of suicide attempts by income level",
@@ -29,19 +35,100 @@ barplot(orderedCount, main = "Number of suicide attempts by income level",
         col = c("blue", "red"))
 ```
 
-To no surprise, it looks like those whose income is the lower end has a higher rate ot suicide attempts. However, this could have also have come to light only because people who use the subreddit are mostly ones with lower income. From this data, we can tell that just because a person has a higher income, does not mean that they will never attempt suicide. I can see a number in the `$150,000 to $174,999` salary range to have had attempted suicide. 
+To no surprise, it looks like those whose income is the lower end has a higher rate ot suicide attempts.From this data, we can tell that just because a person has a higher income, does not mean that they will never attempt suicide. I can see a number in the `$150,000 to $174,999` salary range to have had attempted suicide. 
+
+## Income and Suicide: Logical Regression
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+
+# helper function 
+findAverage <- function(row){
+  incomeRange <- row[5]
+  cleanRange <- str_remove_all(incomeRange, "[$,A-z]")
+  nums <- as.numeric(strsplit(cleanRange, "\\s+")[[1]])
+  if (length(nums) == 1){
+    nums[1]
+  } else {
+    sum(nums)/length(nums)
+  }
+}
+
+ForeverAlone$incomeAverage <- apply(ForeverAlone, 1, findAverage)
+attemptedSuicide <- (as.numeric(ForeverAlone$attempt_suicide=="Yes")); head(attemptedSuicide)
+
+income <- ForeverAlone$incomeAverage
+plot(income, attemptedSuicide, xlab = "Income", ylab="suicide probability", main = "logical regression of suicide probability as a function of income")
+b <- cov(income, attemptedSuicide)/var(income)
+a <- mean(attemptedSuicide) - b*mean(income);a
+abline(a, b, col = "red")
+
+MLL<- function(alpha, beta) {
+  -sum( log( exp(alpha+beta*income)/(1+exp(alpha+beta*income)) )*attemptedSuicide +
+          log(1/(1+exp(alpha+beta*income)))*(1-attemptedSuicide) )
+}
+
+results<-mle(MLL, start = list(alpha = 0, beta = 0)) #an initial guess is required
+results@coef
+curve( exp(results@coef[1]+results@coef[2]*x)/ (1+exp(results@coef[1]+results@coef[2]*x)),col = "blue", add=TRUE)
+
+# test for all the income values to see if it is a good model
+uniqueIncomes <- sort(unique(income))
+#  [1]      0.0   5000.5  14999.5  24999.5  34999.5  44999.5  62499.5  87499.5 112499.5 137499.5
+# [11] 162499.5 187499.0 200000.0
+
+findMean <- function (incomeToEvaluate) {
+  index <- which(income == incomeToEvaluate); head(index)
+  mean(attemptedSuicide[index])   #20%
+}
+
+res <- lapply(uniqueIncomes, findMean)
+cleanRes <- numeric(length(res))
+for (idx in 1: length(res)) {
+  cleanRes[idx] = res[[idx]]
+}
+
+cleanRes
+ # [1] 0.18125000 0.26000000 0.13793103 0.06818182 0.15384615 0.12500000 0.28571429 0.00000000
+ # [9] 0.00000000 0.50000000 0.00000000 0.00000000 0.00000000
+
+```
+
+Unfortunately from these numbers it doesnt look very promising for it to be statistically significant.. It fluctuates.
+
+## Income and Suicide: Permutation Test
+Even though it is not promising to be statistically significant, let's see what happens if we apply Permutation Test
+
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+# Permutation test: The mean number of salary for those who  attempted suicide is:
+AttemptedIncomeAvg <- mean(ForeverAlone$incomeAverage[which(ForeverAlone$attempt_suicide == "Yes")]) # 18088.21
+NotAttemptedIncomeAvg <- mean(ForeverAlone$incomeAverage[which(ForeverAlone$attempt_suicide == "No")]) # 20357.94
+observed <- NotAttemptedIncomeAvg - AttemptedIncomeAvg; observed # 2269.724
+
+# now let's use a permutation test
+N <- 10000
+diffs <- numeric(N)
+for (i in 1:N){
+  Attempted <- sample(ForeverAlone$attempt_suicide) 
+  AttemptedIncomeAvg <- mean(ForeverAlone$incomeAverage[which(Attempted == 'Yes')])
+  NotAttemptedIncomeAvg <- mean(ForeverAlone$incomeAverage[which(Attempted == 'No')])
+  diffs[i] <- NotAttemptedIncomeAvg - AttemptedIncomeAvg
+}
+
+pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # 0.2918708
+```
+
+If we say that statistically significant means they would need to have pvalue of <= 5%, this p-value is quite big (30%). Even though it seems like the histogram shows some good correlation between income and suicide attempt. In fact, the p-value suggests that there is not enough evidence to reject the null hypothesis income and suicide is not independent. Meaning suicide may/may not be affected by income.
 
 ## Salary and Suicide: Conclusion
-Higher income can reduce suicide rate. But it does not eliminate the likelihood of attempting suicide.
+Higher income can reduce suicide rate. But it does not eliminate the likelihood of attempting suicide. And the relationship is not statistically significant.
 
 ***
 
 # Friends and Suicide
-Another obvious thing that can influence a person's decision to die by suicide is the number of friends. The more alone a person is, the more they feel like it won't matter if they passed. I expect people who have least friends have a correlation to attempting who attempted suicide.
+I expect people who have least friends have a correlation to attempting who attempted suicide.
 
 ## Friends and Suicide: finding correlation using histogram and probability density graph overlaid on a histogram
 
-```{r fig.width=8, fig.height=5}
+```{r fig.width=7, fig.height=5}
 SuicideFriends <- subset(ForeverAlone, attempt_suicide == "Yes", friends)
 hist(SuicideFriends$friends, main = "Number of suicide attempts by # of friends",
      xlab ="Number of friends",
@@ -51,7 +138,7 @@ hist(SuicideFriends$friends, main = "Number of suicide attempts by # of friends"
 
 From here you can see that number of friends can exponentially reduce the likelyhood of suicide. In fact, let's try to overlay a exponential distribution. I use the `fitdistrplus` library to obtain a rate.
 
-```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE}
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE}
 rate <- 0.2652106
 hist(SuicideFriends$friends, main = "Age of those who attempted suicide w/ probability",
      xlab ="Age of suicide",
@@ -84,52 +171,128 @@ Pvalue <- pchisq(Chi2,3,lower.tail = FALSE); Pvalue # 0.1406933
 This means that there is 14% chance that this result happens as a exponential distribution. With this value, there is not enough evidence against the null hypothesis that our data did come from a exponential distribution.
 
 ## Friends and Suicide: finding correlation using permutation test (simulation method)
-Let's see if through permutation test, whether or not number of friends has relation to whether or not to attempt suicide. Note that in order to come up with a proper normal distribution, I would need to get rid of outliers. Because the data was giving a max of `600` friends but a median of `3`.
+Let's see if through permutation test, whether or not number of friends has relation to whether or not to attempt suicide. Note that in order to come up with a proper normal distribution, because this data has a strong positive skew, I would need to trim the data. Find if there is a p-value that is <=5% if skewness is between -1 and 1. 
 
-```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
-ForeverAlone.NoFriendOutliers <- subset(ForeverAlone, friends <= 10) # getting rid of outliers
-AttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[
-        which(ForeverAlone.NoFriendOutliers$attempt_suicide == "Yes")])
-NotAttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[
-        which(ForeverAlone.NoFriendOutliers$attempt_suicide == "No")])
-observed <- NotAttemptedFriendNumAvg - AttemptedFriendNumAvg
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+# function to trim dataset based on a percentage
+trimFriendData <- function (data, percentage) {
+  newData <- data
 
-# using this simulation method
-N <- 10000
-diffs <- numeric(N)
-for (i in 1:N){
-  Attempted <- sample(ForeverAlone.NoFriendOutliers$attempt_suicide) 
-  AttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[
-          which(Attempted == 'Yes')])
-  NotAttemptedFriendNumAvg <- mean(ForeverAlone.NoFriendOutliers$friends[
-          which(Attempted == 'No')])
-  diffs[i] <- NotAttemptedFriendNumAvg - AttemptedFriendNumAvg
+  upper_quantile <- quantile(newData$friends, 1-percentage)
+  lower_quantile <- quantile(newData$friends, percentage)
+
+  newData$friends[newData$friends > upper_quantile] <- NA
+  newData$friends[newData$friends < lower_quantile] <- NA
+
+  subset(newData, !is.na(friends))
 }
 
-hist(diffs, breaks = "FD", probability = TRUE)
-abline(v = observed, col = "red")
+findPValueWithTrimmedFriends <- function (percentage) {
+  ForeverAlone.Trimmed <- trimFriendData(ForeverAlone, percentage)
 
-pvalue <- (sum(diffs >= observed)+1)/(N+1); pvalue # around 0.08559144
+  cat("This is the trimmed mean = ", mean(ForeverAlone.Trimmed$friends), " \n")
+  cat("This is the skewness for your trimmed subset = ", skewness(ForeverAlone.Trimmed$friends), "\n")
+
+  # Now let's redo the permutation test with this new table
+  AttemptedFriendNumAvg <- mean(ForeverAlone.Trimmed$friends[which(ForeverAlone.Trimmed$attempt_suicide == "Yes")])
+  NotAttemptedFriendNumAvg <- mean(ForeverAlone.Trimmed$friends[which(ForeverAlone.Trimmed$attempt_suicide == "No")])
+  observed <- NotAttemptedFriendNumAvg - AttemptedFriendNumAvg; observed
+
+  # let's see if through permutation test, whether or not number of friends has relation to whether or not to attempt suicide
+  N <- 10000
+  diffs <- numeric(N)
+  for (i in 1:N){
+    Attempted <- sample(ForeverAlone.Trimmed$attempt_suicide)   # permuted suicide attempt column
+    AttemptedFriendNumAvg <- mean(ForeverAlone.Trimmed$friends[which(Attempted == 'Yes')])
+    NotAttemptedFriendNumAvg <- mean(ForeverAlone.Trimmed$friends[which(Attempted == 'No')])
+    diffs[i] <- NotAttemptedFriendNumAvg - AttemptedFriendNumAvg
+  }
+
+  hist(diffs, breaks = "FD", probability = TRUE) # BEAUTIFUL! It looks like a proper normal distribution :)
+  abline(v = observed, col = "red")
+
+  pvalue <- (sum(diffs >= observed)+1)/(N+1)
+  cat("This is your p-value = ", pvalue, "\n")
+}
+
+# test out numbers, see which one is has low skewness and see if the p-value can still be statistically significant
+# after a couple of tries with many numbers... found that `0.11` is the sweetspot to keep
+# the skewness low but find a statistically significant subset.
+
+findPValueWithTrimmedFriends(0.11)
 ```
 
-If we're using `0.1` significations level, do reject that having friends and suicide attempt are independent. Meaning that there is some correlation, which is no surprise to me. In fact, if we do not get rid of the outliers, the p-value would result to `0.00419958`, which enforces the correlation.
+Found that with trimming the data at 0.11, the trimmed mean =  `3.390168`, skewness = `0.9407331` and p-value = `0.04479552`. If we define statistical significance as p-value <= 0.05), do reject that having friends and suicide attempt are independent. And even after making data not have a high skewness level (between -1 and 1), they are actually statistically significant!
 
-## Friends and Suicide: Using CLT
+## Friends and Suicide: Logical Regression
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+getLogicalRegressionValues <- function (percentage) {
+  ForeverAlone.Trimmed <- trimFriendData(ForeverAlone, percentage)
+
+  cat("This is the skewness for your trimmed subset = ", skewness(ForeverAlone.Trimmed$friends), "\n")
+
+  # Let's try to see if using logistic regression can make it seem like it is statistical significant
+  attemptedSuicide <- (as.numeric(ForeverAlone.Trimmed$attempt_suicide=="Yes")); head(attemptedSuicide)
+
+  friends <- ForeverAlone.Trimmed$friends
+  plot(friends, attemptedSuicide, xlab="Number of friends", ylab="Suicide Probability", main = "Logical Regression of suicide probability as a function of number of friends")
+  b <- cov(friends, attemptedSuicide)/var(income) # obtain slope
+  # Find the intercept
+  a <- mean(attemptedSuicide) - b*mean(friends);a
+  #We can add this regression line to the plot of the data
+  abline(a, b, col = "red")
+
+  MLL<- function(alpha, beta) {
+    -sum( log( exp(alpha+beta*friends)/(1+exp(alpha+beta*friends)) )*attemptedSuicide +
+            log(1/(1+exp(alpha+beta*friends)))*(1-attemptedSuicide) )
+  }
+
+  #R has a function that will maximize this function of alpha and beta
+  results<-mle(MLL, start = list(alpha = 0, beta = 0)) #an initial guess is required
+  results@coef
+  curve( exp(results@coef[1]+results@coef[2]*x)/ (1+exp(results@coef[1]+results@coef[2]*x)),col = "blue", add=TRUE)
+  # shows slight decline as number of friends grow
+
+  # test for all the income values to see if it is a good model
+  uniqueNumOfFriends <- sort(unique(friends))
+  findMean <- function (numOfFriendsToEvaluate) {
+    index <- which(friends == numOfFriendsToEvaluate); head(index)
+    mean(attemptedSuicide[index])   #20%
+  }
+
+  res <- lapply(uniqueNumOfFriends, findMean)
+  cleanRes <- numeric(length(res))
+  for (idx in 1: length(res)) {
+    cleanRes[idx] = res[[idx]]
+  }
+  cleanRes
+
+  data.frame(number_of_friends = uniqueNumOfFriends, mean_attempted_suicide=cleanRes)
+}
+
+regressionWithThreshold <- getLogicalRegressionValues(0.11);
+```
+It's strange because this logical regression value fluctuates a lot in this subset. But apparently it is statistically significant? Surprise!?
+
+## Friends and Suicide: Showing CLT
 This graph of people having friends is not normal distribution. So let's use CLT so see if its mean is normal distribution.
 
-```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
-friendsNumber <- ForeverAlone.NoFriendOutliers$friends
-hist(friendsNumber, breaks="FD", probability = TRUE) 
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+ForeverAlone.Trimmed <- trimFriendData(ForeverAlone, 0.11) # use this percentage as found above
+friendsNumber <- ForeverAlone.Trimmed$friends
+hist(friendsNumber, breaks="FD", probability = TRUE, xlab = "number of friends", ylab="suicide probability", main="density of suicide") # looks nothing like a normaldistribution.
+
 nFriends <- length(friendsNumber) # the number of tested
-mu <- mean(friendsNumber); mu # 3.130123
-sigma <- sd(friendsNumber); sigma # 3.081096
+#To find the best fitting normal distribution, compute the mean and variance of the data
+mu <- mean(friendsNumber); mu # 3.390168
+sigma <- sd(friendsNumber); sigma # 3.393507
 curve(dnorm(x, mu, sigma), add = TRUE, col = "red")
 ```
 
 Now it shows the histogram of the data with an overlay of graph of normal density function
 with the same mean and variance
 
-```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
 dec <- qnorm(seq(0.0, 1, by = 0.1), mu, sigma); dec   #11 bins
 Exp <- rep(nFriends/10,10); Exp     #expected friends per bin
 
@@ -147,7 +310,7 @@ pValue <- pchisq(chisq, df = 7, lower.tail = FALSE); pValue # 8.26185e-43
 
 The very small p value which makes sense because this is nothing like a normal distribution.
 
-```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
 # Now repeat, using average score for a sample of 25 friends
 N <- 2000; xbars <- numeric(N)
 for (i in 1:N) xbars[i] <- mean(sample(friendsNumber,25))
@@ -173,8 +336,7 @@ chisq <- sum((binmeans - Exp)^2/Exp); chisq #  11.01
 # We estimated two parameters, which costs two degrees of freedom
 pValue <- pchisq(chisq, df = 7, lower.tail = FALSE); pValue # 0.1381834;
 ```
-Using 0.05 significance level, Since p-value 0.1381834 is much larger than 0.05 significance level, we do not reject the null hypothesis that the normal distribution was a good model for the dataset. This time the calculated chi-square value could easily have arisen by chance
-This result illustrates the central-limit theorem: Start with any distribution of finite variance and construct the mean of many samples. The sample means will have a distribution that is approximately normal.
+Using 0.05 significance level, Since p-value 0.1381834 is much larger than 0.05 significance level, we do not reject the null hypothesis that the normal distribution was a good model for the dataset. The calculated chi-square value could easily have arisen by chance. This result illustrates the central-limit theorem: Start with any distribution of finite variance and construct the mean of many samples. The sample means will have a distribution that is approximately normal.
 
 In this case the sample means is even more normal than the actual data.
 
@@ -187,7 +349,7 @@ Higher number of friends can exponentially reduce chance of suicide. If you know
 Is depression and suicide correlated?
 
 ## Depression and Suicide: using Contingency table to find correlation
-```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
 observed <- table(ForeverAlone$depressed, ForeverAlone$attempt_suicide); observed
   #      No Yes
   # No  147  10
@@ -195,7 +357,7 @@ observed <- table(ForeverAlone$depressed, ForeverAlone$attempt_suicide); observe
 ```
 It's no surprise to me that those who are depressed are more likely to attempt suicide. Now let's try to compare with an expected contingency table.
 
-```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
 pDepressed <- mean(ForeverAlone$depressed == 'Yes')
 pAttempted <- mean(ForeverAlone$attempt_suicide == 'Yes')
 expected <- nrow(ForeverAlone) * outer(c(1 - pDepressed, pDepressed), c(1 - pAttempted, pAttempted)); expected
@@ -207,11 +369,6 @@ expected <- nrow(ForeverAlone) * outer(c(1 - pDepressed, pDepressed), c(1 - pAtt
 
 chisq <- sum((observed-expected)^2/expected); chisq # 21.97367
 pValue <- 1 - pchisq(chisq, 1); pValue # 2.764167e-06
-```
-
-With such a small p-value = 2.764e-06, we reject the null hypothesis that depression and suicide attempt are independent. meaning there may be a correlation between those who are depressed and those who have attempted suicide.
-
-```{r fig.width=8, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
 # Using the built in chisq method...
 chisq.test(ForeverAlone$depressed, ForeverAlone$attempt_suicide, correct=FALSE)
 #
@@ -222,9 +379,116 @@ chisq.test(ForeverAlone$depressed, ForeverAlone$attempt_suicide, correct=FALSE)
 #
 # (Same result)
 ```
-With such a small `p-value = 2.764e-06`, we reject the null hypothesis that depression and suicide attempt are independent. Meaning there may be a correlation between those who are depressed and those who have attempted suicide.
+
+With such a small p-value = `2.764e-06`, we reject the null hypothesis that depression and suicide attempt are independent. meaning there may be a correlation between those who are depressed and those who have attempted suicide.
 
 ## Depression and Suicide: Conclusion
-Depression and suicide is correlated.
+Depression and suicide is correlated. Decreasing depression decreases likelihood of suicide. Efforts to reduce suicide also means efforts to reduce depression.
 
+***
 
+# Age and Suicide
+
+What is the age has the highest rate of suicide?
+
+## Age and Suicide: using confidence interval
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+SuicideAge <- subset(ForeverAlone, attempt_suicide == "Yes", age)$age
+populationMean <- mean(SuicideAge) # 24.24706
+populationSd <- sd(SuicideAge) # 6.307414
+
+n <- 10
+N <- 10^4
+
+means <- numeric(N)
+stdSamplesT <- numeric(N)
+for (i in 1:N){
+  values <- sample(SuicideAge, n)
+  sampleMean <- mean(values)
+  sampleSd <- sd(values)
+  means[i] <- sampleMean
+  stdSamplesT[i] <- (sampleMean - populationMean)/(sampleSd/sqrt(n))
+}
+
+hist(means, probability = TRUE)
+curve(dnorm(x, populationMean, populationSd/sqrt(10)), add=TRUE, col="red")
+
+hist(stdSamplesT, probability = TRUE, breaks = "FD")
+curve(dt(x, n-1), add=TRUE, col="red")
+
+#Let's see how we do with a t confidence interval
+missedL <- 0; missedU <- 0
+plot(x =c(15,40), y = c(1,100), type = "n", xlab = "age", ylab = "", main="confidence interval for age of those who attempted suicide") #blank plot
+N <-1000
+counter <- 0
+for (i in 1:N) {
+  x <- sample(SuicideAge, n)
+  L <- mean(x) + qt(0.025, n-1) * sd(x)/sqrt(n) #usually less than the true mean
+  U <- mean(x) + qt(0.975, n-1) * sd(x)/sqrt(n) #usually greater than the true mean
+  if (populationMean <L) missedL <- missedL + 1 # +1 if we were wrong
+  if (populationMean >U) missedU <- missedU + 1 # +1 if we were wrong
+  if (L < populationMean && U > populationMean) counter <- counter + 1 #count +1 if we were correct
+  if(i <= 100) segments(L, i, U, i)
+}
+abline (v = populationMean, col = "red") #vertical line at true mean
+(N-missedL-missedU)/N # 0.93
+missedL/N # 0.006
+missedU/N #0.064
+```
+The fraction of the time did interval include the true mean is `0.93`. Which is significant. However, not all intervals include the true mean. The confidence interval rarely lies to the left of the true mean `0.006` but a bit more often on the right `0.064`.
+
+## Age and Suicide: conclusion
+The confidence interval shows that `0.93` of all intervals include the true mean. This is good because if there are campaigns for suicide prevention, they can be directed to those in their mid-twenties.
+
+***
+
+# Age, Sexuality and Suicide
+
+Do those who are part of the LGBTQ+ community struggle more with suicide? 
+
+## Age, Sexuality, and Suicide: using ggplot
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+ForeverAlone.SuicideSubset <- subset(ForeverAlone, attempt_suicide == "Yes")
+ForeverAlone.SuicideSubset$isStraight <- ifelse(ForeverAlone.SuicideSubset$sexuallity == 'Straight', 1, 0)
+ForeverAlone.SuicideSubset$isStraight <- factor(ForeverAlone.SuicideSubset$isStraight,levels=c(0,1),
+   labels=c("Gay/Lesbian/Bisexual","Straight"))
+qplot(age, data=ForeverAlone.SuicideSubset, geom="density", fill=isStraight, alpha=I(.5),
+   main="Distribution of Suicide rate by sexuality", xlab="Age",
+   ylab="Density")
+```
+
+Here it is obvious that those do not identify as straight struggle more with suicide. 
+
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+qplot(isStraight, age, data=ForeverAlone.SuicideSubset, geom=c("boxplot", "jitter"),
+   fill=isStraight, main="Age of those attempted suicide by sexuality",
+   xlab="", ylab="Age")
+```
+
+Both are centered more in mid-20s but for those who do not identify as straight, the distribution is even more condensed in their mid-20s.
+
+```{r fig.width=7, fig.height=5, message=FALSE, warning=FALSE, results='hide'}
+ForeverAlone$hasSuicide <- ifelse(ForeverAlone$attempt_suicide == "Yes", 1, 0)
+ForeverAlone$isStraight <- ifelse(ForeverAlone$sexuallity == 'Straight', 1, 0)
+ForeverAlone$isStraight <- factor(ForeverAlone$isStraight,levels=c(0,1),
+   labels=c("Gay/Lesbian/Bisexual","Straight"))
+
+qplot(age, hasSuicide, data=ForeverAlone, geom=c("point", "smooth"),
+   method="lm", formula=y~x, color=isStraight,
+   main="Regression of Suicide density on Age divided by sexuality",
+   xlab="Age", ylab="Suicide density")
+```
+
+From all the results, I am seeing an overwhelming amount of people who are part of the LGBTQ community are more likely to attempt suicide.
+
+## Age, Sexuality and Suicide : conclusion
+Finding that the hotspot of people who attempted suicide is in their mid-20s and that those who are part of the LGBT has higher risk of suicide.
+
+***
+
+# Overall conclusion
+Having more income does not fix all your problems if you've already been struggling with suicide. Of course, having basic necessities would help. But being rich does not make you completely happy. However, having friends can exponentially lessen likelyhood of suicide. There is also a strong correlation between suicide probability and depression. Those who experience depression and more likely to to attempt suicide. Treating  depression can be instrumental in reducing suicide attempts.
+
+Aside from this, people who attempt suicide are more likely in their 20s. Those who do not identify as straight have a higher risk of suicide.
+
+End of document.

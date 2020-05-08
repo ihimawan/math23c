@@ -55,7 +55,7 @@ head(ForeverAlone$incomeAverage)
 attemptedSuicide <- (as.numeric(ForeverAlone$attempt_suicide=="Yes")); head(attemptedSuicide)
 
 income <- ForeverAlone$incomeAverage
-plot(income, attemptedSuicide)
+plot(income, attemptedSuicide, xlab = "Income", ylab="Suicide probability", main = "Logical regression of suicide probability as a function of income")
 b <- cov(income, attemptedSuicide)/var(income) # obtain slope
 # Find the intercept
 a <- mean(attemptedSuicide) - b*mean(income);a
@@ -306,7 +306,7 @@ getLogicalRegressionValues <- function (percentage) {
   attemptedSuicide <- (as.numeric(ForeverAlone.Trimmed$attempt_suicide=="Yes")); head(attemptedSuicide)
 
   friends <- ForeverAlone.Trimmed$friends
-  plot(friends, attemptedSuicide)
+  plot(friends, attemptedSuicide, xlab="Number of friends", ylab="Suicide Probability", main = "Logical Regression of suicide probability as a function of number of friends")
   b <- cov(friends, attemptedSuicide)/var(income) # obtain slope
   # Find the intercept
   a <- mean(attemptedSuicide) - b*mean(friends);a
@@ -346,8 +346,8 @@ regressionWithThreshold <- getLogicalRegressionValues(0.11); head(regressionWith
 # But apparently it is statistically significant? Surprise!?
 
 # Let's try to apply CLT to the number of friends to see if we can get the same normal distribution
-ForeverAlone.NoFriendOutliers <- subset(ForeverAlone, friends <= 14) # use threshold as 14 form above
-friendsNumber <- ForeverAlone.NoFriendOutliers$friends
+ForeverAlone.Trimmed <- trimFriendData(ForeverAlone, 0.11) # use this percentage as found above
+friendsNumber <- ForeverAlone.Trimmed$friends
 hist(friendsNumber, breaks="FD", probability = TRUE) # looks nothing like a normaldistribution.
 
 nFriends <- length(friendsNumber) # the number of tested
@@ -450,7 +450,7 @@ SuicideAge <- subset(ForeverAlone, attempt_suicide == "Yes", age)$age
 populationMean <- mean(SuicideAge) # 24.24706
 populationSd <- sd(SuicideAge) # 6.307414
 
-n <- 10
+n <- 10 # estimate mean using sample of 10
 N <- 10^4
 
 means <- numeric(N)
@@ -465,15 +465,15 @@ for (i in 1:N){
 
 hist(means, probability = TRUE)
 curve(dnorm(x, populationMean, populationSd/sqrt(10)), add=TRUE, col="red")
-# looks nice
+# looks good. And it helps that the age distribution is not that skewed.
 
 hist(stdSamplesT, probability = TRUE, breaks = "FD")
 curve(dt(x, n-1), add=TRUE, col="red")
-# looks nice.
+# looks like a good fit.
 
 #Let's see how we do with a t confidence interval
 missedL <- 0; missedU <- 0
-plot(x =c(15,40), y = c(1,100), type = "n", xlab = "", ylab = "") #blank plot
+plot(x =c(15,40), y = c(1,100), type = "n", xlab = "Age", ylab = "", main="Confidence interval for age of those who attempted suicide") #blank plot
 N <-1000
 counter <- 0
 for (i in 1:N) {
@@ -506,8 +506,8 @@ qplot(age, data=ForeverAlone.SuicideSubset, geom="density", fill=isStraight, alp
 
 # both are centered more in mid-20s
 qplot(isStraight, age, data=ForeverAlone.SuicideSubset, geom=c("boxplot", "jitter"),
-   fill=isStraight, main="Mileage by Gear Number",
-   xlab="", ylab="Miles per Gallon")
+   fill=isStraight, main="Age of those attempted suicide by sexuality",
+   xlab="", ylab="Age")
 
 ForeverAlone$hasSuicide <- ifelse(ForeverAlone$attempt_suicide == "Yes", 1, 0)
 ForeverAlone$isStraight <- ifelse(ForeverAlone$sexuallity == 'Straight', 1, 0)
